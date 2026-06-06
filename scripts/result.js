@@ -1,7 +1,9 @@
 /* =====================================================================
-   scripts/result.js — 결과 화면
-   URL 쿼리 파싱 → plants.json fetch → matchPlants → 식물 3종 카드 렌더.
-   각 카드: 사진 + 이름 + "왜 맞는지" 한 줄 이유 + 버튼 3개 + 반려동물 배지.
+   scripts/result.js — 결과 화면 v2
+   URL 쿼리 파싱(light/water/purpose/place/pet/size/interest/level)
+   → 화이트리스트 검증 → plants.json fetch → matchPlants → 식물 3종 카드 렌더.
+   각 카드: 사진 + 이름 + "왜 맞는지" 이유(새 차원 반영) + 버튼 3개 + 배지.
+   "자세히 보기"는 모든 식물 → /plant.html?id={id} (동적 상세, 213종 전부 동작).
    쿼리 없으면 안내 + 시작으로.
    ===================================================================== */
 (function () {
@@ -17,19 +19,28 @@
   var LIGHT = ["low", "mid", "high"];
   var WATER = ["low", "mid", "high"];
   var PURPOSE = ["air", "deco", "gift", "harvest"];
+  var PLACE = ["living", "window", "bathroom", "desk"];
+  var PET = ["yes", "no"];
+  var SIZE = ["small", "medium", "large"];
+  var INTEREST = ["flower", "foliage", "fruit"];
   var LEVEL = ["beginner", "experienced"];
+
+  function pickFrom(list, val) {
+    return list.indexOf(val) !== -1 ? val : undefined;
+  }
 
   function parseAnswers() {
     var p = new URLSearchParams(window.location.search);
     var a = {};
-    var light = p.get("light");
-    var water = p.get("water");
-    var purpose = p.get("purpose");
-    var level = p.get("level");
-    if (LIGHT.indexOf(light) !== -1) a.light = light;
-    if (WATER.indexOf(water) !== -1) a.water = water;
-    if (PURPOSE.indexOf(purpose) !== -1) a.purpose = purpose;
-    if (LEVEL.indexOf(level) !== -1) a.level = level;
+    var v;
+    if ((v = pickFrom(LIGHT, p.get("light"))) !== undefined) a.light = v;
+    if ((v = pickFrom(WATER, p.get("water"))) !== undefined) a.water = v;
+    if ((v = pickFrom(PURPOSE, p.get("purpose"))) !== undefined) a.purpose = v;
+    if ((v = pickFrom(PLACE, p.get("place"))) !== undefined) a.place = v;
+    if ((v = pickFrom(PET, p.get("pet"))) !== undefined) a.pet = v;
+    if ((v = pickFrom(SIZE, p.get("size"))) !== undefined) a.size = v;
+    if ((v = pickFrom(INTEREST, p.get("interest"))) !== undefined) a.interest = v;
+    if ((v = pickFrom(LEVEL, p.get("level"))) !== undefined) a.level = v;
     return a;
   }
 
@@ -38,34 +49,72 @@
     return !!(a.light || a.water || a.purpose);
   }
 
-  // "왜 맞는지" 한 줄 이유 — 빛/물/목적 일치 근거로 동적 생성(카피덱 템플릿 기반)
-  function buildReason(plant, a) {
-    var lightMatch = a.light && Array.isArray(plant.tags_light) && plant.tags_light.indexOf(a.light) !== -1;
-    var waterMatch = a.water && Array.isArray(plant.tags_water) && plant.tags_water.indexOf(a.water) !== -1;
-    var purposeMatch = a.purpose && Array.isArray(plant.tags_purpose) && plant.tags_purpose.indexOf(a.purpose) !== -1;
+  function inTags(tags, val) {
+    return !!val && Array.isArray(tags) && tags.indexOf(val) !== -1;
+  }
 
-    // 빛+물 조합 우선
+  // "왜 맞는지" 한 줄 이유 — 빛/물/목적 + 새 차원(장소/반려동물/크기/보는재미) 반영
+  function buildReason(plant, a) {
+    var lightMatch = inTags(plant.tags_light, a.light);
+    var waterMatch = inTags(plant.tags_water, a.water);
+    var purposeMatch = inTags(plant.tags_purpose, a.purpose);
+    var placeMatch = inTags(plant.tags_place, a.place);
+    var sizeMatch = a.size && plant.size === a.size;
+    var interestMatch = inTags(plant.tags_interest, a.interest);
+
+    // 1) 반려동물 안전(가장 안심되는 정보 먼저)
+    if (a.pet === "yes" && plant.toxic_to_pets !== true) {
+      return "반려동물에게 안전한 식물이에요.";
+    }
+
+    // 2) 장소 일치
+    if (placeMatch && a.place) {
+      if (a.place === "living")   return "거실에 두기 좋아요.";
+      if (a.place === "window")   return "베란다·창가에 잘 어울려요.";
+      if (a.place === "bathroom") return "습한 욕실에서도 잘 자라요.";
+      if (a.place === "desk")     return "작아서 책상에 딱 맞아요.";
+    }
+
+    // 3) 크기 일치
+    if (sizeMatch) {
+      if (a.size === "small")  return "작아서 어디에나 두기 좋아요.";
+      if (a.size === "large")  return "크게 자라 거실을 채워 줘요.";
+      if (a.size === "medium") return "크기가 알맞아 키우기 편해요.";
+    }
+
+    // 4) 보는 재미 일치
+    if (interestMatch) {
+      if (a.interest === "flower")  return "예쁜 꽃이 피어요.";
+      if (a.interest === "foliage") return "잎과 무늬가 멋져요.";
+      if (a.interest === "fruit")   return "열매·단풍을 볼 수 있어요.";
+    }
+
+    // 5) 빛+물 조합
     if (lightMatch && waterMatch) {
       if (a.light === "high" && a.water === "high") return "햇빛 좋고 물 좋아하는 친구예요.";
       if (a.light === "high" && a.water === "low")  return "햇빛 좋아하고 손이 덜 가요.";
       if (a.light === "low" && a.water === "mid")   return "그늘에서도 잘 자라요.";
       if (a.light === "low" && a.water === "low")   return "빛 적고 물 잊어도 괜찮아요.";
     }
-    // 목적 일치
+
+    // 6) 목적 일치
     if (purposeMatch) {
       if (a.purpose === "air")     return "공기를 맑게 해 줘요.";
       if (a.purpose === "deco")    return "예쁜 꽃을 볼 수 있어요.";
       if (a.purpose === "gift")    return "작고 키우기 쉬워요.";
       if (a.purpose === "harvest") return "길러서 드실 수 있어요.";
     }
-    // 빛 또는 물 단독 일치
+
+    // 7) 빛 또는 물 단독 일치
     if (lightMatch && a.light === "low") return "빛이 약해도 잘 자라요.";
     if (waterMatch && a.water === "low") return "물을 자주 안 줘도 돼요.";
     if (lightMatch) return "두실 곳 빛에 잘 맞아요.";
     if (waterMatch) return "물 주기가 잘 맞아요.";
-    // 초보 + 쉬움
+
+    // 8) 초보 + 쉬움
     if (a.level === "beginner" && plant.difficulty === "매우 쉬움") return "처음이라도 잘 키워요.";
-    // 폴백: 식물 자체 장점
+
+    // 폴백
     return "누구나 키우기 쉬운 친구예요.";
   }
 
@@ -93,7 +142,7 @@
     html += '<h2 class="plant-card__name">' + name + '</h2>';
     html += '<p class="plant-card__why">' + esc(reason) + '</p>';
     html += '<div class="plant-card__actions">';
-    html += '<a class="btn btn--detail" href="/plants/' + id + '.html">🔎 자세히 보기</a>';
+    html += '<a class="btn btn--detail" href="/plant.html?id=' + encodeURIComponent(plant.id) + '">🔎 자세히 보기</a>';
     html += '<a class="btn btn--shop" href="' + esc(coupang) + '" target="_blank" rel="noopener nofollow sponsored">'
       + '쿠팡에서 보기 <span aria-hidden="true">🛒</span></a>';
     html += '<button class="btn btn--share" type="button" data-share-id="' + id + '" data-share-name="' + name + '">'
@@ -135,9 +184,12 @@
     var picks = window.matchPlants(a, plants);
     var allZeroFallback = picks.every(function (p) {
       var s = 0;
-      if (a.light && Array.isArray(p.tags_light) && p.tags_light.indexOf(a.light) !== -1) s += 3;
-      if (a.water && Array.isArray(p.tags_water) && p.tags_water.indexOf(a.water) !== -1) s += 3;
-      if (a.purpose && Array.isArray(p.tags_purpose) && p.tags_purpose.indexOf(a.purpose) !== -1) s += 2;
+      if (inTags(p.tags_light, a.light)) s += 3;
+      if (inTags(p.tags_water, a.water)) s += 3;
+      if (inTags(p.tags_purpose, a.purpose)) s += 2;
+      if (inTags(p.tags_place, a.place)) s += 2;
+      if (a.size && p.size === a.size) s += 2;
+      if (inTags(p.tags_interest, a.interest)) s += 1;
       return s === 0;
     });
 
@@ -149,6 +201,8 @@
 
     if (allZeroFallback) {
       html += '<p class="notice">딱 맞는 건 적지만, 쉬운 식물로 골랐어요.</p>';
+    } else if (a.pet === "yes") {
+      html += '<p class="notice">반려동물에게 안전한 식물로 골랐어요. 천천히 보세요.</p>';
     } else {
       html += '<p class="notice">어느 친구든 키우기 쉬워요. 천천히 골라 보세요.</p>';
     }
@@ -172,12 +226,13 @@
         var b = e.currentTarget;
         var id = b.getAttribute("data-share-id");
         var name = b.getAttribute("data-share-name");
+        var base = (window.CONFIG && window.CONFIG.SITE_URL)
+          ? window.CONFIG.SITE_URL.replace(/\/$/, "")
+          : window.location.origin;
         window.App.share({
           title: "우리집 초록친구 — " + name,
           text: name + " 어떠세요? 우리집에 맞는 식물을 찾아봤어요.",
-          url: window.CONFIG && window.CONFIG.SITE_URL
-            ? (window.CONFIG.SITE_URL.replace(/\/$/, "") + "/plants/" + id + ".html")
-            : (window.location.origin + "/plants/" + id + ".html")
+          url: base + "/plant.html?id=" + encodeURIComponent(id)
         });
       });
     }

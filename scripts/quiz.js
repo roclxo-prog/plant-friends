@@ -1,16 +1,19 @@
 /* =====================================================================
-   scripts/quiz.js — 질문 흐름 (한 화면 1질문)
-   Q1 빛 → Q2 물 → Q3 목적 → Q4 경험(선택)
-   진행바 ①②③ 갱신, '← 이전' / '다시하기', 답 완료 시 result.html 이동.
-   답은 URL 쿼리스트링으로만 전달(저장 없음).
+   scripts/quiz.js — 질문 흐름 v2 (한 화면 1질문)
+   필수 Q1 빛 → Q2 물 → Q3 목적
+     → 분기 화면("이대로 추천받기" / "더 정확히 추천받기")
+   선택 Q4 장소 → Q5 반려동물 → Q6 크기 → Q7 보는 재미(각각 건너뛰기 가능)
+   진행바: 필수 3칸 → 정밀화 선택 시 7칸 확장. '← 이전' / '다시하기'.
+   답은 URL 쿼리스트링으로만 전달(저장 없음). 선택 미응답/건너뛰기는 파라미터 생략.
+   접근성: 새 질문마다 heading 포커스 이동·aria, reduced-motion 처리 유지.
    ===================================================================== */
 (function () {
   "use strict";
 
-  // 질문 정의(카피덱 라벨 그대로)
-  var QUESTIONS = [
+  // 필수 질문(3) — 카피덱 라벨 그대로
+  var REQUIRED = [
     {
-      key: "light",
+      key: "light", step: "빛",
       question: "식물 둘 곳에 햇빛이 잘 드나요?",
       options: [
         { value: "high", emoji: "☀️", label: "햇빛이 잘 들어요" },
@@ -19,7 +22,7 @@
       ]
     },
     {
-      key: "water",
+      key: "water", step: "물",
       question: "물은 자주 챙겨 주실 수 있나요?",
       options: [
         { value: "high", emoji: "💧", label: "자주 줄 수 있어요" },
@@ -28,7 +31,7 @@
       ]
     },
     {
-      key: "purpose",
+      key: "purpose", step: "목적",
       question: "어떤 식물을 찾으세요?",
       options: [
         { value: "air",     emoji: "🌳", label: "공기 맑게 하는 식물" },
@@ -36,45 +39,83 @@
         { value: "gift",    emoji: "🪴", label: "작고 귀여운 식물" },
         { value: "harvest", emoji: "🥬", label: "먹을 수 있는 식물" }
       ]
+    }
+  ];
+
+  // 선택 질문(4) — 각각 "잘 모르겠어요/건너뛰기" 보기(값 비움 → 파라미터 생략)
+  var OPTIONAL = [
+    {
+      key: "place", step: "장소",
+      question: "어디에 두실 건가요?",
+      options: [
+        { value: "living",   emoji: "🛋️", label: "거실" },
+        { value: "window",   emoji: "🪟", label: "베란다·창가" },
+        { value: "bathroom", emoji: "🚿", label: "욕실·습한 곳" },
+        { value: "desk",     emoji: "🖥️", label: "책상·사무실" },
+        { value: "",         emoji: "🤷", label: "잘 모르겠어요" }
+      ]
     },
     {
-      key: "level",
-      optional: true,
-      question: "식물을 키워 보신 적 있나요?",
+      key: "pet", step: "반려동물",
+      question: "강아지나 고양이를 키우세요?",
       options: [
-        { value: "beginner",     emoji: "🐣", label: "처음이에요" },
-        { value: "experienced",  emoji: "🌱", label: "조금 키워 봤어요" },
-        { value: "experienced",  emoji: "🌳", label: "잘 키워요" }
+        { value: "yes", emoji: "🐶", label: "강아지·고양이 있어요" },
+        { value: "no",  emoji: "🙆", label: "없어요" },
+        { value: "",    emoji: "🤷", label: "잘 모르겠어요" }
+      ]
+    },
+    {
+      key: "size", step: "크기",
+      question: "어느 정도 크기가 좋으세요?",
+      options: [
+        { value: "small",  emoji: "🌱", label: "작은 탁상용" },
+        { value: "medium", emoji: "🪴", label: "중간 크기" },
+        { value: "large",  emoji: "🌳", label: "큰 거실용" },
+        { value: "",       emoji: "🤷", label: "잘 모르겠어요" }
+      ]
+    },
+    {
+      key: "interest", step: "보는 재미",
+      question: "무엇을 보는 재미가 좋으세요?",
+      options: [
+        { value: "flower",  emoji: "🌸", label: "꽃" },
+        { value: "foliage", emoji: "🍃", label: "잎·무늬" },
+        { value: "fruit",   emoji: "🍅", label: "열매·단풍" },
+        { value: "",        emoji: "🤷", label: "상관없어요" }
       ]
     }
   ];
 
-  // 진행바에 표시할 3단계(Q4는 선택이라 진행바는 3칸 유지)
-  var STEP_LABELS = ["빛", "물", "목적"];
+  var NUM = ["①", "②", "③", "④", "⑤", "⑥", "⑦"];
 
-  var ORDINAL = ["1번째", "2번째", "3번째", "4번째"];
-
-  var state = { index: 0, answers: {} };
+  // state.mode: 'required'(Q1~3) | 'branch'(분기) | 'optional'(Q4~7)
+  var state = { mode: "required", index: 0, answers: {} };
 
   var elQuestion, elProgress, elHint, elBack;
 
-  function ordinalText(i) {
-    if (i < 3) return "3개 중 " + ORDINAL[i];
-    return "마지막 질문이에요 (선택)";
-  }
+  /* --- 진행바 ----------------------------------------------------- */
+  // 필수 단계에서는 3칸, 정밀화(분기 이후)부터 7칸으로 확장.
+  function renderProgress() {
+    var expanded = (state.mode !== "required");
+    var steps = expanded
+      ? REQUIRED.concat(OPTIONAL)
+      : REQUIRED;
 
-  function renderProgress(i) {
+    // 현재 위치(전체 흐름에서의 0-based index)
+    var current;
+    if (state.mode === "required") current = state.index;
+    else if (state.mode === "branch") current = -1; // 분기 화면: 필수 3개 완료
+    else current = REQUIRED.length + state.index;
+
     var html = '<ol class="progress__list">';
-    for (var s = 0; s < STEP_LABELS.length; s++) {
+    for (var s = 0; s < steps.length; s++) {
       var cls = "progress__step";
-      var current = (i >= 3) ? -1 : i; // Q4에서는 모두 완료로 표시
-      if (s < i) cls += " is-done";
+      if (s < current || (state.mode === "branch" && s < REQUIRED.length)) cls += " is-done";
       if (s === current) cls += " is-current";
-      var num = ["①", "②", "③"][s];
       html += '<li class="' + cls + '"' + (s === current ? ' aria-current="step"' : '') + '>';
-      html += '<span class="progress__num" aria-hidden="true">' + num + '</span>';
-      html += '<span class="progress__text">' + STEP_LABELS[s] + '</span>';
-      if (s < i) html += '<span class="sr-only">(완료)</span>';
+      html += '<span class="progress__num" aria-hidden="true">' + NUM[s] + '</span>';
+      html += '<span class="progress__text">' + steps[s].step + '</span>';
+      if (s < current || (state.mode === "branch" && s < REQUIRED.length)) html += '<span class="sr-only">(완료)</span>';
       else if (s === current) html += '<span class="sr-only">(지금 여기)</span>';
       html += '</li>';
     }
@@ -82,18 +123,56 @@
     elProgress.innerHTML = html;
   }
 
-  function renderQuestion() {
-    var q = QUESTIONS[state.index];
-    renderProgress(state.index);
+  /* --- 진행 안내(시니어 친화: "지금 어디인지") -------------------- */
+  function hintText() {
+    if (state.mode === "required") {
+      return "3개 중 " + (state.index + 1) + "번째예요 · 천천히 고르셔도 돼요.";
+    }
+    if (state.mode === "branch") {
+      return "필수 질문 3개를 마쳤어요.";
+    }
+    // optional
+    var total = REQUIRED.length + OPTIONAL.length;
+    return (REQUIRED.length + state.index + 1) + " / " + total + " · 모르시면 건너뛰셔도 돼요.";
+  }
 
-    if (elHint) elHint.textContent = ordinalText(state.index) + " · 천천히 고르셔도 돼요.";
+  /* --- 현재 질문 객체 --------------------------------------------- */
+  function currentQuestion() {
+    if (state.mode === "required") return REQUIRED[state.index];
+    if (state.mode === "optional") return OPTIONAL[state.index];
+    return null;
+  }
+
+  /* --- 화면 렌더 -------------------------------------------------- */
+  function render() {
+    renderProgress();
+    if (elHint) elHint.textContent = hintText();
+
+    if (state.mode === "branch") {
+      renderBranch();
+    } else {
+      renderQuestion();
+    }
+
+    if (elBack) elBack.disabled = (state.mode === "required" && state.index === 0);
+
+    var heading = document.getElementById("quiz-question");
+    if (heading) { heading.setAttribute("tabindex", "-1"); heading.focus(); }
+    window.scrollTo(0, 0);
+  }
+
+  function renderQuestion() {
+    var q = currentQuestion();
+    var optional = (state.mode === "optional");
 
     var html = '';
-    html += '<h1 id="quiz-question">' + q.question + (q.optional ? ' <span class="lead">(선택)</span>' : '') + '</h1>';
+    html += '<h1 id="quiz-question">' + q.question + (optional ? ' <span class="lead">(선택)</span>' : '') + '</h1>';
     html += '<div class="choice-group" role="group" aria-labelledby="quiz-question">';
     for (var i = 0; i < q.options.length; i++) {
       var o = q.options[i];
-      html += '<button class="choice-card" type="button" aria-pressed="false"'
+      var isSkip = (o.value === "");
+      var cls = "choice-card" + (isSkip ? " choice-card--skip" : "");
+      html += '<button class="' + cls + '" type="button" aria-pressed="false"'
         + ' data-value="' + o.value + '" data-idx="' + i + '">';
       html += '<span class="choice-card__emoji" aria-hidden="true">' + o.emoji + '</span>';
       html += '<span class="choice-card__label">' + o.label + '</span>';
@@ -102,72 +181,100 @@
     }
     html += '</div>';
 
-    // Q4(선택)에는 "건너뛰고 결과 보기" 보조 동작 제공
-    if (q.optional) {
-      html += '<div style="margin-top:var(--space-3)">';
-      html += '<button class="bottomnav__btn bottomnav__btn--back" type="button" id="quiz-skip" style="width:100%;min-height:var(--tap-min)">건너뛰고 결과 보기</button>';
-      html += '</div>';
-    }
+    elQuestion.innerHTML = html;
+
+    var cards = elQuestion.querySelectorAll(".choice-card");
+    for (var c = 0; c < cards.length; c++) cards[c].addEventListener("click", onSelect);
+  }
+
+  function renderBranch() {
+    var html = '';
+    html += '<h1 id="quiz-question">필수 질문 3개를 마쳤어요!</h1>';
+    html += '<p class="lead">이대로 추천받으셔도 되고, 몇 가지만 더 알려 주시면 더 잘 맞는 식물을 찾아 드려요.</p>';
+    html += '<div class="choice-group" role="group" aria-labelledby="quiz-question">';
+    html += '<button class="choice-card" type="button" id="branch-now">';
+    html += '<span class="choice-card__emoji" aria-hidden="true">✅</span>';
+    html += '<span class="choice-card__label">이대로 추천받기</span>';
+    html += '<span class="choice-card__check" aria-hidden="true">✓</span>';
+    html += '</button>';
+    html += '<button class="choice-card" type="button" id="branch-more">';
+    html += '<span class="choice-card__emoji" aria-hidden="true">🔎</span>';
+    html += '<span class="choice-card__label">더 정확히 추천받기 (4문항)</span>';
+    html += '<span class="choice-card__check" aria-hidden="true">✓</span>';
+    html += '</button>';
+    html += '</div>';
 
     elQuestion.innerHTML = html;
 
-    // 선택 핸들러
-    var cards = elQuestion.querySelectorAll(".choice-card");
-    for (var c = 0; c < cards.length; c++) {
-      cards[c].addEventListener("click", onSelect);
-    }
-    var skip = document.getElementById("quiz-skip");
-    if (skip) skip.addEventListener("click", function () { finish(); });
-
-    // 이전 버튼 상태(첫 질문에서는 disabled)
-    if (elBack) elBack.disabled = (state.index === 0);
-
-    // 새 질문으로 포커스 이동(스크린리더 안내)
-    var heading = document.getElementById("quiz-question");
-    if (heading) { heading.setAttribute("tabindex", "-1"); heading.focus(); }
-    window.scrollTo(0, 0);
+    document.getElementById("branch-now").addEventListener("click", function () { finish(); });
+    document.getElementById("branch-more").addEventListener("click", function () {
+      state.mode = "optional";
+      state.index = 0;
+      render();
+    });
   }
 
+  /* --- 선택 처리 -------------------------------------------------- */
   function onSelect(e) {
     var btn = e.currentTarget;
-    var q = QUESTIONS[state.index];
+    var q = currentQuestion();
+    var value = btn.getAttribute("data-value");
 
-    // 시각적 선택 표시(3중) — 잠깐 보여주고 다음으로
     var cards = elQuestion.querySelectorAll(".choice-card");
     for (var i = 0; i < cards.length; i++) cards[i].setAttribute("aria-pressed", "false");
     btn.setAttribute("aria-pressed", "true");
 
-    state.answers[q.key] = btn.getAttribute("data-value");
+    // 건너뛰기(빈 값)는 해당 답을 지움(파라미터 생략)
+    if (value === "") delete state.answers[q.key];
+    else state.answers[q.key] = value;
 
-    // 모션 최소화 사용자는 전환 지연 없이 즉시 이동(점프감 제거)
     var reduceMotion = window.matchMedia &&
       window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     var delay = reduceMotion ? 0 : 220;
 
-    // 명시적 동작(클릭)으로만 전환 — 자동 점프지만 사용자 동작 직후라 허용
-    setTimeout(function () {
-      if (state.index < QUESTIONS.length - 1) {
+    setTimeout(advance, delay);
+  }
+
+  function advance() {
+    if (state.mode === "required") {
+      if (state.index < REQUIRED.length - 1) {
         state.index++;
-        renderQuestion();
+        render();
+      } else {
+        // 필수 끝 → 분기 화면
+        state.mode = "branch";
+        render();
+      }
+    } else if (state.mode === "optional") {
+      if (state.index < OPTIONAL.length - 1) {
+        state.index++;
+        render();
       } else {
         finish();
       }
-    }, delay);
+    }
   }
 
+  /* --- 이전 / 다시하기 -------------------------------------------- */
   function goBack() {
-    if (state.index > 0) {
-      state.index--;
-      // 되돌아온 질문의 기존 답을 화면에 반영
-      renderQuestion();
+    if (state.mode === "required") {
+      if (state.index > 0) { state.index--; render(); restoreSelection(); }
+    } else if (state.mode === "branch") {
+      state.mode = "required";
+      state.index = REQUIRED.length - 1;
+      render();
       restoreSelection();
+    } else if (state.mode === "optional") {
+      if (state.index > 0) { state.index--; render(); restoreSelection(); }
+      else { state.mode = "branch"; render(); }
     }
   }
 
   function restoreSelection() {
-    var q = QUESTIONS[state.index];
+    var q = currentQuestion();
+    if (!q) return;
     var saved = state.answers[q.key];
-    if (!saved) return;
+    if (saved === undefined) return;
     var cards = elQuestion.querySelectorAll(".choice-card");
     for (var i = 0; i < cards.length; i++) {
       if (cards[i].getAttribute("data-value") === saved) {
@@ -177,17 +284,21 @@
   }
 
   function restart() {
-    state = { index: 0, answers: {} };
-    renderQuestion();
+    state = { mode: "required", index: 0, answers: {} };
+    render();
   }
 
+  /* --- 완료 → 결과 이동 ------------------------------------------- */
   function finish() {
     var a = state.answers;
     var params = [];
-    if (a.light)   params.push("light=" + encodeURIComponent(a.light));
-    if (a.water)   params.push("water=" + encodeURIComponent(a.water));
-    if (a.purpose) params.push("purpose=" + encodeURIComponent(a.purpose));
-    if (a.level)   params.push("level=" + encodeURIComponent(a.level));
+    var keys = ["light", "water", "purpose", "place", "pet", "size", "interest", "level"];
+    for (var i = 0; i < keys.length; i++) {
+      var k = keys[i];
+      if (a[k] !== undefined && a[k] !== "") {
+        params.push(k + "=" + encodeURIComponent(a[k]));
+      }
+    }
     window.location.assign("/result.html?" + params.join("&"));
   }
 
@@ -201,7 +312,7 @@
     if (elBack) elBack.addEventListener("click", goBack);
     if (elRestart) elRestart.addEventListener("click", restart);
 
-    renderQuestion();
+    render();
   }
 
   if (document.readyState === "loading") {

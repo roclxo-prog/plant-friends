@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>식물 상세 — 우리집 초록친구</title>
+  <meta name="description" content="추천받은 식물의 빛·물 주기·난이도·크기·장점·주의점을 큰 글씨로 안내합니다. 반려동물 안전 정보와 구매 링크도 함께 알려 드려요." />
+
+  <meta name="color-scheme" content="light" />
+  <link rel="icon" href="/public/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/public/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/public/favicon-16.png" />
+  <link rel="apple-touch-icon" href="/public/apple-touch-icon.png" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="식물 상세 — 우리집 초록친구" />
+  <meta property="og:description" content="추천받은 식물을 큰 글씨로 자세히 안내합니다." />
+  <meta property="og:image" content="/public/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="/public/og-image.png" />
+  <link rel="canonical" href="/plant.html" />
+
+  <!-- 폰트: Pretendard(비차단 로딩). 미로드 시 system-ui·Noto Sans KR 폴백으로 한글 정상 표시(styles.css --font-sans). -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+  <link rel="preload" as="style" crossorigin
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <link rel="stylesheet" crossorigin media="print" onload="this.media='all'"
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <noscript>
+    <link rel="stylesheet" crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  </noscript>
+
+  <link rel="stylesheet" href="/styles/styles.css" />
+  <script src="/scripts/config.js"></script>
+  <script src="/scripts/app.js" defer></script>
+  <script src="/scripts/plant.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">본문 바로가기</a>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-header__logo" href="/index.html">
+        <img src="/public/favicon.svg" alt="" aria-hidden="true" />
+        초록친구
+      </a>
+      <nav class="site-nav" aria-label="주요 메뉴">
+        <a href="/index.html">처음으로</a>
+        <a href="/guide.html">돌봄 안내</a>
+        <a href="/contact.html">문의</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container prose">
+    <section id="plant-container" aria-live="polite">
+      <p>식물 정보를 불러오고 있어요.</p>
+    </section>
+
+    <!-- 광고는 콘텐츠 하단에만 -->
+    <aside class="ad-slot" aria-label="광고">
+      <p class="ad-slot__tag">광고</p>
+      <div class="ad-slot__body"></div>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <ul class="site-footer__links">
+        <li><a href="/index.html">처음으로</a></li>
+        <li><a href="/about.html">소개</a></li>
+        <li><a href="/privacy.html">개인정보처리방침</a></li>
+        <li><a href="/contact.html">문의</a></li>
+        <li><a href="/guide.html">돌봄 안내</a></li>
+        <li><a href="/credits.html">사진 출처</a></li>
+      </ul>
+      <p class="site-footer__note">우리집 초록친구 · 처음이라도, 실수해도 괜찮아요.</p>
+    </div>
+  </footer>
+</body>
+</html>
