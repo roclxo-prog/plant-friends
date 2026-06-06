@@ -109,14 +109,17 @@
 
     var html = '<ol class="progress__list">';
     for (var s = 0; s < steps.length; s++) {
+      var isDone = (s < current || (state.mode === "branch" && s < REQUIRED.length));
+      var isCurrent = (s === current);
       var cls = "progress__step";
-      if (s < current || (state.mode === "branch" && s < REQUIRED.length)) cls += " is-done";
-      if (s === current) cls += " is-current";
-      html += '<li class="' + cls + '"' + (s === current ? ' aria-current="step"' : '') + '>';
-      html += '<span class="progress__num" aria-hidden="true">' + NUM[s] + '</span>';
+      if (isDone) cls += " is-done";
+      if (isCurrent) cls += " is-current";
+      html += '<li class="' + cls + '"' + (isCurrent ? ' aria-current="step"' : '') + '>';
+      // 지난 단계는 색만이 아니라 '체크(✓)'로, 현재·다음은 숫자로 — 색 외 정보 병기
+      html += '<span class="progress__num" aria-hidden="true">' + (isDone ? '✓' : NUM[s]) + '</span>';
       html += '<span class="progress__text">' + steps[s].step + '</span>';
-      if (s < current || (state.mode === "branch" && s < REQUIRED.length)) html += '<span class="sr-only">(완료)</span>';
-      else if (s === current) html += '<span class="sr-only">(지금 여기)</span>';
+      if (isDone) html += '<span class="sr-only">(완료)</span>';
+      else if (isCurrent) html += '<span class="sr-only">(지금 여기)</span>';
       html += '</li>';
     }
     html += '</ol>';

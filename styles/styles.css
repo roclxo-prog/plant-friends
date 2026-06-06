@@ -316,6 +316,17 @@ li { margin: 0 0 8px; }
   color: var(--color-text);
 }
 
+/* 페이지 본문 컨테이너로 쓰인 .prose 는 '불투명 흰 카드' 위에 글씨를 둔다.
+   (소개·정책·문의·사진출처·식물 상세 본문) — 베이지 위 반투명 글씨 금지 원칙. */
+.container.prose {
+  background: var(--card);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+  padding: var(--pad-card);
+  margin-top: var(--space-2);
+  margin-bottom: var(--space-2);
+}
+
 /* 콘텐츠(소개·정책·문의) 본문 가독성 */
 .prose p,
 .prose li {

@@ -141,6 +141,11 @@
     if (badges) html += '<div class="plant-card__badges">' + badges + '</div>';
     html += '<h2 class="plant-card__name">' + name + '</h2>';
     html += '<p class="plant-card__why">' + esc(reason) + '</p>';
+    // 핵심 돌봄 정보를 태그(흰 카드 위 알약)로 강조 — 빛·물 한눈에
+    var facts = '';
+    if (plant.light_desc) facts += '<span class="badge"><span aria-hidden="true">☀️</span> ' + esc(plant.light_desc) + '</span>';
+    if (plant.water_cycle) facts += '<span class="badge"><span aria-hidden="true">💧</span> 물 ' + esc(plant.water_cycle) + '</span>';
+    if (facts) html += '<div class="plant-card__badges">' + facts + '</div>';
     html += '<div class="plant-card__actions">';
     html += '<a class="btn btn--detail" href="/plant.html?id=' + encodeURIComponent(plant.id) + '">🔎 자세히 보기</a>';
     html += '<a class="btn btn--shop" href="' + esc(coupang) + '" target="_blank" rel="noopener nofollow sponsored">'
@@ -194,8 +199,8 @@
     });
 
     var html = '';
-    html += '<div class="result-head">';
-    html += '<h1 class="result-head__title">우리집에 딱 맞는 친구예요</h1>';
+    html += '<div class="result-head card">';
+    html += '<h1 class="result-head__title">이런 식물이 잘 맞아요 <span aria-hidden="true">🌿</span></h1>';
     html += '<p class="result-head__subtitle">우리집에 잘 맞는 식물 3가지예요.</p>';
     html += '</div>';
 
