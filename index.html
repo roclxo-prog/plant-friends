@@ -29,6 +29,39 @@
   <link rel="stylesheet" href="/styles/styles.css" />
   <script src="/scripts/config.js"></script>
   <script src="/scripts/app.js" defer></script>
+
+  <!-- 구조화 데이터: Organization + WebSite. 절대 URL은 배포 시 SITE_URL(placeholder: https://example.pages.dev)로 일괄 치환하세요. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://example.pages.dev/#organization",
+        "name": "우리집 초록친구",
+        "url": "https://example.pages.dev/",
+        "logo": "https://example.pages.dev/public/logo.svg",
+        "description": "처음 식물을 키우는 어르신을 위해 큰 글씨로 식물을 추천하고 키우는 법을 알려 드리는 서비스입니다."
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://example.pages.dev/#website",
+        "url": "https://example.pages.dev/",
+        "name": "우리집 초록친구",
+        "inLanguage": "ko-KR",
+        "publisher": { "@id": "https://example.pages.dev/#organization" },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://example.pages.dev/guide.html?q={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">본문 바로가기</a>

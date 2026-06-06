@@ -27,6 +27,37 @@
   <script src="/scripts/config.js"></script>
   <script src="/scripts/app.js" defer></script>
   <script src="/scripts/guide.js" defer></script>
+
+  <!-- 구조화 데이터: CollectionPage + 식물 10종 ItemList. 절대 URL은 배포 시 SITE_URL(placeholder: https://example.pages.dev)로 일괄 치환하세요. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "@id": "https://example.pages.dev/guide.html#collection",
+    "url": "https://example.pages.dev/guide.html",
+    "name": "케어가이드 — 식물 키우는 법 모음",
+    "inLanguage": "ko-KR",
+    "description": "키우기 쉬운 실내 식물 10종의 물 주기·햇빛·주의할 점을 큰 글씨로 안내합니다.",
+    "isPartOf": { "@id": "https://example.pages.dev/#website" },
+    "mainEntity": {
+      "@type": "ItemList",
+      "itemListOrder": "https://schema.org/ItemListUnordered",
+      "numberOfItems": 10,
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "산세베리아 키우는 법", "url": "https://example.pages.dev/plants/sansevieria.html" },
+        { "@type": "ListItem", "position": 2, "name": "스파티필름 키우는 법", "url": "https://example.pages.dev/plants/spathiphyllum.html" },
+        { "@type": "ListItem", "position": 3, "name": "다육식물 키우는 법", "url": "https://example.pages.dev/plants/succulent.html" },
+        { "@type": "ListItem", "position": 4, "name": "스킨답서스 키우는 법", "url": "https://example.pages.dev/plants/scindapsus.html" },
+        { "@type": "ListItem", "position": 5, "name": "금전수 키우는 법", "url": "https://example.pages.dev/plants/zamioculcas.html" },
+        { "@type": "ListItem", "position": 6, "name": "테이블야자 키우는 법", "url": "https://example.pages.dev/plants/parlor_palm.html" },
+        { "@type": "ListItem", "position": 7, "name": "고무나무 키우는 법", "url": "https://example.pages.dev/plants/rubber_plant.html" },
+        { "@type": "ListItem", "position": 8, "name": "행운목 키우는 법", "url": "https://example.pages.dev/plants/lucky_bamboo.html" },
+        { "@type": "ListItem", "position": 9, "name": "호접란 키우는 법", "url": "https://example.pages.dev/plants/phalaenopsis.html" },
+        { "@type": "ListItem", "position": 10, "name": "아이비 키우는 법", "url": "https://example.pages.dev/plants/ivy.html" }
+      ]
+    }
+  }
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">본문 바로가기</a>

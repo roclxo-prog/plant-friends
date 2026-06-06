@@ -1,0 +1,13 @@
+# 우리집 초록친구 — robots.txt
+# 전체 크롤링 허용
+
+User-agent: *
+Allow: /
+
+# result.html 은 쿼리 파라미터(?...)로 추천 결과가 동적으로 만들어지는 페이지입니다.
+# 페이지 자체 크롤링은 허용하되, 무한히 늘어나는 파라미터 조합 색인은 권장하지 않습니다.
+# (정책상 차단하지 않으며, 색인 제어는 페이지 canonical 로 처리합니다.)
+
+# 사이트맵 위치 — 배포 시 scripts/config.js 의 SITE_URL 도메인으로 맞춰 주세요.
+# placeholder: https://example.pages.dev
+Sitemap: https://example.pages.dev/sitemap.xml

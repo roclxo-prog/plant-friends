@@ -15,3 +15,4 @@
 - **2026-06-06 / 이미지 폴백**: 실제 식물 사진은 CC0 큐레이션 목록(public/IMAGE-SOURCES.md)으로 제공, 사이트는 `<img onerror>`로 public/plants/placeholder.svg 폴백 → 사진 없이도 배포·작동.
 - **2026-06-06 / 카톡 공유**: 카카오 JS SDK 키는 사용자 설정값이므로, 키 없이도 작동하도록 navigator.share(Web Share API) 우선 + 실패 시 링크 복사 폴백. config.js에 KAKAO_JS_KEY placeholder만 둠.
 - **2026-06-06 / 반려동물 독성 표시**: plants.json toxic_to_pets=true 식물은 상세·결과 카드에 "🐾 반려동물 주의" 배지 노출(시니어 가구 반려동물 안전). 독성 식물 추천 자체를 막지는 않되 명확히 고지.
+- **2026-06-06 / 상추·바질 상세페이지 추가(배치 2F)**: 매칭이 harvest 목적에 상추·바질을 추천하는데 상세페이지가 없으면 "자세히 보기" 링크가 깨짐(404). 지시서는 10편이지만 완전성·텃밭 기능·애드센스 콘텐츠 강화를 위해 케어가이드 2편 + 상세페이지 2개 추가 → 총 12종 완전 지원. 동시에 상세페이지가 참조하던 미정의 CSS 클래스(breadcrumb·guide-figure·related-plants·ad-disclosure·info-card)를 styles.css에 추가하고, app.js에 placeholder 쿠팡링크 안전 폴백(data-coupang) 바인딩 추가.

@@ -26,6 +26,75 @@
   <link rel="stylesheet" href="/styles/styles.css" />
   <script src="/scripts/config.js"></script>
   <script src="/scripts/app.js" defer></script>
+
+  <!-- 구조화 데이터: HowTo("금전수 키우는 법") + BreadcrumbList. 절대 URL은 배포 시 SITE_URL(placeholder: https://example.pages.dev)로 일괄 치환하세요. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "HowTo",
+        "@id": "https://example.pages.dev/plants/zamioculcas.html#howto",
+        "name": "금전수 키우는 법",
+        "description": "금전수 키우는 법: 물은 2~3주에 한 번, 직사광선이 없는 밝은 곳이 좋아요. 난이도는 쉬움. 재물이 들어온다고 하여 선물로 인기가 많아요.",
+        "image": "https://example.pages.dev/public/plants/zamioculcas.jpg",
+        "inLanguage": "ko-KR",
+        "totalTime": "PT5M",
+        "supply": [
+          {
+            "@type": "HowToSupply",
+            "name": "물 빠짐 구멍이 있는 화분"
+          },
+          {
+            "@type": "HowToSupply",
+            "name": "물이 잘 빠지는 흙"
+          }
+        ],
+        "step": [
+          {
+            "@type": "HowToStep",
+            "name": "빛 자리 고르기",
+            "text": "직사광선이 없는 밝은 곳이 좋아요 자리에 두세요."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "물 주기",
+            "text": "흙이 마르면 2~3주에 한 번 듬뿍 주고 받침에 고인 물은 버려 주세요."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "주의할 점",
+            "text": "물을 너무 자주 주면 뿌리가 무를 수 있어요."
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://example.pages.dev/plants/zamioculcas.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "홈",
+            "item": "https://example.pages.dev/index.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "식물 키우는 법",
+            "item": "https://example.pages.dev/guide.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "금전수",
+            "item": "https://example.pages.dev/plants/zamioculcas.html"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">본문 바로가기</a>
