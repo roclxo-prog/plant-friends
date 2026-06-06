@@ -7,48 +7,68 @@
    - prefers-reduced-motion 존중, 전환 200ms 이내
    ===================================================================== */
 
+/* ---------------------------------------------------------------------
+   옛 변수 → 새 토큰(tokens.css) 별칭 매핑
+   - tokens.css 가 단일 출처. 여기서는 기존 규칙이 깨지지 않도록
+     옛 이름(--color-*, --font-* 등)을 새 토큰에 연결만 한다.
+   - 수치는 tokens.css 값을 그대로 따른다(임의 변경 금지).
+   - 단, '시니어 안전 글래스모피즘' 규격에 맞춰 모서리/그림자/유리 등은
+     아래 컴포넌트 규칙에서 새 규격으로 적용한다.
+   --------------------------------------------------------------------- */
 :root {
-  /* 폰트 */
-  --font-sans: "Pretendard", "Pretendard Variable",
+  /* 폰트: tokens.css --font 사용(Light/Thin 금지, 본문 weight 500) */
+  --font-sans: var(--font, "Pretendard", "Pretendard Variable",
     "Noto Sans KR", -apple-system, BlinkMacSystemFont,
-    "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+    "Apple SD Gothic Neo", "Malgun Gothic", sans-serif);
 
-  /* 글자 크기 (본문 18px 미만 금지) */
-  --font-base: 18px;     /* 본문 최소 */
-  --font-caption: 18px;  /* 보조 텍스트 최소, 그 이하 금지 (16px 이하 금지) */
-  --font-h3: 22px;       /* 소제목 */
-  --font-h2: 26px;       /* 부제목 */
-  --font-h1: 30px;       /* 대제목 */
-  --line-height: 1.7;
+  /* 글자 크기 → 새 토큰 매핑 (본문 18px 미만 금지) */
+  --font-base: var(--fs-body);     /* 18px */
+  --font-caption: var(--fs-body);  /* 보조 텍스트도 18px 유지 */
+  --font-h3: var(--fs-h3);         /* 20px */
+  --font-h2: var(--fs-h2);         /* 24px */
+  --font-h1: var(--fs-h1);         /* 32px */
+  --font-lead: var(--fs-lead);     /* 20px */
+  --line-height: var(--lh);        /* 1.7 */
 
-  /* 색 (brand.md 확정값, 모두 4.5:1 이상 검증 조합) */
-  --color-text: #1B1B1B;          /* 본문 잉크 (크림 위 15.8:1) */
-  --color-bg: #F5F0E1;            /* 크림 배경 */
-  --color-surface: #FFFFFF;       /* 카드 흰 배경 (잉크 18.9:1) */
-  --color-primary: #2E7D32;       /* 초록 (흰 글자 5.1:1) */
-  --color-primary-dark: #256628;  /* 초록 hover/focus */
-  --color-primary-darker: #1E551F;/* 초록 active */
-  --color-on-primary: #FFFFFF;
-  --color-secondary: #5D4037;     /* 브라운 (흰 글자 8.9:1) */
-  --color-on-secondary: #FFFFFF;
-  --color-soft: #A5D6A7;          /* 연초록: 배경/장식 전용, 위에는 잉크만 */
-  --color-warning-text: #B3261E;  /* 경고 텍스트 (아이콘·문구 병기 필수) */
-  --color-border: #5D4037;        /* 카드/선택 테두리 */
-  --color-disabled-bg: #D7D2C4;   /* 비활성 배경 */
-  --color-disabled-text: #5A564B; /* 비활성 텍스트 (대비 3:1+ 확보) */
+  /* 색 → 새 토큰 매핑 */
+  --color-text: var(--ink);            /* 본문 잉크 #1A1A1A */
+  --color-text-sub: var(--ink-sub);    /* 보조 글씨 #4A4A4A */
+  --color-bg: var(--beige);            /* 베이지 배경 */
+  --color-surface: var(--card);        /* 카드 불투명 흰 */
+  --color-primary: var(--green-600);   /* 메인 초록 */
+  --color-primary-dark: var(--green-700);   /* 초록 hover/focus/강조 */
+  --color-primary-darker: var(--green-700); /* 초록 active */
+  --color-on-primary: var(--on-green);
+  --color-secondary: var(--earth);     /* 흙색 보조 */
+  --color-on-secondary: var(--on-green);
+  --color-soft: var(--green-100);      /* 연초록: 선택 배경/장식 전용 */
+  --color-point: var(--earth);
+  --color-warning-text: #B3261E;       /* 경고 텍스트(토큰 외 고대비 빨강 유지) */
+  --color-border: var(--line);         /* 카드 구분 테두리 */
+  --color-choice-border: var(--green-600); /* 선택 카드 강조 테두리 */
+  --color-disabled-bg: #D7D2C4;        /* 비활성 배경 */
+  --color-disabled-text: #5A564B;      /* 비활성 텍스트 (대비 3:1+) */
 
-  /* 터치 타깃 */
-  --tap-min: 48px;        /* 버튼 최소 높이·너비 */
-  --tap-primary: 56px;    /* 핵심 행동 버튼 */
-  --tap-card: 96px;       /* 선택 카드 최소 높이 */
-  --gap-min: 12px;        /* 버튼 간 최소 간격 */
+  /* 터치 타깃 → 새 토큰 (--tap-min 은 tokens.css 의 48px 를 그대로 상속) */
+  --tap-primary: var(--btn-min-h);     /* 56px */
+  --tap-card: var(--choice-min-h);     /* 96px */
+  --gap-min: 12px;                     /* 버튼 간 최소 간격 12px */
 
-  /* 간격·모서리 */
-  --space-1: 12px;
-  --space-2: 16px;
-  --space-3: 24px;
-  --space-4: 32px;
-  --radius: 12px;
+  /* 간격: 기존 styles.css 규칙이 쓰는 옛 이름(--space-1..4) 유지.
+     tokens.css 의 --space-1..6 과 이름이 겹치므로, 순환 참조를 피하려고
+     tokens.css 의 의도(12/16/24/32)에 맞춰 별칭 변수로 새로 정의한다. */
+  --sp-1: 12px;
+  --sp-2: 16px;
+  --sp-3: 24px;
+  --sp-4: 32px;
+  --space-1: var(--sp-1);
+  --space-2: var(--sp-2);
+  --space-3: var(--sp-3);
+  --space-4: var(--sp-4);
+
+  /* 모서리 → 새 토큰 (그림자/유리/pill 은 tokens.css 변수를 직접 사용) */
+  --radius: var(--radius-card);        /* 카드 24px */
+  --radius-button: var(--radius-btn);  /* 버튼 16px */
   --focus-width: 3px;
 
   /* 레이아웃 */
@@ -79,6 +99,7 @@ body {
   margin: 0;
   font-family: var(--font-sans);
   font-size: var(--font-base);
+  font-weight: var(--weight-body);   /* 500 — Light/Thin 금지 */
   line-height: var(--line-height);
   letter-spacing: 0.01em;
   color: var(--color-text);
@@ -166,9 +187,20 @@ a {
 /* ---------------------------------------------------------------------
    헤더 / 푸터 (사이트 공통)
    --------------------------------------------------------------------- */
+/* 헤더 띠 — 유리 효과 허용(장식 영역). 로고/링크 글씨는 진한 색으로 대비 4.5:1+ 유지.
+   가독을 위해 유리 불투명도를 0.82로 상향한 띠 위에 글씨를 얹는다. */
 .site-header {
-  background: var(--color-bg);
-  border-bottom: 2px solid var(--color-soft);
+  position: sticky;
+  top: 0;
+  z-index: 90;
+  background: rgba(255, 255, 255, 0.82);
+  -webkit-backdrop-filter: var(--glass-blur);
+  backdrop-filter: var(--glass-blur);
+  border-bottom: 1px solid var(--line);
+}
+/* 블러 미지원 브라우저: 불투명 흰색으로 폴백 → 글씨 대비 보장 */
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .site-header { background: var(--card); }
 }
 .site-header__inner {
   width: 100%;
@@ -187,7 +219,7 @@ a {
   min-height: var(--tap-min);
   font-size: var(--font-h3);
   font-weight: 700;
-  color: var(--color-primary);
+  color: var(--color-primary-dark);   /* green-700: 유리 띠 위 대비 강화 */
   text-decoration: none;
 }
 .site-header__logo img { width: 32px; height: 32px; }
@@ -203,10 +235,10 @@ a {
   min-height: var(--tap-min);
   padding: 0 var(--space-1);
   font-size: var(--font-caption);
-  font-weight: 600;
-  color: var(--color-secondary);
+  font-weight: 700;
+  color: var(--color-text);   /* 잉크: 유리 띠 위 대비 4.5:1+ 확보 */
   text-decoration: none;
-  border-radius: var(--radius);
+  border-radius: var(--radius-button);
 }
 .site-nav a:hover,
 .site-nav a:focus-visible {
@@ -264,12 +296,24 @@ p  { margin: 0 0 var(--space-2); }
 li { margin: 0 0 8px; }
 
 .lead {
-  font-size: var(--font-h3);
-  color: var(--color-secondary);
+  font-size: var(--font-lead);   /* 20px */
+  font-weight: var(--weight-body);
+  color: var(--color-text);
 }
 
 .section {
   margin: var(--space-4) 0;
+}
+
+/* ---------------------------------------------------------------------
+   범용 텍스트 카드 .card — 불투명 흰 카드 + 고대비 (반투명/블러 금지)
+   --------------------------------------------------------------------- */
+.card {
+  background: var(--card);
+  border-radius: var(--radius-card);
+  padding: var(--pad-card);
+  box-shadow: var(--shadow-card);
+  color: var(--color-text);
 }
 
 /* 콘텐츠(소개·정책·문의) 본문 가독성 */
@@ -294,16 +338,17 @@ li { margin: 0 0 8px; }
   align-items: center;
   justify-content: center;
   gap: var(--space-1);
-  width: 100%;
-  min-height: var(--tap-primary);   /* 56px */
+  width: 100%;                      /* 모바일 full-width */
+  min-height: var(--btn-min-h);     /* 56px */
   padding: var(--space-1) var(--space-3);
   font-family: var(--font-sans);
-  font-size: var(--font-h2);        /* 26px */
-  font-weight: 700;
+  font-size: var(--fs-lead);        /* 20px */
+  font-weight: var(--weight-head);  /* 700 */
   color: var(--color-on-primary);
-  background: var(--color-primary);
+  background: var(--color-primary); /* green-600 */
   border: 0;
-  border-radius: var(--radius);
+  border-radius: var(--radius-button);  /* 16px */
+  box-shadow: var(--shadow-card);
   text-decoration: none;
   cursor: pointer;
 }
@@ -332,16 +377,17 @@ li { margin: 0 0 8px; }
   align-items: center;
   gap: var(--space-2);
   width: 100%;
-  min-height: var(--tap-card);      /* 96px */
+  min-height: var(--choice-min-h);  /* 96px */
   padding: var(--space-2) var(--space-3);
   font-family: var(--font-sans);
-  font-size: var(--font-h3);        /* 22px */
-  font-weight: 600;
+  font-size: var(--fs-h3);          /* 20px */
+  font-weight: var(--weight-head);  /* 700 */
   text-align: left;
   color: var(--color-text);
-  background: var(--color-surface);
-  border: 2px solid var(--color-border);
-  border-radius: var(--radius);
+  background: var(--card);          /* 불투명 흰 카드 */
+  border: 2px solid var(--line);
+  border-radius: var(--radius-card);   /* 24px */
+  box-shadow: var(--shadow-card);
   cursor: pointer;
 }
 .choice-card__emoji { font-size: 40px; line-height: 1; flex: 0 0 auto; }
@@ -360,10 +406,11 @@ li { margin: 0 0 8px; }
 }
 .choice-card:active { transform: translateY(1px); }
 
+/* 선택됨: 색만으로 알리지 않도록 2px 초록 테두리 + 연초록 배경 + ✓ 병기 */
 .choice-card[aria-pressed="true"] {
-  border-width: 4px;
-  border-color: var(--color-primary);
-  background: var(--color-soft);    /* 연초록 위 잉크 11.3:1 */
+  border-width: 2px;
+  border-color: var(--green-600);
+  background: var(--green-100);     /* 연초록 위 잉크 고대비 */
 }
 .choice-card[aria-pressed="true"] .choice-card__check { visibility: visible; }
 
@@ -384,18 +431,38 @@ li { margin: 0 0 8px; }
   list-style: none; margin: 0; padding: var(--space-2) 0;
 }
 .progress__step {
-  display: flex; flex-direction: column; align-items: center; gap: 4px;
+  display: flex; flex-direction: column; align-items: center; gap: 6px;
   flex: 1 1 0;
   font-size: var(--font-caption);
-  color: var(--color-text);
+  color: var(--color-text-sub);
   text-align: center;
 }
-.progress__num { font-size: var(--font-h2); font-weight: 700; line-height: 1; }
+/* 큰 동그라미 (지름 44px) — 숫자/체크 텍스트 병기로 색 외 정보 전달 */
+.progress__num {
+  display: flex; align-items: center; justify-content: center;
+  width: 44px; height: 44px;
+  font-size: var(--font-h3); font-weight: 700; line-height: 1;
+  border-radius: var(--radius-pill);
+  background: var(--card);
+  color: var(--color-text-sub);
+  border: 2px solid var(--line);   /* 다음 단계: 회색 테두리 */
+}
 
-.progress__step.is-done .progress__num { color: var(--color-secondary); }
+/* 지난 단계: 체크 + 초록 채움 */
+.progress__step.is-done { color: var(--color-primary-dark); }
+.progress__step.is-done .progress__num {
+  background: var(--green-100);
+  color: var(--color-primary-dark);
+  border-color: var(--green-600);
+}
 
-.progress__step.is-current { font-weight: 700; color: var(--color-primary); }
-.progress__step.is-current .progress__num { color: var(--color-primary); }
+/* 현재 단계: 초록 채움 + 흰 숫자 */
+.progress__step.is-current { font-weight: 700; color: var(--color-primary-dark); }
+.progress__step.is-current .progress__num {
+  background: var(--green-600);
+  color: var(--on-green);
+  border-color: var(--green-600);
+}
 .progress__step.is-current .progress__text {
   text-decoration: underline;
   text-underline-offset: 4px;
@@ -405,16 +472,17 @@ li { margin: 0 0 8px; }
    4. 식물 카드 .plant-card
    --------------------------------------------------------------------- */
 .plant-card {
-  background: var(--color-surface);
-  border: 1px solid var(--color-soft);
-  border-radius: var(--radius);
+  background: var(--card);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
   overflow: hidden;
   margin-bottom: var(--space-3);
 }
+/* 상단 사진: 위쪽 모서리만 둥글게. 사진 위 글씨 금지(장식·식별용). */
 .plant-card__photo {
   display: block; width: 100%; height: auto;
   aspect-ratio: 3 / 2; object-fit: cover;
-  background: var(--color-soft);
+  background: var(--green-100);
 }
 .plant-card__body { padding: var(--space-3); }
 .plant-card__badges {
@@ -451,8 +519,8 @@ li { margin: 0 0 8px; }
   min-height: var(--tap-min);       /* 48px */
   padding: var(--space-1) var(--space-3);
   font-family: var(--font-sans);
-  font-size: var(--font-base); font-weight: 600;
-  border-radius: var(--radius);
+  font-size: var(--font-base); font-weight: 700;
+  border-radius: var(--radius-button);  /* 16px */
   text-decoration: none; cursor: pointer; border: 2px solid transparent;
 }
 .btn--detail { background: var(--color-primary); color: var(--color-on-primary); }
@@ -473,25 +541,39 @@ li { margin: 0 0 8px; }
 /* ---------------------------------------------------------------------
    5. 하단 고정 네비
    --------------------------------------------------------------------- */
+/* 떠있는 하단 네비 — 알약형, 하단에서 띄움, --shadow-float.
+   여기에만 유리 허용: 반투명 + 블러. 라벨은 진한 잉크로 대비 4.5:1+ 유지.
+   가독을 위해 유리 불투명도를 0.85로 상향. 블러 미지원 시 불투명 폴백. */
 .bottomnav {
-  position: fixed; left: 0; right: 0; bottom: 0; z-index: 100;
+  position: fixed; left: 50%; bottom: 0; z-index: 100;
+  transform: translateX(-50%);
   display: flex; gap: var(--gap-min);
-  width: 100%; max-width: var(--content-max);
-  margin: 0 auto; padding: var(--space-1) var(--space-2);
+  width: calc(100% - 2 * var(--space-2));
+  max-width: calc(var(--content-max) - 2 * var(--space-2));
+  margin: 0 auto var(--space-2);
+  padding: var(--space-1) var(--space-2);
   min-height: var(--bottomnav-h);
-  background: var(--color-bg);
-  border-top: 2px solid var(--color-soft);
+  background: rgba(255, 255, 255, 0.85);
+  -webkit-backdrop-filter: var(--glass-blur);
+  backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-pill);
+  box-shadow: var(--shadow-float);
   padding-bottom: calc(var(--space-1) + env(safe-area-inset-bottom));
 }
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .bottomnav { background: var(--card); }
+}
 .bottomnav__btn {
+  display: flex; align-items: center; justify-content: center; gap: 6px;
   flex: 1 1 0;
   min-height: var(--tap-min);
   font-family: var(--font-sans);
-  font-size: var(--font-base); font-weight: 600;
-  border-radius: var(--radius); cursor: pointer;
+  font-size: var(--font-base); font-weight: 700;
+  border-radius: var(--radius-pill); cursor: pointer;
 }
 .bottomnav__btn--back {
-  background: var(--color-surface); color: var(--color-secondary);
+  background: var(--card); color: var(--color-text);
   border: 2px solid var(--color-secondary);
 }
 .bottomnav__btn--restart {
@@ -516,10 +598,10 @@ li { margin: 0 0 8px; }
   grid-template-columns: 48px 1fr;
   grid-template-areas: "icon title" "icon value";
   column-gap: var(--space-2); row-gap: 4px;
-  padding: var(--space-3);
-  background: var(--color-surface);
-  border: 1px solid var(--color-soft);
-  border-radius: var(--radius);
+  padding: var(--pad-card);
+  background: var(--card);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
 }
 .info-card__icon  { grid-area: icon; font-size: 36px; line-height: 1; }
 .info-card__title { grid-area: title; margin: 0;
@@ -539,9 +621,9 @@ li { margin: 0 0 8px; }
 .ad-slot {
   margin: var(--space-4) 0 0;
   padding: var(--space-2);
-  background: var(--color-surface);
+  background: var(--card);
   border: 1px dashed var(--color-secondary);
-  border-radius: var(--radius);
+  border-radius: var(--radius-card);
   text-align: center;
 }
 .ad-slot__tag {
@@ -554,22 +636,44 @@ li { margin: 0 0 8px; }
 /* ---------------------------------------------------------------------
    Hero (index)
    --------------------------------------------------------------------- */
+/* 히어로 — 배경 사진(장식) + 어둡게 오버레이. 사진 위에는 글씨를 올리지 않는다.
+   글씨는 반드시 그 위의 불투명 흰 인트로 카드(.hero__card)에만 얹는다. */
 .hero {
-  text-align: center;
-  padding: var(--space-4) 0 var(--space-3);
+  position: relative;
+  margin: var(--space-2) 0 var(--space-3);
+  padding: var(--space-4) var(--space-2) var(--space-5);
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32)),
+    url("/public/hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-.hero__logo { width: 96px; height: 96px; margin: 0 auto var(--space-2); display: block; }
-.hero__title { font-size: var(--font-h1); }
-.hero__subtitle { font-size: var(--font-h3); color: var(--color-secondary); margin: 0 0 4px; }
-.hero__subtitle--soft { font-size: var(--font-base); color: var(--color-text); }
-.hero__cta { margin: var(--space-3) 0; }
+/* 불투명 흰 인트로 카드 — 글씨가 올라가는 유일한 영역 */
+.hero__card {
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+  background: var(--card);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-float);
+  padding: var(--pad-card);
+  text-align: center;
+}
+.hero__logo { width: 80px; height: 80px; margin: 0 auto var(--space-1); display: block; }
+.hero__title { font-size: var(--font-h1); color: var(--color-text); margin: 0 0 var(--space-1); }
+.hero__subtitle { font-size: var(--font-lead); color: var(--color-text); margin: 0 0 var(--space-2); }
+.hero__subtitle--soft { font-size: var(--font-base); color: var(--color-text-sub); }
+.hero__cta { margin: var(--space-2) 0 0; }
 
-/* 안심 문구 카드 */
+/* 안심 문구 카드 — 불투명 흰 카드 */
 .reassure {
-  background: var(--color-surface);
-  border: 1px solid var(--color-soft);
-  border-radius: var(--radius);
-  padding: var(--space-3);
+  background: var(--card);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+  padding: var(--pad-card);
   margin: var(--space-3) 0;
 }
 .reassure ul { list-style: none; margin: 0; padding: 0; }
@@ -587,10 +691,10 @@ li { margin: 0 0 8px; }
   grid-template-columns: 56px 1fr;
   align-items: center;
   gap: var(--space-2);
-  padding: var(--space-3);
-  background: var(--color-surface);
-  border: 1px solid var(--color-soft);
-  border-radius: var(--radius);
+  padding: var(--pad-card);
+  background: var(--card);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
 }
 .step-item__num {
   width: 48px; height: 48px;
@@ -808,9 +912,9 @@ figure > figcaption {
 @media (min-width: 768px) {
   :root {
     --content-max: 640px;
-    --font-h1: 32px;
   }
-  .bottomnav { border-radius: var(--radius) var(--radius) 0 0; }
+  /* 떠있는 알약 네비는 큰 화면에서도 알약 유지 */
+  .bottomnav { border-radius: var(--radius-pill); }
 }
 
 @media (min-width: 1024px) {
