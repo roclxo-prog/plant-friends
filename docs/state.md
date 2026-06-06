@@ -3,6 +3,7 @@
 > 현재 Wave / 태스크별 상태(대기·진행·완료·실패) / 재시도 횟수. 매 배치 종료 시 갱신.
 
 ## 현재 상태
+- **🚀 배포 완료**: https://plant-friends.pages.dev/ (Cloudflare Pages, GitHub roclxo-prog/plant-friends 연동 · git push 시 자동 재배포) — 도메인 치환 완료
 - **현재 Wave**: 🎉 WAVE 5 ✅완료 — **전 Wave 완료, Cloudflare Pages 배포 직전 상태**
 - **마지막 갱신**: 2026-06-06
 - **진행 요약**: PRE-WAVE✅ WAVE1✅ WAVE2✅ WAVE3✅ WAVE4✅ WAVE5✅
