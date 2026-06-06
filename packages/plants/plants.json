@@ -3,9 +3,27 @@
     "id": "sansevieria",
     "name": "산세베리아",
     "scientific_name": "Sansevieria trifasciata",
-    "tags_light": ["low", "mid", "high"],
-    "tags_water": ["low"],
-    "tags_purpose": ["air", "gift"],
+    "tags_light": [
+      "low",
+      "mid",
+      "high"
+    ],
+    "tags_water": [
+      "low"
+    ],
+    "tags_purpose": [
+      "air",
+      "gift"
+    ],
+    "tags_place": [
+      "living",
+      "desk",
+      "bathroom"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "medium",
     "difficulty": "매우 쉬움",
     "water_cycle": "2~3주에 한 번",
     "light_desc": "어두운 곳도 잘 견뎌요",
@@ -13,6 +31,7 @@
     "caution": "물을 너무 자주 주면 뿌리가 무를 수 있어요.",
     "toxic_to_pets": true,
     "common": true,
+    "tier": "core",
     "image": "public/plants/sansevieria.jpg",
     "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
   },
@@ -20,9 +39,25 @@
     "id": "spathiphyllum",
     "name": "스파티필름",
     "scientific_name": "Spathiphyllum wallisii",
-    "tags_light": ["mid"],
-    "tags_water": ["mid"],
-    "tags_purpose": ["air", "deco"],
+    "tags_light": [
+      "mid"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "air",
+      "deco"
+    ],
+    "tags_place": [
+      "living",
+      "bathroom"
+    ],
+    "tags_interest": [
+      "flower",
+      "foliage"
+    ],
+    "size": "medium",
     "difficulty": "쉬움",
     "water_cycle": "일주일에 한 번",
     "light_desc": "직사광선이 없는 밝은 곳이 좋아요",
@@ -30,6 +65,7 @@
     "caution": "잎이 축 처지면 물이 부족하다는 뜻이에요.",
     "toxic_to_pets": true,
     "common": true,
+    "tier": "core",
     "image": "public/plants/spathiphyllum.jpg",
     "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
   },
@@ -37,9 +73,24 @@
     "id": "succulent",
     "name": "다육식물",
     "scientific_name": "Echeveria spp.",
-    "tags_light": ["high"],
-    "tags_water": ["low"],
-    "tags_purpose": ["deco", "gift"],
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "low"
+    ],
+    "tags_purpose": [
+      "deco",
+      "gift"
+    ],
+    "tags_place": [
+      "window",
+      "desk"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
     "difficulty": "매우 쉬움",
     "water_cycle": "2~3주에 한 번",
     "light_desc": "볕이 잘 드는 곳을 좋아해요",
@@ -47,6 +98,7 @@
     "caution": "물을 자주 주면 무르기 쉬우니 흙이 마른 뒤에 주세요.",
     "toxic_to_pets": false,
     "common": true,
+    "tier": "core",
     "image": "public/plants/succulent.jpg",
     "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
   },
@@ -54,9 +106,24 @@
     "id": "scindapsus",
     "name": "스킨답서스",
     "scientific_name": "Epipremnum aureum",
-    "tags_light": ["mid"],
-    "tags_water": ["mid"],
-    "tags_purpose": ["air"],
+    "tags_light": [
+      "mid"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "air"
+    ],
+    "tags_place": [
+      "living",
+      "desk",
+      "bathroom"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
     "difficulty": "매우 쉬움",
     "water_cycle": "일주일에 한 번",
     "light_desc": "직사광선이 없는 밝은 곳이 좋아요",
@@ -64,6 +131,7 @@
     "caution": "추운 곳에 두면 잎이 누렇게 될 수 있어요.",
     "toxic_to_pets": true,
     "common": true,
+    "tier": "core",
     "image": "public/plants/scindapsus.jpg",
     "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
   },
@@ -71,9 +139,23 @@
     "id": "zamioculcas",
     "name": "금전수",
     "scientific_name": "Zamioculcas zamiifolia",
-    "tags_light": ["mid"],
-    "tags_water": ["low"],
-    "tags_purpose": ["gift"],
+    "tags_light": [
+      "mid"
+    ],
+    "tags_water": [
+      "low"
+    ],
+    "tags_purpose": [
+      "gift"
+    ],
+    "tags_place": [
+      "living",
+      "desk"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "medium",
     "difficulty": "쉬움",
     "water_cycle": "2~3주에 한 번",
     "light_desc": "직사광선이 없는 밝은 곳이 좋아요",
@@ -81,6 +163,7 @@
     "caution": "물을 너무 자주 주면 뿌리가 무를 수 있어요.",
     "toxic_to_pets": true,
     "common": true,
+    "tier": "core",
     "image": "public/plants/zamioculcas.jpg",
     "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
   },
@@ -88,9 +171,24 @@
     "id": "parlor_palm",
     "name": "테이블야자",
     "scientific_name": "Chamaedorea elegans",
-    "tags_light": ["mid"],
-    "tags_water": ["mid"],
-    "tags_purpose": ["air", "deco"],
+    "tags_light": [
+      "mid"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "air",
+      "deco"
+    ],
+    "tags_place": [
+      "living",
+      "desk"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "medium",
     "difficulty": "쉬움",
     "water_cycle": "일주일에 한 번",
     "light_desc": "직사광선이 없는 밝은 곳이 좋아요",
@@ -98,6 +196,7 @@
     "caution": "잎이 마르지 않게 가끔 잎에 물을 뿌려 주면 좋아요.",
     "toxic_to_pets": false,
     "common": true,
+    "tier": "core",
     "image": "public/plants/parlor_palm.jpg",
     "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
   },
@@ -105,9 +204,24 @@
     "id": "rubber_plant",
     "name": "고무나무",
     "scientific_name": "Ficus elastica",
-    "tags_light": ["mid", "high"],
-    "tags_water": ["mid"],
-    "tags_purpose": ["air"],
+    "tags_light": [
+      "mid",
+      "high"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "air"
+    ],
+    "tags_place": [
+      "living",
+      "window"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "large",
     "difficulty": "쉬움",
     "water_cycle": "일주일에 한 번",
     "light_desc": "볕이 잘 드는 밝은 곳이 좋아요",
@@ -115,6 +229,7 @@
     "caution": "잎에서 나오는 하얀 즙이 피부에 닿지 않게 조심하세요.",
     "toxic_to_pets": true,
     "common": true,
+    "tier": "core",
     "image": "public/plants/rubber_plant.jpg",
     "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
   },
@@ -122,9 +237,23 @@
     "id": "lucky_bamboo",
     "name": "행운목",
     "scientific_name": "Dracaena fragrans",
-    "tags_light": ["mid"],
-    "tags_water": ["mid"],
-    "tags_purpose": ["gift"],
+    "tags_light": [
+      "mid"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "gift"
+    ],
+    "tags_place": [
+      "living",
+      "desk"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
     "difficulty": "쉬움",
     "water_cycle": "일주일에 한 번",
     "light_desc": "직사광선이 없는 밝은 곳이 좋아요",
@@ -132,6 +261,7 @@
     "caution": "잎 끝이 마르면 잎에 가끔 물을 뿌려 주세요.",
     "toxic_to_pets": true,
     "common": true,
+    "tier": "core",
     "image": "public/plants/lucky_bamboo.jpg",
     "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
   },
@@ -139,9 +269,25 @@
     "id": "phalaenopsis",
     "name": "호접란",
     "scientific_name": "Phalaenopsis aphrodite",
-    "tags_light": ["mid", "high"],
-    "tags_water": ["low"],
-    "tags_purpose": ["deco", "gift"],
+    "tags_light": [
+      "mid",
+      "high"
+    ],
+    "tags_water": [
+      "low"
+    ],
+    "tags_purpose": [
+      "deco",
+      "gift"
+    ],
+    "tags_place": [
+      "living",
+      "window"
+    ],
+    "tags_interest": [
+      "flower"
+    ],
+    "size": "small",
     "difficulty": "보통",
     "water_cycle": "열흘에 한 번",
     "light_desc": "직사광선이 없는 밝은 곳이 좋아요",
@@ -149,6 +295,7 @@
     "caution": "물이 고이면 뿌리가 무르니 잘 빠지게 해 주세요.",
     "toxic_to_pets": false,
     "common": true,
+    "tier": "core",
     "image": "public/plants/phalaenopsis.jpg",
     "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
   },
@@ -156,9 +303,23 @@
     "id": "ivy",
     "name": "아이비",
     "scientific_name": "Hedera helix",
-    "tags_light": ["mid"],
-    "tags_water": ["mid"],
-    "tags_purpose": ["air"],
+    "tags_light": [
+      "mid"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "air"
+    ],
+    "tags_place": [
+      "living",
+      "window"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
     "difficulty": "쉬움",
     "water_cycle": "일주일에 한 번",
     "light_desc": "직사광선이 없는 밝은 곳이 좋아요",
@@ -166,6 +327,7 @@
     "caution": "잎과 줄기에 독성이 있어 반려동물이 먹지 않게 하세요.",
     "toxic_to_pets": true,
     "common": true,
+    "tier": "core",
     "image": "public/plants/ivy.jpg",
     "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
   },
@@ -173,9 +335,23 @@
     "id": "lettuce",
     "name": "상추",
     "scientific_name": "Lactuca sativa",
-    "tags_light": ["mid", "high"],
-    "tags_water": ["high"],
-    "tags_purpose": ["harvest"],
+    "tags_light": [
+      "mid",
+      "high"
+    ],
+    "tags_water": [
+      "high"
+    ],
+    "tags_purpose": [
+      "harvest"
+    ],
+    "tags_place": [
+      "window"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
     "difficulty": "쉬움",
     "water_cycle": "이틀에 한 번",
     "light_desc": "볕이 잘 드는 곳이 좋아요",
@@ -183,6 +359,7 @@
     "caution": "흙이 마르지 않게 물을 자주 챙겨 주세요.",
     "toxic_to_pets": false,
     "common": true,
+    "tier": "core",
     "image": "public/plants/lettuce.jpg",
     "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
   },
@@ -190,9 +367,22 @@
     "id": "basil",
     "name": "바질",
     "scientific_name": "Ocimum basilicum",
-    "tags_light": ["high"],
-    "tags_water": ["high"],
-    "tags_purpose": ["harvest"],
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "high"
+    ],
+    "tags_purpose": [
+      "harvest"
+    ],
+    "tags_place": [
+      "window"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
     "difficulty": "쉬움",
     "water_cycle": "이틀에 한 번",
     "light_desc": "볕이 잘 드는 곳을 좋아해요",
@@ -200,7 +390,6559 @@
     "caution": "추위에 약하니 따뜻한 곳에서 키워 주세요.",
     "toxic_to_pets": false,
     "common": true,
+    "tier": "core",
     "image": "public/plants/basil.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "monstera",
+    "name": "몬스테라",
+    "scientific_name": "Monstera deliciosa",
+    "tags_light": [
+      "mid"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "air",
+      "deco"
+    ],
+    "tags_place": [
+      "living",
+      "window"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "large",
+    "difficulty": "쉬움",
+    "water_cycle": "일주일에 한 번",
+    "light_desc": "직사광선이 없는 밝은 곳이 좋아요.",
+    "merit": "잎이 시원하게 갈라져서 거실 분위기를 살려 줘요.",
+    "caution": "잎과 줄기에 독성이 있어 반려동물이 먹지 않게 해 주세요.",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "core",
+    "image": "public/plants/monstera.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "monstera_adansonii",
+    "name": "몬스테라 아단소니",
+    "scientific_name": "Monstera adansonii",
+    "tags_light": [
+      "mid"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "living",
+      "window"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "medium",
+    "difficulty": "쉬움",
+    "water_cycle": "일주일에 한 번",
+    "light_desc": "직사광선이 없는 밝은 곳이 좋아요.",
+    "merit": "잎에 동그란 구멍이 많아서 보기에 귀여워요.",
+    "caution": "잎과 줄기에 독성이 있어 반려동물이 먹지 않게 해 주세요.",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/monstera_adansonii.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "philodendron_selloum",
+    "name": "셀로움",
+    "scientific_name": "Philodendron bipinnatifidum",
+    "tags_light": [
+      "mid"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "air",
+      "deco"
+    ],
+    "tags_place": [
+      "living"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "large",
+    "difficulty": "쉬움",
+    "water_cycle": "일주일에 한 번",
+    "light_desc": "직사광선이 없는 밝은 곳이 좋아요.",
+    "merit": "잎이 큼직하고 풍성해서 거실에 두면 멋스러워요.",
+    "caution": "잎과 줄기에 독성이 있어 반려동물이 먹지 않게 해 주세요.",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/philodendron_selloum.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "philodendron_heartleaf",
+    "name": "하트필로덴드론",
+    "scientific_name": "Philodendron hederaceum",
+    "tags_light": [
+      "low",
+      "mid"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "air",
+      "deco"
+    ],
+    "tags_place": [
+      "living",
+      "desk"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "매우 쉬움",
+    "water_cycle": "일주일에 한 번",
+    "light_desc": "조금 어두운 곳에서도 잘 자라요.",
+    "merit": "하트 모양 잎이 늘어지며 자라서 매달아 키우기 좋아요.",
+    "caution": "잎과 줄기에 독성이 있어 반려동물이 먹지 않게 해 주세요.",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/philodendron_heartleaf.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "syngonium",
+    "name": "싱고니움",
+    "scientific_name": "Syngonium podophyllum",
+    "tags_light": [
+      "low",
+      "mid"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "air",
+      "deco"
+    ],
+    "tags_place": [
+      "living",
+      "desk"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "매우 쉬움",
+    "water_cycle": "일주일에 한 번",
+    "light_desc": "직사광선이 없는 밝은 곳이 좋아요.",
+    "merit": "화살촉 모양 잎이 부드러워서 책상 위에 두기 좋아요.",
+    "caution": "잎과 줄기에 독성이 있어 반려동물이 먹지 않게 해 주세요.",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/syngonium.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "aglaonema",
+    "name": "아글라오네마",
+    "scientific_name": "Aglaonema commutatum",
+    "tags_light": [
+      "low",
+      "mid"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "air",
+      "deco"
+    ],
+    "tags_place": [
+      "living",
+      "desk"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "medium",
+    "difficulty": "매우 쉬움",
+    "water_cycle": "일주일에 한 번",
+    "light_desc": "조금 어두운 곳에서도 잘 자라요.",
+    "merit": "잎에 분홍빛 무늬가 들어서 화사하고 키우기도 쉬워요.",
+    "caution": "잎과 줄기에 독성이 있어 반려동물이 먹지 않게 해 주세요.",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/aglaonema.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "dieffenbachia",
+    "name": "디펜바키아",
+    "scientific_name": "Dieffenbachia seguine",
+    "tags_light": [
+      "mid"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "air",
+      "deco"
+    ],
+    "tags_place": [
+      "living"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "medium",
+    "difficulty": "쉬움",
+    "water_cycle": "일주일에 한 번",
+    "light_desc": "직사광선이 없는 밝은 곳이 좋아요.",
+    "merit": "넓은 잎에 흰 무늬가 시원하게 들어가 보기 좋아요.",
+    "caution": "잎과 줄기 즙에 독성이 강해 반려동물과 아이 손이 닿지 않게 해 주세요.",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/dieffenbachia.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "alocasia_amazonica",
+    "name": "알로카시아",
+    "scientific_name": "Alocasia x amazonica",
+    "tags_light": [
+      "mid"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "living",
+      "window"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "medium",
+    "difficulty": "보통",
+    "water_cycle": "일주일에 한 번",
+    "light_desc": "직사광선이 없는 밝은 곳이 좋아요.",
+    "merit": "잎맥이 또렷하게 살아 있어 잎 하나하나가 멋스러워요.",
+    "caution": "잎과 줄기에 독성이 있어 반려동물이 먹지 않게 해 주세요.",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/alocasia_amazonica.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "anthurium",
+    "name": "안스리움",
+    "scientific_name": "Anthurium andraeanum",
+    "tags_light": [
+      "mid"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "deco",
+      "gift"
+    ],
+    "tags_place": [
+      "living"
+    ],
+    "tags_interest": [
+      "flower",
+      "foliage"
+    ],
+    "size": "medium",
+    "difficulty": "쉬움",
+    "water_cycle": "일주일에 한 번",
+    "light_desc": "직사광선이 없는 밝은 곳이 좋아요.",
+    "merit": "반질반질한 붉은 잎이 꽃처럼 오래가서 선물로도 좋아요.",
+    "caution": "잎과 줄기에 독성이 있어 반려동물이 먹지 않게 해 주세요.",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/anthurium.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "caladium",
+    "name": "칼라디움",
+    "scientific_name": "Caladium bicolor",
+    "tags_light": [
+      "mid"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "living",
+      "window"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "medium",
+    "difficulty": "보통",
+    "water_cycle": "일주일에 한 번",
+    "light_desc": "직사광선이 없는 밝은 곳이 좋아요.",
+    "merit": "잎에 분홍빛과 붉은빛이 어우러져 그림처럼 화려해요.",
+    "caution": "잎과 줄기에 독성이 있어 반려동물이 먹지 않게 해 주세요.",
+    "toxic_to_pets": true,
+    "common": false,
+    "tier": "ext",
+    "image": "public/plants/caladium.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "calathea_orbifolia",
+    "name": "칼라데아 오비폴리아",
+    "scientific_name": "Goeppertia orbifolia",
+    "tags_light": [
+      "mid"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "air",
+      "deco"
+    ],
+    "tags_place": [
+      "living",
+      "bathroom"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "medium",
+    "difficulty": "보통",
+    "water_cycle": "일주일에 한 번",
+    "light_desc": "직사광선이 없는 밝은 곳이 좋아요.",
+    "merit": "둥근 잎에 은빛 줄무늬가 곱고 반려동물에게도 안전해요.",
+    "caution": "공기가 건조하면 잎 끝이 마르니 자주 물을 뿌려 주세요.",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/calathea_orbifolia.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "calathea_makoyana",
+    "name": "공작 칼라데아",
+    "scientific_name": "Goeppertia makoyana",
+    "tags_light": [
+      "mid"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "air",
+      "deco"
+    ],
+    "tags_place": [
+      "living",
+      "bathroom"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "medium",
+    "difficulty": "보통",
+    "water_cycle": "일주일에 한 번",
+    "light_desc": "직사광선이 없는 밝은 곳이 좋아요.",
+    "merit": "잎 무늬가 공작 깃털을 닮아 화려하고 반려동물에게 안전해요.",
+    "caution": "공기가 건조하면 잎 끝이 마르니 자주 물을 뿌려 주세요.",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/calathea_makoyana.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "calathea_lancifolia",
+    "name": "비폭스 칼라데아",
+    "scientific_name": "Goeppertia lancifolia",
+    "tags_light": [
+      "mid"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "living",
+      "bathroom"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "medium",
+    "difficulty": "보통",
+    "water_cycle": "일주일에 한 번",
+    "light_desc": "직사광선이 없는 밝은 곳이 좋아요.",
+    "merit": "길쭉한 잎에 물결무늬가 들어가 독특하고 반려동물에게 안전해요.",
+    "caution": "공기가 건조하면 잎 끝이 마르니 자주 물을 뿌려 주세요.",
+    "toxic_to_pets": false,
+    "common": false,
+    "tier": "ext",
+    "image": "public/plants/calathea_lancifolia.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "maranta",
+    "name": "마란타",
+    "scientific_name": "Maranta leuconeura",
+    "tags_light": [
+      "mid"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "living",
+      "desk"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "보통",
+    "water_cycle": "일주일에 한 번",
+    "light_desc": "직사광선이 없는 밝은 곳이 좋아요.",
+    "merit": "밤이 되면 잎을 모으는 모습이 신기하고 반려동물에게 안전해요.",
+    "caution": "공기가 건조하면 잎 끝이 마르니 자주 물을 뿌려 주세요.",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/maranta.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "stromanthe_triostar",
+    "name": "스트로만테 삼색",
+    "scientific_name": "Stromanthe sanguinea",
+    "tags_light": [
+      "mid"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "living",
+      "bathroom"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "medium",
+    "difficulty": "보통",
+    "water_cycle": "일주일에 한 번",
+    "light_desc": "직사광선이 없는 밝은 곳이 좋아요.",
+    "merit": "잎 앞은 분홍빛 무늬, 뒤는 붉은빛이라 화사하고 안전해요.",
+    "caution": "공기가 건조하면 잎 끝이 마르니 자주 물을 뿌려 주세요.",
+    "toxic_to_pets": false,
+    "common": false,
+    "tier": "ext",
+    "image": "public/plants/stromanthe_triostar.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "ctenanthe",
+    "name": "크테난테",
+    "scientific_name": "Ctenanthe burle-marxii",
+    "tags_light": [
+      "mid"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "living",
+      "bathroom"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "보통",
+    "water_cycle": "일주일에 한 번",
+    "light_desc": "직사광선이 없는 밝은 곳이 좋아요.",
+    "merit": "잎에 붓으로 그린 듯한 무늬가 있어 멋스럽고 안전해요.",
+    "caution": "공기가 건조하면 잎 끝이 마르니 자주 물을 뿌려 주세요.",
+    "toxic_to_pets": false,
+    "common": false,
+    "tier": "ext",
+    "image": "public/plants/ctenanthe.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "peperomia_obtusifolia",
+    "name": "페페로미아",
+    "scientific_name": "Peperomia obtusifolia",
+    "tags_light": [
+      "mid"
+    ],
+    "tags_water": [
+      "low"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "desk",
+      "living"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "매우 쉬움",
+    "water_cycle": "열흘에 한 번",
+    "light_desc": "직사광선이 없는 밝은 곳이 좋아요.",
+    "merit": "도톰한 잎이 귀엽고 작아서 책상 위에 두기 좋아요.",
+    "caution": "잎이 두꺼워 물을 자주 주면 무를 수 있으니 흙이 마른 뒤 주세요.",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/peperomia_obtusifolia.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "peperomia_watermelon",
+    "name": "수박페페로미아",
+    "scientific_name": "Peperomia argyreia",
+    "tags_light": [
+      "mid"
+    ],
+    "tags_water": [
+      "low"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "desk",
+      "living"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "매우 쉬움",
+    "water_cycle": "열흘에 한 번",
+    "light_desc": "직사광선이 없는 밝은 곳이 좋아요.",
+    "merit": "잎무늬가 수박 껍질을 닮아 귀엽고 반려동물에게 안전해요.",
+    "caution": "잎이 두꺼워 물을 자주 주면 무를 수 있으니 흙이 마른 뒤 주세요.",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/peperomia_watermelon.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "pilea_peperomioides",
+    "name": "필레아 페페",
+    "scientific_name": "Pilea peperomioides",
+    "tags_light": [
+      "mid"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "deco",
+      "gift"
+    ],
+    "tags_place": [
+      "desk",
+      "window"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "쉬움",
+    "water_cycle": "일주일에 한 번",
+    "light_desc": "직사광선이 없는 밝은 곳이 좋아요.",
+    "merit": "동전 모양 잎이 귀엽고 새끼 모종이 잘 나서 나눠 주기 좋아요.",
+    "caution": "한쪽으로만 빛을 받으면 기우니 가끔 화분을 돌려 주세요.",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/pilea_peperomioides.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "pilea_cadierei",
+    "name": "알루미늄필레아",
+    "scientific_name": "Pilea cadierei",
+    "tags_light": [
+      "mid"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "desk",
+      "living"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "쉬움",
+    "water_cycle": "일주일에 한 번",
+    "light_desc": "직사광선이 없는 밝은 곳이 좋아요.",
+    "merit": "잎에 은빛 무늬가 반짝거려 작아도 눈에 잘 띄고 안전해요.",
+    "caution": "오래 키우면 줄기가 길어지니 가끔 잘라 모양을 잡아 주세요.",
+    "toxic_to_pets": false,
+    "common": false,
+    "tier": "ext",
+    "image": "public/plants/pilea_cadierei.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "fittonia",
+    "name": "피토니아",
+    "scientific_name": "Fittonia albivenis",
+    "tags_light": [
+      "mid"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "desk",
+      "bathroom"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "보통",
+    "water_cycle": "일주일에 두 번",
+    "light_desc": "직사광선이 없는 밝은 곳이 좋아요.",
+    "merit": "잎맥이 그물처럼 또렷해 작은 화분에도 잘 어울리고 안전해요.",
+    "caution": "물이 마르면 금방 축 처지니 흙이 마르지 않게 살펴 주세요.",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/fittonia.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "hypoestes",
+    "name": "히포에스테스",
+    "scientific_name": "Hypoestes phyllostachya",
+    "tags_light": [
+      "mid"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "desk",
+      "window"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "쉬움",
+    "water_cycle": "일주일에 한 번",
+    "light_desc": "직사광선이 없는 밝은 곳이 좋아요.",
+    "merit": "잎에 분홍빛 점이 흩뿌려져 화사하고 반려동물에게 안전해요.",
+    "caution": "빛이 부족하면 무늬가 옅어지니 밝은 곳에 두세요.",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/hypoestes.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "aphelandra",
+    "name": "얼룩말풀",
+    "scientific_name": "Aphelandra squarrosa",
+    "tags_light": [
+      "mid"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "living",
+      "window"
+    ],
+    "tags_interest": [
+      "flower",
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "보통",
+    "water_cycle": "일주일에 한 번",
+    "light_desc": "직사광선이 없는 밝은 곳이 좋아요.",
+    "merit": "진한 잎에 흰 줄무늬가 또렷하고 노란 꽃도 피어 안전해요.",
+    "caution": "공기가 건조하면 잎이 떨어지니 자주 물을 뿌려 주세요.",
+    "toxic_to_pets": false,
+    "common": false,
+    "tier": "ext",
+    "image": "public/plants/aphelandra.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "chlorophytum",
+    "name": "무늬접란",
+    "scientific_name": "Chlorophytum comosum",
+    "tags_light": [
+      "low",
+      "mid"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "air",
+      "deco"
+    ],
+    "tags_place": [
+      "living",
+      "window",
+      "bathroom"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "매우 쉬움",
+    "water_cycle": "일주일에 한 번",
+    "light_desc": "조금 어두운 곳에서도 잘 자라요.",
+    "merit": "잘 죽지 않고 새끼 모종이 줄줄이 나서 나눠 주기 좋아요.",
+    "caution": "물을 너무 자주 주면 뿌리가 무를 수 있어요.",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "core",
+    "image": "public/plants/chlorophytum.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "boston_fern",
+    "name": "보스턴고사리",
+    "scientific_name": "Nephrolepis exaltata",
+    "tags_light": [
+      "mid"
+    ],
+    "tags_water": [
+      "high"
+    ],
+    "tags_purpose": [
+      "air",
+      "deco"
+    ],
+    "tags_place": [
+      "bathroom",
+      "living"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "medium",
+    "difficulty": "보통",
+    "water_cycle": "일주일에 두 번",
+    "light_desc": "직사광선이 없는 밝은 곳이 좋아요.",
+    "merit": "잎이 풍성하게 늘어져 시원해 보이고 반려동물에게 안전해요.",
+    "caution": "공기가 건조하면 잎이 마르니 욕실처럼 습한 곳에 두세요.",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/boston_fern.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "adiantum",
+    "name": "아디안텀",
+    "scientific_name": "Adiantum raddianum",
+    "tags_light": [
+      "mid"
+    ],
+    "tags_water": [
+      "high"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "bathroom",
+      "living"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "보통",
+    "water_cycle": "일주일에 두 번",
+    "light_desc": "직사광선이 없는 밝은 곳이 좋아요.",
+    "merit": "잎이 얇고 하늘하늘해 보기에 시원하고 반려동물에게 안전해요.",
+    "caution": "물이 마르면 금방 잎이 마르니 흙이 마르지 않게 살펴 주세요.",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/adiantum.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "birds_nest_fern",
+    "name": "아비스",
+    "scientific_name": "Asplenium nidus",
+    "tags_light": [
+      "low",
+      "mid"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "air",
+      "deco"
+    ],
+    "tags_place": [
+      "bathroom",
+      "living"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "medium",
+    "difficulty": "쉬움",
+    "water_cycle": "일주일에 한 번",
+    "light_desc": "조금 어두운 곳에서도 잘 자라요.",
+    "merit": "넓은 잎이 둥지처럼 모여 자라고 반려동물에게도 안전해요.",
+    "caution": "잎 가운데에 물이 고이면 무를 수 있으니 흙에만 주세요.",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/birds_nest_fern.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "staghorn_fern",
+    "name": "박쥐란",
+    "scientific_name": "Platycerium bifurcatum",
+    "tags_light": [
+      "mid"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "living",
+      "bathroom"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "medium",
+    "difficulty": "보통",
+    "water_cycle": "일주일에 한 번",
+    "light_desc": "직사광선이 없는 밝은 곳이 좋아요.",
+    "merit": "박쥐 날개를 닮은 잎이 독특해 벽에 걸어 키우기 좋고 안전해요.",
+    "caution": "뿌리를 감싼 흙이 마르면 통째로 물에 담가 적셔 주세요.",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/staghorn_fern.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "dracaena_marginata",
+    "name": "드라세나 마지나타",
+    "scientific_name": "Dracaena marginata",
+    "tags_light": [
+      "low",
+      "mid"
+    ],
+    "tags_water": [
+      "low"
+    ],
+    "tags_purpose": [
+      "air",
+      "deco"
+    ],
+    "tags_place": [
+      "living"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "large",
+    "difficulty": "매우 쉬움",
+    "water_cycle": "열흘에 한 번",
+    "light_desc": "조금 어두운 곳에서도 잘 자라요.",
+    "merit": "가는 잎이 위로 뻗어 멋스럽고 물도 자주 주지 않아 편해요.",
+    "caution": "잎과 줄기에 독성이 있어 반려동물이 먹지 않게 해 주세요.",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/dracaena_marginata.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "dracaena_reflexa",
+    "name": "송오브인디아",
+    "scientific_name": "Dracaena reflexa",
+    "tags_light": [
+      "low",
+      "mid"
+    ],
+    "tags_water": [
+      "low"
+    ],
+    "tags_purpose": [
+      "air",
+      "deco"
+    ],
+    "tags_place": [
+      "living",
+      "desk"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "medium",
+    "difficulty": "매우 쉬움",
+    "water_cycle": "열흘에 한 번",
+    "light_desc": "조금 어두운 곳에서도 잘 자라요.",
+    "merit": "잎 가장자리에 연둣빛 줄이 들어가 화사하고 키우기도 쉬워요.",
+    "caution": "잎과 줄기에 독성이 있어 반려동물이 먹지 않게 해 주세요.",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/dracaena_reflexa.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "cordyline",
+    "name": "코르딜리네",
+    "scientific_name": "Cordyline fruticosa",
+    "tags_light": [
+      "mid"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "living",
+      "window"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "medium",
+    "difficulty": "쉬움",
+    "water_cycle": "일주일에 한 번",
+    "light_desc": "직사광선이 없는 밝은 곳이 좋아요.",
+    "merit": "잎에 붉은빛이 돌아 거실에 두면 색이 화사해 보여요.",
+    "caution": "잎과 줄기에 독성이 있어 반려동물이 먹지 않게 해 주세요.",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/cordyline.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "croton",
+    "name": "크로톤",
+    "scientific_name": "Codiaeum variegatum",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "window",
+      "living"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "medium",
+    "difficulty": "쉬움",
+    "water_cycle": "일주일에 한 번",
+    "light_desc": "볕이 잘 드는 곳을 좋아해요.",
+    "merit": "잎에 빨강 노랑 초록이 어우러져 단풍처럼 화려해요.",
+    "caution": "잎과 줄기 즙에 독성이 있어 반려동물이 먹지 않게 해 주세요.",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/croton.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "schefflera",
+    "name": "홍콩야자",
+    "scientific_name": "Schefflera arboricola",
+    "tags_light": [
+      "mid",
+      "high"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "air",
+      "deco"
+    ],
+    "tags_place": [
+      "living",
+      "window"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "large",
+    "difficulty": "매우 쉬움",
+    "water_cycle": "일주일에 한 번",
+    "light_desc": "직사광선이 없는 밝은 곳이 좋아요.",
+    "merit": "잎이 손바닥처럼 모여 풍성하고 잘 죽지 않아 키우기 쉬워요.",
+    "caution": "잎과 줄기에 독성이 있어 반려동물이 먹지 않게 해 주세요.",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "core",
+    "image": "public/plants/schefflera.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "rhapis_palm",
+    "name": "관음죽",
+    "scientific_name": "Rhapis excelsa",
+    "tags_light": [
+      "low",
+      "mid"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "air",
+      "deco"
+    ],
+    "tags_place": [
+      "living"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "large",
+    "difficulty": "매우 쉬움",
+    "water_cycle": "일주일에 한 번",
+    "light_desc": "조금 어두운 곳에서도 잘 자라요.",
+    "merit": "잎이 부채처럼 펴지고 공기도 맑게 해 주며 반려동물에게 안전해요.",
+    "caution": "천천히 자라니 조급해하지 말고 흙이 마른 뒤 물을 주세요.",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/rhapis_palm.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "areca_palm",
+    "name": "아레카야자",
+    "scientific_name": "Dypsis lutescens",
+    "tags_light": [
+      "mid",
+      "high"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "air",
+      "deco"
+    ],
+    "tags_place": [
+      "living",
+      "window"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "large",
+    "difficulty": "쉬움",
+    "water_cycle": "일주일에 한 번",
+    "light_desc": "직사광선이 없는 밝은 곳이 좋아요.",
+    "merit": "잎이 시원하게 뻗어 공기를 맑게 해 주고 반려동물에게 안전해요.",
+    "caution": "공기가 건조하면 잎 끝이 마르니 자주 물을 뿌려 주세요.",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "core",
+    "image": "public/plants/areca_palm.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "tradescantia_zebrina",
+    "name": "자주달개비",
+    "scientific_name": "Tradescantia zebrina",
+    "tags_light": [
+      "mid",
+      "high"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "window",
+      "desk"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "쉬움",
+    "water_cycle": "일주일에 한 번",
+    "light_desc": "직사광선이 없는 밝은 곳이 좋아요.",
+    "merit": "잎 앞은 은빛 줄무늬, 뒤는 보랏빛이라 늘어뜨려 키우기 좋아요.",
+    "caution": "잎과 줄기 즙이 피부를 자극할 수 있으니 반려동물 주의가 필요해요.",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/tradescantia_zebrina.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "asparagus_fern",
+    "name": "아스파라거스",
+    "scientific_name": "Asparagus densiflorus",
+    "tags_light": [
+      "mid"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "living",
+      "window"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "쉬움",
+    "water_cycle": "일주일에 한 번",
+    "light_desc": "직사광선이 없는 밝은 곳이 좋아요.",
+    "merit": "잎이 솜털처럼 보드라워 보여 작은 화분에 잘 어울려요.",
+    "caution": "잎과 열매에 독성이 있어 반려동물이 먹지 않게 해 주세요.",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/asparagus_fern.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "begonia_rex",
+    "name": "렉스베고니아",
+    "scientific_name": "Begonia rex",
+    "tags_light": [
+      "mid"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "living",
+      "bathroom"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "보통",
+    "water_cycle": "일주일에 한 번",
+    "light_desc": "직사광선이 없는 밝은 곳이 좋아요.",
+    "merit": "잎에 은빛 보랏빛 무늬가 어우러져 화려해 보여요.",
+    "caution": "뿌리와 잎에 독성이 있어 반려동물이 먹지 않게 해 주세요.",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/begonia_rex.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "banana_plant",
+    "name": "바나나나무",
+    "scientific_name": "Musa acuminata",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "high"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "window",
+      "living"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "large",
+    "difficulty": "보통",
+    "water_cycle": "일주일에 두 번",
+    "light_desc": "볕이 잘 드는 곳을 좋아해요.",
+    "merit": "잎이 넓고 시원하게 자라 거실을 남국 분위기로 만들어 주고 안전해요.",
+    "caution": "물을 좋아하니 흙이 마르지 않게 자주 살펴 주세요.",
+    "toxic_to_pets": false,
+    "common": false,
+    "tier": "ext",
+    "image": "public/plants/banana_plant.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "echeveria",
+    "name": "에케베리아",
+    "scientific_name": "Echeveria elegans",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "low"
+    ],
+    "tags_purpose": [
+      "deco",
+      "gift"
+    ],
+    "tags_place": [
+      "window",
+      "desk"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "매우 쉬움",
+    "water_cycle": "2~3주에 한 번",
+    "light_desc": "볕이 잘 드는 창가가 좋아요",
+    "merit": "통통한 잎이 장미처럼 모여 있어 탁상에 두기 좋아요",
+    "caution": "물을 자주 주면 무르니 흙이 마른 뒤에 주세요",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "core",
+    "image": "public/plants/echeveria.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "haworthia",
+    "name": "하월시아",
+    "scientific_name": "Haworthia cooperi",
+    "tags_light": [
+      "mid"
+    ],
+    "tags_water": [
+      "low"
+    ],
+    "tags_purpose": [
+      "deco",
+      "gift"
+    ],
+    "tags_place": [
+      "window",
+      "desk"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "매우 쉬움",
+    "water_cycle": "2~3주에 한 번",
+    "light_desc": "직사광선이 없는 밝은 곳이 좋아요",
+    "merit": "잎이 투명하게 비쳐서 보석처럼 예쁜 다육이에요",
+    "caution": "강한 볕에 오래 두면 잎이 탈 수 있어요",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "core",
+    "image": "public/plants/haworthia.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "zebra_haworthia",
+    "name": "십이지권",
+    "scientific_name": "Haworthiopsis fasciata",
+    "tags_light": [
+      "mid"
+    ],
+    "tags_water": [
+      "low"
+    ],
+    "tags_purpose": [
+      "deco",
+      "gift"
+    ],
+    "tags_place": [
+      "window",
+      "desk"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "매우 쉬움",
+    "water_cycle": "2~3주에 한 번",
+    "light_desc": "직사광선이 없는 밝은 곳이 좋아요",
+    "merit": "잎에 하얀 줄무늬가 또렷해서 작은 화분에 잘 어울려요",
+    "caution": "물을 자주 주면 뿌리가 무를 수 있어요",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/zebra_haworthia.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "gasteria",
+    "name": "가스테리아",
+    "scientific_name": "Gasteria bicolor",
+    "tags_light": [
+      "mid"
+    ],
+    "tags_water": [
+      "low"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "window",
+      "desk"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "매우 쉬움",
+    "water_cycle": "2~3주에 한 번",
+    "light_desc": "직사광선이 없는 밝은 곳이 좋아요",
+    "merit": "두툼한 혀 모양 잎이 좌우로 펼쳐져 모양이 독특해요",
+    "caution": "물이 잎 사이에 고이지 않게 흙에만 주세요",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/gasteria.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "sedum_morganianum",
+    "name": "옥주염",
+    "scientific_name": "Sedum morganianum",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "low"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "window",
+      "desk"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "쉬움",
+    "water_cycle": "2~3주에 한 번",
+    "light_desc": "볕이 잘 드는 창가가 좋아요",
+    "merit": "통통한 잎이 줄기를 따라 길게 늘어져 보기 좋아요",
+    "caution": "잎이 잘 떨어지니 옮길 때 조심해서 다뤄 주세요",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/sedum_morganianum.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "sedum_rubrotinctum",
+    "name": "홍옥",
+    "scientific_name": "Sedum rubrotinctum",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "low"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "window",
+      "desk"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "매우 쉬움",
+    "water_cycle": "2~3주에 한 번",
+    "light_desc": "볕이 잘 드는 창가가 좋아요",
+    "merit": "볕을 받으면 잎 끝이 빨갛게 물들어 예뻐요",
+    "caution": "물을 자주 주면 색이 옅어지고 무를 수 있어요",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/sedum_rubrotinctum.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "graptopetalum",
+    "name": "오로라",
+    "scientific_name": "Graptopetalum paraguayense",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "low"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "window",
+      "desk"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "매우 쉬움",
+    "water_cycle": "2~3주에 한 번",
+    "light_desc": "볕이 잘 드는 창가가 좋아요",
+    "merit": "잎이 분홍빛으로 물들어 예쁘고 키우기도 쉬워요",
+    "caution": "물을 자주 주면 색이 흐려지니 흙이 마른 뒤에 주세요",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/graptopetalum.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "pachyphytum",
+    "name": "성미인",
+    "scientific_name": "Pachyphytum oviferum",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "low"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "window",
+      "desk"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "쉬움",
+    "water_cycle": "2~3주에 한 번",
+    "light_desc": "볕이 잘 드는 창가가 좋아요",
+    "merit": "둥근 잎에 하얀 분이 덮여 사탕처럼 통통해요",
+    "caution": "잎의 하얀 분이 벗겨지지 않게 잎을 만지지 마세요",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/pachyphytum.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "aeonium",
+    "name": "흑법사",
+    "scientific_name": "Aeonium arboreum 'Atropurpureum'",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "low"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "window",
+      "desk"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "medium",
+    "difficulty": "쉬움",
+    "water_cycle": "2~3주에 한 번",
+    "light_desc": "볕이 잘 드는 창가가 좋아요",
+    "merit": "잎이 진한 자줏빛이라 다른 다육이와 색이 잘 어울려요",
+    "caution": "한여름 더위에 잠들어 쉬니 그때는 물을 줄여 주세요",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/aeonium.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "cotyledon_bear_paw",
+    "name": "방울복랑",
+    "scientific_name": "Cotyledon tomentosa subsp. ladismithiensis",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "low"
+    ],
+    "tags_purpose": [
+      "deco",
+      "gift"
+    ],
+    "tags_place": [
+      "window",
+      "desk"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "쉬움",
+    "water_cycle": "2~3주에 한 번",
+    "light_desc": "볕이 잘 드는 창가가 좋아요",
+    "merit": "잎끝이 곰 발톱처럼 생겨 귀엽고 인기가 많아요",
+    "caution": "잎에 보송한 솜털이 있어 물이 닿으면 얼룩질 수 있어요",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/cotyledon_bear_paw.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "crassula_jade",
+    "name": "염자",
+    "scientific_name": "Crassula ovata",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "low"
+    ],
+    "tags_purpose": [
+      "deco",
+      "gift"
+    ],
+    "tags_place": [
+      "window",
+      "desk"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "medium",
+    "difficulty": "매우 쉬움",
+    "water_cycle": "2~3주에 한 번",
+    "light_desc": "볕이 잘 드는 창가가 좋아요",
+    "merit": "돈나무라 불려 새 집이나 개업 선물로 인기가 많아요",
+    "caution": "잎과 줄기에 독성이 있어 반려동물이 먹지 않게 하세요",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/crassula_jade.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "crassula_string_of_buttons",
+    "name": "성을녀",
+    "scientific_name": "Crassula perforata",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "low"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "window",
+      "desk"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "쉬움",
+    "water_cycle": "2~3주에 한 번",
+    "light_desc": "볕이 잘 드는 창가가 좋아요",
+    "merit": "잎이 줄기를 감싸며 층층이 쌓여 모양이 재미있어요",
+    "caution": "잎에 독성이 있어 반려동물이 먹지 않게 하세요",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/crassula_string_of_buttons.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "kalanchoe_blossfeldiana",
+    "name": "칼랑코에",
+    "scientific_name": "Kalanchoe blossfeldiana",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "low"
+    ],
+    "tags_purpose": [
+      "deco",
+      "gift"
+    ],
+    "tags_place": [
+      "window",
+      "desk"
+    ],
+    "tags_interest": [
+      "flower",
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "쉬움",
+    "water_cycle": "열흘에 한 번",
+    "light_desc": "볕이 잘 드는 창가가 좋아요",
+    "merit": "작은 꽃이 오래 피어 선물용으로 인기가 많아요",
+    "caution": "독성이 강하니 반려동물이 먹지 않게 멀리 두세요",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/kalanchoe_blossfeldiana.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "kalanchoe_mother_of_thousands",
+    "name": "천손초",
+    "scientific_name": "Kalanchoe daigremontiana",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "low"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "window",
+      "desk"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "medium",
+    "difficulty": "매우 쉬움",
+    "water_cycle": "열흘에 한 번",
+    "light_desc": "볕이 잘 드는 창가가 좋아요",
+    "merit": "잎 가장자리에 작은 새싹이 줄지어 돋아 번식이 쉬워요",
+    "caution": "독성이 강하니 반려동물이 먹지 않게 멀리 두세요",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/kalanchoe_mother_of_thousands.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "kalanchoe_tomentosa",
+    "name": "월토이",
+    "scientific_name": "Kalanchoe tomentosa",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "low"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "window",
+      "desk"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "쉬움",
+    "water_cycle": "열흘에 한 번",
+    "light_desc": "볕이 잘 드는 창가가 좋아요",
+    "merit": "잎 전체에 보송한 털이 있어 토끼 귀처럼 귀여워요",
+    "caution": "독성이 있으니 반려동물이 먹지 않게 멀리 두세요",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/kalanchoe_tomentosa.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "aloe_vera",
+    "name": "알로에베라",
+    "scientific_name": "Aloe vera",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "low"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "window",
+      "desk"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "medium",
+    "difficulty": "매우 쉬움",
+    "water_cycle": "2~3주에 한 번",
+    "light_desc": "볕이 잘 드는 창가가 좋아요",
+    "merit": "두툼한 잎이 시원하게 뻗어 키우기 쉽고 보기 좋아요",
+    "caution": "잎에 독성이 있어 반려동물이 먹지 않게 하세요",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/aloe_vera.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "aloe_aristata",
+    "name": "불야성",
+    "scientific_name": "Aristaloe aristata",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "low"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "window",
+      "desk"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "쉬움",
+    "water_cycle": "2~3주에 한 번",
+    "light_desc": "볕이 잘 드는 창가가 좋아요",
+    "merit": "별 모양으로 모인 잎에 하얀 점이 박혀 작고 단단해요",
+    "caution": "물이 잎 사이에 고이지 않게 흙에만 주세요",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/aloe_aristata.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "agave",
+    "name": "아가베",
+    "scientific_name": "Agave americana",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "low"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "window"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "large",
+    "difficulty": "쉬움",
+    "water_cycle": "2~3주에 한 번",
+    "light_desc": "볕이 잘 드는 창가가 좋아요",
+    "merit": "단단하고 늠름한 잎이 뻗어 멋스러운 분위기를 내요",
+    "caution": "잎끝 가시가 날카롭고 즙에 독성이 있으니 조심하세요",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/agave.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "euphorbia_milii",
+    "name": "꽃기린",
+    "scientific_name": "Euphorbia milii",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "low"
+    ],
+    "tags_purpose": [
+      "deco",
+      "gift"
+    ],
+    "tags_place": [
+      "window",
+      "desk"
+    ],
+    "tags_interest": [
+      "flower",
+      "foliage"
+    ],
+    "size": "medium",
+    "difficulty": "쉬움",
+    "water_cycle": "열흘에 한 번",
+    "light_desc": "볕이 잘 드는 창가가 좋아요",
+    "merit": "사철 작은 꽃이 피어 오래도록 보는 재미가 있어요",
+    "caution": "가시가 있고 하얀 즙에 독성이 있으니 만질 때 조심하세요",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/euphorbia_milii.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "euphorbia_tirucalli",
+    "name": "청산호",
+    "scientific_name": "Euphorbia tirucalli",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "low"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "window"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "large",
+    "difficulty": "쉬움",
+    "water_cycle": "2~3주에 한 번",
+    "light_desc": "볕이 잘 드는 창가가 좋아요",
+    "merit": "가는 가지가 산호처럼 뻗어 독특한 모양을 만들어요",
+    "caution": "하얀 즙에 독성이 강하니 자르거나 만질 때 조심하세요",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/euphorbia_tirucalli.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "senecio_string_of_pearls",
+    "name": "녹영",
+    "scientific_name": "Curio rowleyanus",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "low"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "window",
+      "desk"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "보통",
+    "water_cycle": "열흘에 한 번",
+    "light_desc": "볕이 잘 드는 창가가 좋아요",
+    "merit": "동그란 구슬 같은 잎이 줄줄이 늘어져 매달기 좋아요",
+    "caution": "잎에 독성이 있어 반려동물이 먹지 않게 하세요",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/senecio_string_of_pearls.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "senecio_candle_plant",
+    "name": "은행목",
+    "scientific_name": "Curio articulatus",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "low"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "window",
+      "desk"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "쉬움",
+    "water_cycle": "2~3주에 한 번",
+    "light_desc": "볕이 잘 드는 창가가 좋아요",
+    "merit": "통통한 줄기가 마디마디 이어져 모양이 재미있어요",
+    "caution": "줄기에 독성이 있어 반려동물이 먹지 않게 하세요",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/senecio_candle_plant.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "portulacaria_afra",
+    "name": "아악무",
+    "scientific_name": "Portulacaria afra",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "low"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "window",
+      "desk"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "medium",
+    "difficulty": "매우 쉬움",
+    "water_cycle": "2~3주에 한 번",
+    "light_desc": "볕이 잘 드는 창가가 좋아요",
+    "merit": "작은 잎이 빼곡히 달려 나무처럼 다듬어 키우기 좋아요",
+    "caution": "잎을 많이 먹으면 배탈이 날 수 있으니 주의하세요",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/portulacaria_afra.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "gymnocalycium_moon_cactus",
+    "name": "비모란",
+    "scientific_name": "Gymnocalycium mihanovichii",
+    "tags_light": [
+      "mid"
+    ],
+    "tags_water": [
+      "low"
+    ],
+    "tags_purpose": [
+      "deco",
+      "gift"
+    ],
+    "tags_place": [
+      "window",
+      "desk"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "쉬움",
+    "water_cycle": "2~3주에 한 번",
+    "light_desc": "직사광선이 없는 밝은 곳이 좋아요",
+    "merit": "빨강 노랑 동그란 머리가 접목되어 색이 화사해요",
+    "caution": "물을 자주 주면 접목 부위가 무를 수 있어요",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/gymnocalycium_moon_cactus.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "mammillaria",
+    "name": "백성환선인장",
+    "scientific_name": "Mammillaria hahniana",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "low"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "window",
+      "desk"
+    ],
+    "tags_interest": [
+      "flower",
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "쉬움",
+    "water_cycle": "2~3주에 한 번",
+    "light_desc": "볕이 잘 드는 창가가 좋아요",
+    "merit": "둥근 몸에 하얀 가시가 덮이고 작은 꽃이 둘러 펴요",
+    "caution": "가시가 가늘고 많으니 만질 때 손에 박히지 않게 하세요",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/mammillaria.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "echinopsis",
+    "name": "단모환선인장",
+    "scientific_name": "Echinopsis eyriesii",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "low"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "window",
+      "desk"
+    ],
+    "tags_interest": [
+      "flower",
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "쉬움",
+    "water_cycle": "2~3주에 한 번",
+    "light_desc": "볕이 잘 드는 창가가 좋아요",
+    "merit": "둥근 몸에서 크고 향긋한 꽃이 밤에 활짝 피어요",
+    "caution": "가시가 단단하니 옮길 때 손에 박히지 않게 하세요",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/echinopsis.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "opuntia",
+    "name": "부채선인장",
+    "scientific_name": "Opuntia ficus-indica",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "low"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "window"
+    ],
+    "tags_interest": [
+      "foliage",
+      "fruit"
+    ],
+    "size": "large",
+    "difficulty": "쉬움",
+    "water_cycle": "2~3주에 한 번",
+    "light_desc": "볕이 잘 드는 창가가 좋아요",
+    "merit": "납작한 줄기가 부채처럼 이어져 보기에 시원해요",
+    "caution": "잔가시가 살에 잘 박히니 맨손으로 만지지 마세요",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/opuntia.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "cereus",
+    "name": "귀면각선인장",
+    "scientific_name": "Cereus repandus",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "low"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "window"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "large",
+    "difficulty": "쉬움",
+    "water_cycle": "2~3주에 한 번",
+    "light_desc": "볕이 잘 드는 창가가 좋아요",
+    "merit": "기둥처럼 곧게 자라 거실에 두면 멋스러운 분위기를 내요",
+    "caution": "가시가 단단하니 옮길 때 손에 박히지 않게 하세요",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/cereus.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "astrophytum",
+    "name": "난봉옥선인장",
+    "scientific_name": "Astrophytum myriostigma",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "low"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "window",
+      "desk"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "보통",
+    "water_cycle": "2~3주에 한 번",
+    "light_desc": "볕이 잘 드는 창가가 좋아요",
+    "merit": "가시 없이 별 모양으로 각이 져서 모양이 단정해요",
+    "caution": "물이 몸통에 오래 닿으면 무르니 흙에만 주세요",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/astrophytum.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "rhipsalis",
+    "name": "립살리스",
+    "scientific_name": "Rhipsalis baccifera",
+    "tags_light": [
+      "mid"
+    ],
+    "tags_water": [
+      "low"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "window",
+      "desk"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "쉬움",
+    "water_cycle": "열흘에 한 번",
+    "light_desc": "직사광선이 없는 밝은 곳이 좋아요",
+    "merit": "가는 줄기가 폭포처럼 늘어져 매달아 키우기 좋아요",
+    "caution": "다른 다육이보다 마름에 약하니 너무 마르지 않게 하세요",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/rhipsalis.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "schlumbergera",
+    "name": "게발선인장",
+    "scientific_name": "Schlumbergera truncata",
+    "tags_light": [
+      "mid"
+    ],
+    "tags_water": [
+      "low"
+    ],
+    "tags_purpose": [
+      "deco",
+      "gift"
+    ],
+    "tags_place": [
+      "window",
+      "desk"
+    ],
+    "tags_interest": [
+      "flower",
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "쉬움",
+    "water_cycle": "열흘에 한 번",
+    "light_desc": "직사광선이 없는 밝은 곳이 좋아요",
+    "merit": "겨울에 화사한 꽃이 줄기 끝마다 매달려 예뻐요",
+    "caution": "꽃봉오리가 맺힐 때 자리를 옮기면 봉오리가 떨어져요",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/schlumbergera.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "lithops",
+    "name": "리톱스",
+    "scientific_name": "Lithops karasmontana",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "low"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "window",
+      "desk"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "보통",
+    "water_cycle": "2~3주에 한 번",
+    "light_desc": "볕이 잘 드는 창가가 좋아요",
+    "merit": "돌멩이처럼 생겨 작고 신기해서 모으는 재미가 있어요",
+    "caution": "허물을 벗는 동안에는 물을 주지 않고 기다려 주세요",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/lithops.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "conophytum",
+    "name": "코노피튬",
+    "scientific_name": "Conophytum bilobum",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "low"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "window",
+      "desk"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "보통",
+    "water_cycle": "2~3주에 한 번",
+    "light_desc": "볕이 잘 드는 창가가 좋아요",
+    "merit": "통통한 잎이 하트처럼 갈라져 작고 앙증맞아요",
+    "caution": "여름에는 잠들어 쉬니 그때는 물을 주지 마세요",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/conophytum.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "sempervivum",
+    "name": "셈퍼비붐",
+    "scientific_name": "Sempervivum tectorum",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "low"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "window",
+      "desk"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "쉬움",
+    "water_cycle": "2~3주에 한 번",
+    "light_desc": "볕이 잘 드는 창가가 좋아요",
+    "merit": "추위에 강하고 작은 새끼 포기가 곁에 돋아 번식이 쉬워요",
+    "caution": "물이 잎 사이에 고이면 무르니 흙에만 주세요",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/sempervivum.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "fenestraria",
+    "name": "오십령옥",
+    "scientific_name": "Fenestraria rhopalophylla",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "low"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "window",
+      "desk"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "보통",
+    "water_cycle": "2~3주에 한 번",
+    "light_desc": "볕이 잘 드는 창가가 좋아요",
+    "merit": "잎끝이 창처럼 투명해서 빛이 비치면 반짝여요",
+    "caution": "물을 자주 주면 잎이 터질 수 있으니 흙이 마른 뒤에 주세요",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/fenestraria.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "clivia",
+    "name": "군자란",
+    "scientific_name": "Clivia miniata",
+    "tags_light": [
+      "mid"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "deco",
+      "gift"
+    ],
+    "tags_place": [
+      "living",
+      "window"
+    ],
+    "tags_interest": [
+      "flower",
+      "foliage"
+    ],
+    "size": "medium",
+    "difficulty": "쉬움",
+    "water_cycle": "일주일에 한 번",
+    "light_desc": "직사광선 없는 밝은 곳이 좋아요",
+    "merit": "주황빛 꽃이 탐스럽게 피어 선물로 좋아요",
+    "caution": "잎과 뿌리에 독성이 있어 반려동물이 먹지 않게 하세요",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "core",
+    "image": "public/plants/clivia.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "cyclamen",
+    "name": "시클라멘",
+    "scientific_name": "Cyclamen persicum",
+    "tags_light": [
+      "mid"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "deco",
+      "gift"
+    ],
+    "tags_place": [
+      "living",
+      "window"
+    ],
+    "tags_interest": [
+      "flower"
+    ],
+    "size": "small",
+    "difficulty": "보통",
+    "water_cycle": "일주일에 한 번",
+    "light_desc": "직사광선 없는 밝고 서늘한 곳이 좋아요",
+    "merit": "꽃잎이 위로 솟아오르듯 피어 겨울에 화사해요",
+    "caution": "뿌리에 독성이 강해 반려동물이 먹지 않게 하세요",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "core",
+    "image": "public/plants/cyclamen.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "geranium",
+    "name": "제라늄",
+    "scientific_name": "Pelargonium hortorum",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "window"
+    ],
+    "tags_interest": [
+      "flower"
+    ],
+    "size": "small",
+    "difficulty": "쉬움",
+    "water_cycle": "일주일에 한 번",
+    "light_desc": "볕이 잘 드는 곳을 좋아해요",
+    "merit": "꽃이 오래 피고 잎에서 좋은 향이 나요",
+    "caution": "잎과 꽃에 독성이 있어 반려동물이 먹지 않게 하세요",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/geranium.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "african_violet",
+    "name": "아프리칸바이올렛",
+    "scientific_name": "Saintpaulia ionantha",
+    "tags_light": [
+      "mid"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "deco",
+      "gift"
+    ],
+    "tags_place": [
+      "window",
+      "desk"
+    ],
+    "tags_interest": [
+      "flower"
+    ],
+    "size": "small",
+    "difficulty": "쉬움",
+    "water_cycle": "일주일에 한 번",
+    "light_desc": "직사광선 없는 밝은 곳이 좋아요",
+    "merit": "작은 보랏빛 꽃이 사계절 피고 반려동물에게도 안전해요",
+    "caution": "잎에 물이 닿으면 얼룩이 생기니 흙에만 물을 주세요",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/african_violet.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "begonia",
+    "name": "베고니아",
+    "scientific_name": "Begonia semperflorens",
+    "tags_light": [
+      "mid"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "living",
+      "window"
+    ],
+    "tags_interest": [
+      "flower",
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "쉬움",
+    "water_cycle": "일주일에 한 번",
+    "light_desc": "직사광선 없는 밝은 곳이 좋아요",
+    "merit": "꽃과 잎이 모두 예뻐 오래 두고 보기 좋아요",
+    "caution": "뿌리에 독성이 있어 반려동물이 먹지 않게 하세요",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/begonia.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "cineraria",
+    "name": "시네라리아",
+    "scientific_name": "Pericallis hybrida",
+    "tags_light": [
+      "mid"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "window"
+    ],
+    "tags_interest": [
+      "flower"
+    ],
+    "size": "small",
+    "difficulty": "보통",
+    "water_cycle": "일주일에 한 번",
+    "light_desc": "직사광선 없는 밝고 서늘한 곳이 좋아요",
+    "merit": "선명한 꽃이 풍성하게 피어 봄에 화사해요",
+    "caution": "잎과 꽃에 독성이 있어 반려동물이 먹지 않게 하세요",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/cineraria.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "primula",
+    "name": "프리뮬러",
+    "scientific_name": "Primula malacoides",
+    "tags_light": [
+      "mid"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "window"
+    ],
+    "tags_interest": [
+      "flower"
+    ],
+    "size": "small",
+    "difficulty": "쉬움",
+    "water_cycle": "일주일에 한 번",
+    "light_desc": "직사광선 없는 밝고 서늘한 곳이 좋아요",
+    "merit": "작은 꽃이 다발로 피어 이른 봄에 화사해요",
+    "caution": "잎에 독성이 있어 반려동물이 먹지 않게 하세요",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/primula.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "calla_lily",
+    "name": "칼라",
+    "scientific_name": "Zantedeschia aethiopica",
+    "tags_light": [
+      "mid"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "deco",
+      "gift"
+    ],
+    "tags_place": [
+      "living",
+      "window"
+    ],
+    "tags_interest": [
+      "flower"
+    ],
+    "size": "medium",
+    "difficulty": "보통",
+    "water_cycle": "일주일에 한 번",
+    "light_desc": "직사광선 없는 밝은 곳이 좋아요",
+    "merit": "깔끔한 모양의 꽃이 우아해 선물로 좋아요",
+    "caution": "잎과 꽃에 독성이 있어 반려동물이 먹지 않게 하세요",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/calla_lily.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "hydrangea",
+    "name": "수국",
+    "scientific_name": "Hydrangea macrophylla",
+    "tags_light": [
+      "mid"
+    ],
+    "tags_water": [
+      "high"
+    ],
+    "tags_purpose": [
+      "deco",
+      "gift"
+    ],
+    "tags_place": [
+      "living",
+      "window"
+    ],
+    "tags_interest": [
+      "flower"
+    ],
+    "size": "medium",
+    "difficulty": "보통",
+    "water_cycle": "이틀에 한 번",
+    "light_desc": "직사광선 없는 밝은 곳이 좋아요",
+    "merit": "큰 꽃송이가 풍성하게 피어 보기 좋아요",
+    "caution": "잎과 꽃에 독성이 있어 반려동물이 먹지 않게 하세요",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/hydrangea.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "camellia",
+    "name": "동백",
+    "scientific_name": "Camellia japonica",
+    "tags_light": [
+      "mid",
+      "high"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "living",
+      "window"
+    ],
+    "tags_interest": [
+      "flower",
+      "foliage"
+    ],
+    "size": "large",
+    "difficulty": "보통",
+    "water_cycle": "일주일에 한 번",
+    "light_desc": "직사광선 없는 밝고 서늘한 곳이 좋아요",
+    "merit": "붉은 꽃이 겨울에 피고 반려동물에게도 안전해요",
+    "caution": "더운 곳에 두면 꽃봉오리가 떨어지기 쉬워요",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/camellia.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "gardenia",
+    "name": "치자",
+    "scientific_name": "Gardenia jasminoides",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "window"
+    ],
+    "tags_interest": [
+      "flower",
+      "foliage"
+    ],
+    "size": "medium",
+    "difficulty": "보통",
+    "water_cycle": "일주일에 한 번",
+    "light_desc": "볕이 잘 드는 밝은 곳이 좋아요",
+    "merit": "하얀 꽃에서 좋은 향이 진하게 나요",
+    "caution": "잎과 꽃에 독성이 있어 반려동물이 먹지 않게 하세요",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/gardenia.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "jasmine",
+    "name": "재스민",
+    "scientific_name": "Jasminum polyanthum",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "window"
+    ],
+    "tags_interest": [
+      "flower"
+    ],
+    "size": "medium",
+    "difficulty": "쉬움",
+    "water_cycle": "일주일에 한 번",
+    "light_desc": "볕이 잘 드는 밝은 곳이 좋아요",
+    "merit": "하얀 꽃에서 향이 좋고 반려동물에게도 안전해요",
+    "caution": "덩굴이 길게 자라니 지지대를 세워 주면 좋아요",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/jasmine.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "lantana",
+    "name": "란타나",
+    "scientific_name": "Lantana camara",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "window"
+    ],
+    "tags_interest": [
+      "flower"
+    ],
+    "size": "small",
+    "difficulty": "쉬움",
+    "water_cycle": "일주일에 한 번",
+    "light_desc": "볕이 잘 드는 곳을 좋아해요",
+    "merit": "여러 빛깔의 꽃이 한 송이에 모여 피어 화사해요",
+    "caution": "잎과 열매에 독성이 있어 반려동물이 먹지 않게 하세요",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/lantana.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "cymbidium",
+    "name": "심비디움",
+    "scientific_name": "Cymbidium hybridum",
+    "tags_light": [
+      "mid",
+      "high"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "deco",
+      "gift"
+    ],
+    "tags_place": [
+      "living",
+      "window"
+    ],
+    "tags_interest": [
+      "flower"
+    ],
+    "size": "medium",
+    "difficulty": "보통",
+    "water_cycle": "일주일에 한 번",
+    "light_desc": "직사광선 없는 밝은 곳이 좋아요",
+    "merit": "큰 꽃이 줄기마다 줄지어 피어 선물로 좋아요",
+    "caution": "물이 고이면 뿌리가 무르니 잘 빠지게 해 주세요",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/cymbidium.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "dendrobium",
+    "name": "덴드로비움",
+    "scientific_name": "Dendrobium nobile",
+    "tags_light": [
+      "mid",
+      "high"
+    ],
+    "tags_water": [
+      "low"
+    ],
+    "tags_purpose": [
+      "deco",
+      "gift"
+    ],
+    "tags_place": [
+      "living",
+      "window"
+    ],
+    "tags_interest": [
+      "flower"
+    ],
+    "size": "medium",
+    "difficulty": "보통",
+    "water_cycle": "열흘에 한 번",
+    "light_desc": "직사광선 없는 밝은 곳이 좋아요",
+    "merit": "줄기를 따라 꽃이 줄지어 피어 보기 좋아요",
+    "caution": "물이 고이면 뿌리가 무르니 잘 빠지게 해 주세요",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/dendrobium.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "oncidium",
+    "name": "온시디움",
+    "scientific_name": "Oncidium hybridum",
+    "tags_light": [
+      "mid",
+      "high"
+    ],
+    "tags_water": [
+      "low"
+    ],
+    "tags_purpose": [
+      "deco",
+      "gift"
+    ],
+    "tags_place": [
+      "living",
+      "window"
+    ],
+    "tags_interest": [
+      "flower"
+    ],
+    "size": "medium",
+    "difficulty": "보통",
+    "water_cycle": "열흘에 한 번",
+    "light_desc": "직사광선 없는 밝은 곳이 좋아요",
+    "merit": "작은 노란 꽃이 춤추듯 무리지어 피어 화사해요",
+    "caution": "물이 고이면 뿌리가 무르니 잘 빠지게 해 주세요",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/oncidium.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "cattleya",
+    "name": "카틀레야",
+    "scientific_name": "Cattleya hybrida",
+    "tags_light": [
+      "mid",
+      "high"
+    ],
+    "tags_water": [
+      "low"
+    ],
+    "tags_purpose": [
+      "deco",
+      "gift"
+    ],
+    "tags_place": [
+      "living",
+      "window"
+    ],
+    "tags_interest": [
+      "flower"
+    ],
+    "size": "medium",
+    "difficulty": "보통",
+    "water_cycle": "열흘에 한 번",
+    "light_desc": "직사광선 없는 밝은 곳이 좋아요",
+    "merit": "크고 화려한 꽃이 피어 선물용으로 인기가 많아요",
+    "caution": "물이 고이면 뿌리가 무르니 잘 빠지게 해 주세요",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/cattleya.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "hyacinth",
+    "name": "히아신스",
+    "scientific_name": "Hyacinthus orientalis",
+    "tags_light": [
+      "mid",
+      "high"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "deco",
+      "gift"
+    ],
+    "tags_place": [
+      "window",
+      "desk"
+    ],
+    "tags_interest": [
+      "flower"
+    ],
+    "size": "small",
+    "difficulty": "쉬움",
+    "water_cycle": "일주일에 한 번",
+    "light_desc": "볕이 잘 드는 밝은 곳이 좋아요",
+    "merit": "꽃에서 향이 진하게 나고 물에서도 키울 수 있어요",
+    "caution": "알뿌리에 독성이 강해 반려동물이 먹지 않게 하세요",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/hyacinth.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "narcissus",
+    "name": "수선화",
+    "scientific_name": "Narcissus tazetta",
+    "tags_light": [
+      "mid",
+      "high"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "deco",
+      "gift"
+    ],
+    "tags_place": [
+      "window",
+      "desk"
+    ],
+    "tags_interest": [
+      "flower"
+    ],
+    "size": "small",
+    "difficulty": "쉬움",
+    "water_cycle": "일주일에 한 번",
+    "light_desc": "볕이 잘 드는 밝은 곳이 좋아요",
+    "merit": "노란 꽃이 이른 봄에 피어 화사해요",
+    "caution": "알뿌리에 독성이 강해 반려동물이 먹지 않게 하세요",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/narcissus.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "tulip",
+    "name": "튤립",
+    "scientific_name": "Tulipa gesneriana",
+    "tags_light": [
+      "mid",
+      "high"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "deco",
+      "gift"
+    ],
+    "tags_place": [
+      "window",
+      "desk"
+    ],
+    "tags_interest": [
+      "flower"
+    ],
+    "size": "small",
+    "difficulty": "쉬움",
+    "water_cycle": "일주일에 한 번",
+    "light_desc": "볕이 잘 드는 밝은 곳이 좋아요",
+    "merit": "여러 빛깔의 꽃이 봄에 화사하게 피어요",
+    "caution": "알뿌리에 독성이 있어 반려동물이 먹지 않게 하세요",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/tulip.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "chrysanthemum",
+    "name": "국화",
+    "scientific_name": "Chrysanthemum morifolium",
+    "tags_light": [
+      "mid",
+      "high"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "deco",
+      "gift"
+    ],
+    "tags_place": [
+      "living",
+      "window"
+    ],
+    "tags_interest": [
+      "flower"
+    ],
+    "size": "small",
+    "difficulty": "쉬움",
+    "water_cycle": "일주일에 한 번",
+    "light_desc": "볕이 잘 드는 밝은 곳이 좋아요",
+    "merit": "가을에 풍성한 꽃이 피어 오래 두고 보기 좋아요",
+    "caution": "잎과 꽃에 독성이 있어 반려동물이 먹지 않게 하세요",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/chrysanthemum.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "petunia",
+    "name": "페튜니아",
+    "scientific_name": "Petunia hybrida",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "window"
+    ],
+    "tags_interest": [
+      "flower"
+    ],
+    "size": "small",
+    "difficulty": "쉬움",
+    "water_cycle": "일주일에 한 번",
+    "light_desc": "볕이 잘 드는 곳을 좋아해요",
+    "merit": "꽃이 풍성하게 오래 피고 반려동물에게도 안전해요",
+    "caution": "시든 꽃을 자주 따 주면 더 오래 피어요",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/petunia.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "calendula",
+    "name": "금잔화",
+    "scientific_name": "Calendula officinalis",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "window"
+    ],
+    "tags_interest": [
+      "flower"
+    ],
+    "size": "small",
+    "difficulty": "매우 쉬움",
+    "water_cycle": "일주일에 한 번",
+    "light_desc": "볕이 잘 드는 곳을 좋아해요",
+    "merit": "노란 꽃이 오래 피고 반려동물에게도 안전해요",
+    "caution": "시든 꽃을 자주 따 주면 더 오래 피어요",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/calendula.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "brunfelsia",
+    "name": "브룬펠시아",
+    "scientific_name": "Brunfelsia pauciflora",
+    "tags_light": [
+      "mid",
+      "high"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "window"
+    ],
+    "tags_interest": [
+      "flower"
+    ],
+    "size": "medium",
+    "difficulty": "보통",
+    "water_cycle": "일주일에 한 번",
+    "light_desc": "직사광선 없는 밝은 곳이 좋아요",
+    "merit": "보라색 꽃이 흰색으로 변해 가며 향이 좋아요",
+    "caution": "잎과 열매에 독성이 강해 반려동물이 먹지 않게 하세요",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/brunfelsia.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "mandevilla",
+    "name": "만데빌라",
+    "scientific_name": "Mandevilla sanderi",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "window"
+    ],
+    "tags_interest": [
+      "flower"
+    ],
+    "size": "medium",
+    "difficulty": "쉬움",
+    "water_cycle": "일주일에 한 번",
+    "light_desc": "볕이 잘 드는 밝은 곳이 좋아요",
+    "merit": "붉은 나팔 모양 꽃이 여름 내내 피어 화사해요",
+    "caution": "줄기를 자를 때 나오는 즙이 피부에 닿지 않게 조심하세요",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/mandevilla.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "marigold",
+    "name": "메리골드",
+    "scientific_name": "Tagetes patula",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "window"
+    ],
+    "tags_interest": [
+      "flower"
+    ],
+    "size": "small",
+    "difficulty": "매우 쉬움",
+    "water_cycle": "일주일에 한 번",
+    "light_desc": "볕이 잘 드는 곳을 좋아해요",
+    "merit": "노란 꽃이 오래 피고 키우기가 아주 쉬워요",
+    "caution": "잎과 꽃에 약한 독성이 있어 반려동물이 먹지 않게 하세요",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/marigold.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "hibiscus",
+    "name": "히비스커스",
+    "scientific_name": "Hibiscus rosa-sinensis",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "window"
+    ],
+    "tags_interest": [
+      "flower"
+    ],
+    "size": "medium",
+    "difficulty": "쉬움",
+    "water_cycle": "일주일에 한 번",
+    "light_desc": "볕이 잘 드는 밝은 곳이 좋아요",
+    "merit": "크고 화려한 꽃이 피고 반려동물에게도 안전해요",
+    "caution": "추위에 약하니 따뜻한 곳에서 키워 주세요",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/hibiscus.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "gerbera",
+    "name": "거베라",
+    "scientific_name": "Gerbera jamesonii",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "deco",
+      "gift"
+    ],
+    "tags_place": [
+      "window",
+      "desk"
+    ],
+    "tags_interest": [
+      "flower"
+    ],
+    "size": "small",
+    "difficulty": "쉬움",
+    "water_cycle": "일주일에 한 번",
+    "light_desc": "볕이 잘 드는 밝은 곳이 좋아요",
+    "merit": "선명한 빛깔의 큰 꽃이 피고 반려동물에게도 안전해요",
+    "caution": "잎에 물이 닿으면 무를 수 있으니 흙에만 물을 주세요",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/gerbera.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "bougainvillea",
+    "name": "부겐빌레아",
+    "scientific_name": "Bougainvillea glabra",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "low"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "window"
+    ],
+    "tags_interest": [
+      "flower"
+    ],
+    "size": "medium",
+    "difficulty": "쉬움",
+    "water_cycle": "열흘에 한 번",
+    "light_desc": "볕이 잘 드는 밝은 곳이 좋아요",
+    "merit": "분홍빛 잎이 꽃처럼 풍성하게 피어 화사해요",
+    "caution": "가시가 있으니 다룰 때 찔리지 않게 조심하세요",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/bougainvillea.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "pachira",
+    "name": "파키라",
+    "scientific_name": "Pachira aquatica",
+    "tags_light": [
+      "mid",
+      "high"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "air",
+      "gift"
+    ],
+    "tags_place": [
+      "living",
+      "window"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "large",
+    "difficulty": "쉬움",
+    "water_cycle": "일주일에 한 번",
+    "light_desc": "밝은 거실이 좋아요",
+    "merit": "줄기가 멋스러워 개업이나 집들이 선물로 인기예요.",
+    "caution": "물을 너무 자주 주면 뿌리가 상할 수 있어요.",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "core",
+    "image": "public/plants/pachira.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "kentia_palm",
+    "name": "켄차야자",
+    "scientific_name": "Howea forsteriana",
+    "tags_light": [
+      "mid"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "air"
+    ],
+    "tags_place": [
+      "living",
+      "window"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "large",
+    "difficulty": "쉬움",
+    "water_cycle": "일주일에 한 번",
+    "light_desc": "직사광선이 없는 밝은 곳이 좋아요",
+    "merit": "잎이 우아하게 늘어져 거실을 멋지게 꾸며 주어요.",
+    "caution": "추운 곳에 오래 두면 잎 끝이 마를 수 있어요.",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/kentia_palm.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "bengal_fig",
+    "name": "벵갈고무나무",
+    "scientific_name": "Ficus benghalensis",
+    "tags_light": [
+      "mid",
+      "high"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "air"
+    ],
+    "tags_place": [
+      "living",
+      "window"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "large",
+    "difficulty": "쉬움",
+    "water_cycle": "일주일에 한 번",
+    "light_desc": "밝은 거실이 좋아요",
+    "merit": "잎맥이 또렷하고 멋스러워 거실 분위기를 살려 주어요.",
+    "caution": "줄기에서 나오는 흰 즙이 피부를 자극할 수 있어요.",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/bengal_fig.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "fiddle_leaf_fig",
+    "name": "떡갈잎고무나무",
+    "scientific_name": "Ficus lyrata",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "air"
+    ],
+    "tags_place": [
+      "living",
+      "window"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "large",
+    "difficulty": "보통",
+    "water_cycle": "일주일에 한 번",
+    "light_desc": "밝은 빛이 잘 드는 곳이 좋아요",
+    "merit": "잎이 넓고 시원해 꾸밈용으로 인기가 많아요.",
+    "caution": "자리를 자주 옮기면 잎이 떨어질 수 있어요.",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/fiddle_leaf_fig.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "polyscias",
+    "name": "폴리시아스",
+    "scientific_name": "Polyscias fruticosa",
+    "tags_light": [
+      "mid",
+      "high"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "air"
+    ],
+    "tags_place": [
+      "living",
+      "window"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "large",
+    "difficulty": "보통",
+    "water_cycle": "일주일에 한 번",
+    "light_desc": "직사광선이 없는 밝은 곳이 좋아요",
+    "merit": "잎이 곱슬곱슬해 독특한 멋을 내 주어요.",
+    "caution": "잎을 삼키면 배앓이를 할 수 있어 주의해 주세요.",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/polyscias.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "yucca",
+    "name": "유카",
+    "scientific_name": "Yucca elephantipes",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "low"
+    ],
+    "tags_purpose": [
+      "air"
+    ],
+    "tags_place": [
+      "living",
+      "window"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "large",
+    "difficulty": "매우 쉬움",
+    "water_cycle": "2~3주에 한 번",
+    "light_desc": "볕이 잘 드는 곳을 좋아해요",
+    "merit": "잎이 곧게 뻗어 시원하고 물을 자주 주지 않아도 잘 자라요.",
+    "caution": "잎을 삼키면 배앓이를 할 수 있어 주의해 주세요.",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/yucca.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "strelitzia",
+    "name": "여인초",
+    "scientific_name": "Strelitzia nicolai",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "air"
+    ],
+    "tags_place": [
+      "living",
+      "window"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "large",
+    "difficulty": "쉬움",
+    "water_cycle": "일주일에 한 번",
+    "light_desc": "밝은 빛이 잘 드는 곳이 좋아요",
+    "merit": "잎이 큼직하고 시원해 거실을 멋지게 채워 주어요.",
+    "caution": "씨앗이나 열매를 삼키면 배앓이를 할 수 있어 주의해 주세요.",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "core",
+    "image": "public/plants/strelitzia.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "bird_of_paradise",
+    "name": "극락조",
+    "scientific_name": "Strelitzia reginae",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "air"
+    ],
+    "tags_place": [
+      "living",
+      "window"
+    ],
+    "tags_interest": [
+      "flower"
+    ],
+    "size": "large",
+    "difficulty": "보통",
+    "water_cycle": "일주일에 한 번",
+    "light_desc": "볕이 잘 드는 곳을 좋아해요",
+    "merit": "새 모양의 화려한 꽃이 피어 보는 재미가 있어요.",
+    "caution": "씨앗이나 열매를 삼키면 배앓이를 할 수 있어 주의해 주세요.",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/bird_of_paradise.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "rhapis_humilis",
+    "name": "종려죽",
+    "scientific_name": "Rhapis humilis",
+    "tags_light": [
+      "low",
+      "mid"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "air"
+    ],
+    "tags_place": [
+      "living",
+      "window"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "large",
+    "difficulty": "매우 쉬움",
+    "water_cycle": "일주일에 한 번",
+    "light_desc": "어두운 곳도 잘 견뎌요",
+    "merit": "가는 잎이 우아하게 퍼져 한식 공간과 잘 어울려요.",
+    "caution": "물을 너무 자주 주면 뿌리가 무를 수 있어요.",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/rhapis_humilis.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "cycas",
+    "name": "소철",
+    "scientific_name": "Cycas revoluta",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "low"
+    ],
+    "tags_purpose": [
+      "gift"
+    ],
+    "tags_place": [
+      "living",
+      "window"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "large",
+    "difficulty": "쉬움",
+    "water_cycle": "2주에 한 번",
+    "light_desc": "볕이 잘 드는 곳을 좋아해요",
+    "merit": "단단한 잎이 멋스러워 개업 선물로 인기가 많아요.",
+    "caution": "온몸에 독이 강해 삼키면 매우 위험하니 손이 닿지 않게 두세요.",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/cycas.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "olive_tree",
+    "name": "올리브나무",
+    "scientific_name": "Olea europaea",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "deco",
+      "gift"
+    ],
+    "tags_place": [
+      "living",
+      "window"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "large",
+    "difficulty": "보통",
+    "water_cycle": "일주일에 한 번",
+    "light_desc": "볕이 잘 드는 곳을 좋아해요",
+    "merit": "은빛 잎이 산뜻해 집들이 선물로 인기가 많아요.",
+    "caution": "볕이 부족하면 잎이 힘없이 떨어질 수 있어요.",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/olive_tree.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "heteropanax",
+    "name": "녹보수",
+    "scientific_name": "Heteropanax fragrans",
+    "tags_light": [
+      "mid",
+      "high"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "air",
+      "gift"
+    ],
+    "tags_place": [
+      "living",
+      "window"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "large",
+    "difficulty": "쉬움",
+    "water_cycle": "일주일에 한 번",
+    "light_desc": "직사광선이 없는 밝은 곳이 좋아요",
+    "merit": "행운을 부른다고 하여 개업이나 집들이 선물로 인기예요.",
+    "caution": "물을 너무 자주 주면 뿌리가 상할 수 있어요.",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/heteropanax.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "washingtonia",
+    "name": "워싱토니아야자",
+    "scientific_name": "Washingtonia robusta",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "living",
+      "window"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "large",
+    "difficulty": "쉬움",
+    "water_cycle": "일주일에 한 번",
+    "light_desc": "볕이 잘 드는 곳을 좋아해요",
+    "merit": "부채 모양 잎이 시원해 거실을 멋지게 채워 주어요.",
+    "caution": "잎 끝에 가시가 있어 다치지 않게 조심해 주세요.",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/washingtonia.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "cocos_palm",
+    "name": "코코스야자",
+    "scientific_name": "Syagrus romanzoffiana",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "living",
+      "window"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "large",
+    "difficulty": "쉬움",
+    "water_cycle": "일주일에 한 번",
+    "light_desc": "밝은 빛이 잘 드는 곳이 좋아요",
+    "merit": "잎이 부드럽게 늘어져 거실을 시원하게 꾸며 주어요.",
+    "caution": "흙이 마르지 않게 물이 부족하지 않도록 살펴 주세요.",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/cocos_palm.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "tree_fern",
+    "name": "헤고",
+    "scientific_name": "Cyathea spinulosa",
+    "tags_light": [
+      "mid"
+    ],
+    "tags_water": [
+      "high"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "living",
+      "window"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "large",
+    "difficulty": "보통",
+    "water_cycle": "주 2~3회",
+    "light_desc": "직사광선이 없는 밝은 곳이 좋아요",
+    "merit": "큼직한 잎이 시원해 숲속 같은 분위기를 만들어 주어요.",
+    "caution": "건조하면 잎이 마르니 자주 분무해 주세요.",
+    "toxic_to_pets": false,
+    "common": false,
+    "tier": "ext",
+    "image": "public/plants/tree_fern.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "china_doll",
+    "name": "차이나돌",
+    "scientific_name": "Radermachera sinica",
+    "tags_light": [
+      "mid",
+      "high"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "air"
+    ],
+    "tags_place": [
+      "living",
+      "window"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "medium",
+    "difficulty": "보통",
+    "water_cycle": "일주일에 한 번",
+    "light_desc": "밝은 빛이 잘 드는 곳이 좋아요",
+    "merit": "작은 잎이 촘촘해 싱그러운 느낌을 주어요.",
+    "caution": "자리를 자주 옮기면 잎이 떨어질 수 있어요.",
+    "toxic_to_pets": false,
+    "common": false,
+    "tier": "ext",
+    "image": "public/plants/china_doll.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "hoya",
+    "name": "호야",
+    "scientific_name": "Hoya carnosa",
+    "tags_light": [
+      "mid",
+      "high"
+    ],
+    "tags_water": [
+      "low"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "window",
+      "desk",
+      "living"
+    ],
+    "tags_interest": [
+      "foliage",
+      "flower"
+    ],
+    "size": "small",
+    "difficulty": "쉬움",
+    "water_cycle": "열흘에 한 번",
+    "light_desc": "밝은 창가가 좋아요",
+    "merit": "두툼한 잎과 늘어지는 줄기가 보기 좋고 향기로운 꽃도 피어요.",
+    "caution": "물을 자주 주면 뿌리가 무를 수 있어요.",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "core",
+    "image": "public/plants/hoya.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "string_of_hearts",
+    "name": "러브체인",
+    "scientific_name": "Ceropegia woodii",
+    "tags_light": [
+      "mid",
+      "high"
+    ],
+    "tags_water": [
+      "low"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "window",
+      "desk"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "쉬움",
+    "water_cycle": "열흘에 한 번",
+    "light_desc": "밝은 창가가 좋아요",
+    "merit": "하트 모양 잎이 가는 줄기에 달려 길게 늘어지며 자라요.",
+    "caution": "물을 너무 자주 주면 뿌리가 무르기 쉬워요.",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "core",
+    "image": "public/plants/string_of_hearts.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "dischidia",
+    "name": "디시디아",
+    "scientific_name": "Dischidia nummularia",
+    "tags_light": [
+      "mid",
+      "high"
+    ],
+    "tags_water": [
+      "low"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "window",
+      "desk"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "보통",
+    "water_cycle": "열흘에 한 번",
+    "light_desc": "밝은 창가가 좋아요",
+    "merit": "동전처럼 동글동글한 잎이 줄줄이 늘어져 앙증맞아요.",
+    "caution": "공기가 너무 건조하면 잎이 쭈글쭈글해질 수 있어요.",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/dischidia.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "tradescantia_pallida",
+    "name": "자주잎달개비",
+    "scientific_name": "Tradescantia pallida",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "window",
+      "living"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "매우 쉬움",
+    "water_cycle": "일주일에 한 번",
+    "light_desc": "볕이 잘 드는 곳에서 잎 색이 더 짙어져요",
+    "merit": "온통 진한 자줏빛 잎이 늘어져 색감이 화려해요.",
+    "caution": "줄기 즙이 닿으면 피부가 가려울 수 있어요.",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/tradescantia_pallida.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "maori_sophora",
+    "name": "마오리소포라",
+    "scientific_name": "Muehlenbeckia complexa",
+    "tags_light": [
+      "mid",
+      "high"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "window",
+      "desk"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "보통",
+    "water_cycle": "일주일에 한 번",
+    "light_desc": "밝은 창가가 좋아요",
+    "merit": "가는 철사 같은 줄기에 작은 잎이 빼곡히 달려 섬세해요.",
+    "caution": "흙이 오래 마르면 잎이 우수수 떨어질 수 있어요.",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/maori_sophora.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "glechoma",
+    "name": "글레코마",
+    "scientific_name": "Glechoma hederacea",
+    "tags_light": [
+      "mid"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "window",
+      "desk"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "쉬움",
+    "water_cycle": "일주일에 한 번",
+    "light_desc": "직사광선이 없는 밝은 곳이 좋아요",
+    "merit": "흰 무늬가 든 둥근 잎이 길게 늘어져 시원해 보여요.",
+    "caution": "많이 먹으면 배탈이 날 수 있으니 반려동물 손이 닿지 않게 두세요.",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/glechoma.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "fishbone_cactus",
+    "name": "피쉬본선인장",
+    "scientific_name": "Disocactus anguliger",
+    "tags_light": [
+      "mid",
+      "high"
+    ],
+    "tags_water": [
+      "low"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "window",
+      "living"
+    ],
+    "tags_interest": [
+      "foliage",
+      "flower"
+    ],
+    "size": "medium",
+    "difficulty": "보통",
+    "water_cycle": "열흘에 한 번",
+    "light_desc": "직사광선이 없는 밝은 곳이 좋아요",
+    "merit": "물고기 뼈처럼 지그재그로 생긴 줄기가 독특하게 늘어져요.",
+    "caution": "물을 자주 주면 줄기가 무를 수 있어요.",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/fishbone_cactus.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "balloon_vine",
+    "name": "풍선덩굴",
+    "scientific_name": "Cardiospermum halicacabum",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "window",
+      "living"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "medium",
+    "difficulty": "쉬움",
+    "water_cycle": "일주일에 한 번",
+    "light_desc": "볕이 잘 드는 곳을 좋아해요",
+    "merit": "작은 풍선처럼 부푼 열매가 매달려 보는 재미가 있어요.",
+    "caution": "덩굴이 빠르게 뻗으니 지지대를 세워 주면 좋아요.",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/balloon_vine.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "hoya_kerrii",
+    "name": "하트호야",
+    "scientific_name": "Hoya kerrii",
+    "tags_light": [
+      "mid",
+      "high"
+    ],
+    "tags_water": [
+      "low"
+    ],
+    "tags_purpose": [
+      "deco",
+      "gift"
+    ],
+    "tags_place": [
+      "window",
+      "desk"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "쉬움",
+    "water_cycle": "열흘에 한 번",
+    "light_desc": "밝은 창가가 좋아요",
+    "merit": "도톰한 하트 모양 잎이 귀여워 선물로도 인기가 많아요.",
+    "caution": "물을 너무 자주 주면 뿌리가 무를 수 있어요.",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/hoya_kerrii.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "hoya_bella",
+    "name": "벨라호야",
+    "scientific_name": "Hoya bella",
+    "tags_light": [
+      "mid",
+      "high"
+    ],
+    "tags_water": [
+      "low"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "window",
+      "desk"
+    ],
+    "tags_interest": [
+      "foliage",
+      "flower"
+    ],
+    "size": "small",
+    "difficulty": "보통",
+    "water_cycle": "열흘에 한 번",
+    "light_desc": "밝은 창가가 좋아요",
+    "merit": "작은 잎이 늘어지며 별 모양의 향기로운 꽃을 피워요.",
+    "caution": "공기가 너무 건조하면 잘 자라지 못해요.",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/hoya_bella.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "string_of_bananas",
+    "name": "바나나녹영",
+    "scientific_name": "Curio radicans",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "low"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "window",
+      "desk"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "쉬움",
+    "water_cycle": "열흘에 한 번",
+    "light_desc": "볕이 잘 드는 밝은 창가가 좋아요",
+    "merit": "바나나처럼 생긴 잎이 줄줄이 늘어져 자라요.",
+    "caution": "잎을 먹으면 토하거나 배탈이 날 수 있으니 반려동물에게 닿지 않게 두세요.",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/string_of_bananas.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "string_of_beans",
+    "name": "미선광",
+    "scientific_name": "Curio herreianus",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "low"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "window",
+      "desk"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "보통",
+    "water_cycle": "열흘에 한 번",
+    "light_desc": "볕이 잘 드는 밝은 창가가 좋아요",
+    "merit": "작은 콩알 같은 잎이 옹기종기 매달려 자라는 모습이 귀여워요.",
+    "caution": "잎을 먹으면 토하거나 배탈이 날 수 있으니 반려동물에게 닿지 않게 두세요.",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/string_of_beans.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "string_of_turtles",
+    "name": "거북알페페로미아",
+    "scientific_name": "Peperomia prostrata",
+    "tags_light": [
+      "mid"
+    ],
+    "tags_water": [
+      "low"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "window",
+      "desk"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "보통",
+    "water_cycle": "열흘에 한 번",
+    "light_desc": "직사광선이 없는 밝은 곳이 좋아요",
+    "merit": "거북 등껍질 무늬가 든 작은 잎이 앙증맞게 늘어져요.",
+    "caution": "물을 자주 주면 잎이 쉽게 물러요.",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/string_of_turtles.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "string_of_dolphins",
+    "name": "돌고래녹영",
+    "scientific_name": "Curio × peregrinus",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "low"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "window",
+      "desk"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "보통",
+    "water_cycle": "열흘에 한 번",
+    "light_desc": "볕이 잘 드는 밝은 창가가 좋아요",
+    "merit": "헤엄치는 돌고래를 닮은 잎이 줄지어 매달려 신기해요.",
+    "caution": "잎을 먹으면 토하거나 기운이 없어질 수 있으니 반려동물에게 닿지 않게 두세요.",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/string_of_dolphins.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "ruby_necklace",
+    "name": "루비목걸이",
+    "scientific_name": "Othonna capensis",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "low"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "window",
+      "desk"
+    ],
+    "tags_interest": [
+      "foliage",
+      "flower"
+    ],
+    "size": "small",
+    "difficulty": "쉬움",
+    "water_cycle": "열흘에 한 번",
+    "light_desc": "볕이 잘 들면 줄기가 붉게 물들어요",
+    "merit": "볕을 받으면 줄기가 루비처럼 붉어지고 노란 꽃도 피어요.",
+    "caution": "물을 자주 주면 줄기가 무를 수 있어요.",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/ruby_necklace.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "lipstick_plant",
+    "name": "립스틱",
+    "scientific_name": "Aeschynanthus radicans",
+    "tags_light": [
+      "mid",
+      "high"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "window",
+      "living"
+    ],
+    "tags_interest": [
+      "foliage",
+      "flower"
+    ],
+    "size": "small",
+    "difficulty": "보통",
+    "water_cycle": "일주일에 한 번",
+    "light_desc": "직사광선이 없는 밝은 곳이 좋아요",
+    "merit": "늘어진 줄기 끝에 립스틱을 닮은 붉은 꽃이 피어요.",
+    "caution": "공기가 건조하면 꽃봉오리가 떨어질 수 있어요.",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/lipstick_plant.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "goldfish_plant",
+    "name": "금붕어꽃",
+    "scientific_name": "Nematanthus gregarius",
+    "tags_light": [
+      "mid",
+      "high"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "window",
+      "living"
+    ],
+    "tags_interest": [
+      "foliage",
+      "flower"
+    ],
+    "size": "small",
+    "difficulty": "보통",
+    "water_cycle": "일주일에 한 번",
+    "light_desc": "직사광선이 없는 밝은 곳이 좋아요",
+    "merit": "금붕어를 닮은 주황색 꽃이 늘어진 줄기에 매달려요.",
+    "caution": "공기가 건조하면 잎이 마를 수 있으니 가끔 물을 뿌려 주세요.",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/goldfish_plant.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "ripple_peperomia",
+    "name": "주름페페로미아",
+    "scientific_name": "Peperomia caperata",
+    "tags_light": [
+      "mid"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "desk",
+      "window"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "쉬움",
+    "water_cycle": "흙이 마르면 한 번씩",
+    "light_desc": "직사광선이 없는 밝은 곳이 좋아요",
+    "merit": "쪼글쪼글한 잎결이 멋스러워 작은 화분에 잘 어울려요.",
+    "caution": "잎 사이에 물이 고이면 무를 수 있으니 흙에만 주세요.",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/ripple_peperomia.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "mini_calathea",
+    "name": "미니칼라데아",
+    "scientific_name": "Goeppertia spp.",
+    "tags_light": [
+      "mid"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "desk",
+      "bathroom"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "보통",
+    "water_cycle": "흙이 살짝 마르면 한 번씩",
+    "light_desc": "직사광선이 없는 밝은 곳이 좋아요",
+    "merit": "잎 뒷면까지 무늬가 고와서 보는 재미가 있어요.",
+    "caution": "건조하면 잎 끝이 마르니 가끔 잎에 물을 뿌려 주세요.",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/mini_calathea.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "table_fern",
+    "name": "테이블고사리",
+    "scientific_name": "Pteris cretica",
+    "tags_light": [
+      "mid"
+    ],
+    "tags_water": [
+      "high"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "desk",
+      "bathroom"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "쉬움",
+    "water_cycle": "흙이 늘 촉촉하게",
+    "light_desc": "직사광선이 없는 밝은 곳이 좋아요",
+    "merit": "잎이 가늘고 산뜻해서 책상 위를 시원하게 해 줘요.",
+    "caution": "물이 마르면 잎이 바스러지니 마르지 않게 주세요.",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/table_fern.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "blue_star_fern",
+    "name": "블루스타고사리",
+    "scientific_name": "Phlebodium aureum",
+    "tags_light": [
+      "mid"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "desk",
+      "bathroom"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "쉬움",
+    "water_cycle": "흙이 살짝 마르면 한 번씩",
+    "light_desc": "직사광선이 없는 밝은 곳이 좋아요",
+    "merit": "푸른빛이 도는 잎이 독특해서 한 그루만 두어도 멋져요.",
+    "caution": "뿌리가 무르기 쉬우니 물이 잘 빠지게 해 주세요.",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/blue_star_fern.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "selaginella",
+    "name": "셀라기넬라",
+    "scientific_name": "Selaginella kraussiana",
+    "tags_light": [
+      "low",
+      "mid"
+    ],
+    "tags_water": [
+      "high"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "desk",
+      "bathroom"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "보통",
+    "water_cycle": "흙이 늘 촉촉하게",
+    "light_desc": "직사광선이 없는 밝은 곳이 좋아요",
+    "merit": "촘촘하고 보들보들한 잎이 작은 화분을 풍성하게 해 줘요.",
+    "caution": "마르면 금방 갈변하니 습도를 높게 유지해 주세요.",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/selaginella.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "baby_tears",
+    "name": "아기눈물",
+    "scientific_name": "Soleirolia soleirolii",
+    "tags_light": [
+      "mid"
+    ],
+    "tags_water": [
+      "high"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "desk",
+      "bathroom"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "보통",
+    "water_cycle": "흙이 늘 촉촉하게",
+    "light_desc": "직사광선이 없는 밝은 곳이 좋아요",
+    "merit": "작은 잎이 동그랗게 퍼져 이끼볼로 꾸미기 좋아요.",
+    "caution": "마르면 잎이 우수수 떨어지니 늘 촉촉하게 주세요.",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/baby_tears.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "watercoin",
+    "name": "워터코인",
+    "scientific_name": "Hydrocotyle vulgaris",
+    "tags_light": [
+      "mid",
+      "high"
+    ],
+    "tags_water": [
+      "high"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "desk",
+      "window",
+      "bathroom"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "매우 쉬움",
+    "water_cycle": "흙이 늘 촉촉하게(수경 가능)",
+    "light_desc": "밝은 곳이 좋아요",
+    "merit": "동전 모양 잎이 귀엽고 물에서도 잘 자라요.",
+    "caution": "물이 마르지 않게 자주 살펴 주세요.",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/watercoin.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "mini_aglaonema",
+    "name": "미니아글라오네마",
+    "scientific_name": "Aglaonema modestum",
+    "tags_light": [
+      "low",
+      "mid"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "air",
+      "deco"
+    ],
+    "tags_place": [
+      "desk",
+      "window"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "쉬움",
+    "water_cycle": "흙이 마르면 한 번씩",
+    "light_desc": "어두운 곳도 잘 견뎌요",
+    "merit": "잎 무늬가 화사하고 어두운 곳에서도 잘 자라요.",
+    "caution": "잎에 독성이 있으니 아이와 반려동물 손이 닿지 않게 두세요.",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/mini_aglaonema.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "philodendron_congo",
+    "name": "콩고",
+    "scientific_name": "Philodendron tatei",
+    "tags_light": [
+      "mid"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "air",
+      "deco"
+    ],
+    "tags_place": [
+      "desk",
+      "window"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "쉬움",
+    "water_cycle": "흙이 마르면 한 번씩",
+    "light_desc": "직사광선이 없는 밝은 곳이 좋아요",
+    "merit": "잎이 도톰하고 윤기가 나서 작은 화분으로도 든든해요.",
+    "caution": "잎에 독성이 있으니 아이와 반려동물 손이 닿지 않게 두세요.",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/philodendron_congo.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "coral_berry",
+    "name": "산호수",
+    "scientific_name": "Ardisia crenata",
+    "tags_light": [
+      "mid"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "deco",
+      "gift"
+    ],
+    "tags_place": [
+      "desk",
+      "window"
+    ],
+    "tags_interest": [
+      "fruit"
+    ],
+    "size": "small",
+    "difficulty": "쉬움",
+    "water_cycle": "흙이 마르면 한 번씩",
+    "light_desc": "직사광선이 없는 밝은 곳이 좋아요",
+    "merit": "빨간 열매가 오래 달려 있어 책상 위가 화사해져요.",
+    "caution": "열매에 독성이 있으니 아이와 반려동물이 먹지 않게 두세요.",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/coral_berry.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "rosemary",
+    "name": "로즈마리",
+    "scientific_name": "Salvia rosmarinus",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "harvest",
+      "deco"
+    ],
+    "tags_place": [
+      "window",
+      "living"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "쉬움",
+    "water_cycle": "일주일에 한 번",
+    "light_desc": "볕이 잘 드는 곳이 좋아요",
+    "merit": "향이 좋아 요리에 넣어 먹고 키우는 재미도 있어요.",
+    "caution": "바람이 잘 통해야 줄기가 무르지 않아요.",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "core",
+    "image": "public/plants/rosemary.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "thyme",
+    "name": "타임",
+    "scientific_name": "Thymus vulgaris",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "low"
+    ],
+    "tags_purpose": [
+      "harvest",
+      "deco"
+    ],
+    "tags_place": [
+      "window"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "쉬움",
+    "water_cycle": "일주일에 한 번",
+    "light_desc": "볕이 잘 드는 곳을 좋아해요",
+    "merit": "작은 잎에 향이 진해 요리에 조금씩 넣어 먹기 좋아요.",
+    "caution": "흙이 늘 젖어 있으면 뿌리가 무르니 마른 뒤에 주세요.",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/thyme.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "mint",
+    "name": "민트",
+    "scientific_name": "Mentha spicata",
+    "tags_light": [
+      "mid",
+      "high"
+    ],
+    "tags_water": [
+      "mid",
+      "high"
+    ],
+    "tags_purpose": [
+      "harvest"
+    ],
+    "tags_place": [
+      "window"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "매우 쉬움",
+    "water_cycle": "2~3일에 한 번",
+    "light_desc": "밝은 곳이면 잘 자라요",
+    "merit": "잘 자라고 잎을 따서 차나 요리에 넣어 먹기 좋아요.",
+    "caution": "번식이 빨라 다른 화분과 따로 심는 것이 좋아요.",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "core",
+    "image": "public/plants/mint.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "applemint",
+    "name": "애플민트",
+    "scientific_name": "Mentha suaveolens",
+    "tags_light": [
+      "mid",
+      "high"
+    ],
+    "tags_water": [
+      "mid",
+      "high"
+    ],
+    "tags_purpose": [
+      "harvest"
+    ],
+    "tags_place": [
+      "window"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "매우 쉬움",
+    "water_cycle": "2~3일에 한 번",
+    "light_desc": "밝은 곳이면 잘 자라요",
+    "merit": "사과 같은 향이 나고 잎을 차로 우려 마시기 좋아요.",
+    "caution": "물을 좋아하니 흙이 너무 마르지 않게 챙겨 주세요.",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/applemint.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "parsley",
+    "name": "파슬리",
+    "scientific_name": "Petroselinum crispum",
+    "tags_light": [
+      "mid",
+      "high"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "harvest"
+    ],
+    "tags_place": [
+      "window"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "쉬움",
+    "water_cycle": "2~3일에 한 번",
+    "light_desc": "밝은 곳이 좋아요",
+    "merit": "잎을 조금씩 따서 요리에 곁들이기 좋아요.",
+    "caution": "반려동물이 많이 먹으면 탈이 날 수 있으니 닿지 않는 곳에 두세요.",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/parsley.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "arugula",
+    "name": "루꼴라",
+    "scientific_name": "Eruca vesicaria",
+    "tags_light": [
+      "mid",
+      "high"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "harvest"
+    ],
+    "tags_place": [
+      "window"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "쉬움",
+    "water_cycle": "2~3일에 한 번",
+    "light_desc": "밝은 곳이 좋아요",
+    "merit": "씨를 뿌리면 빨리 자라 잎을 따서 바로 먹을 수 있어요.",
+    "caution": "너무 더우면 잎이 질겨지니 서늘할 때 길러 보세요.",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/arugula.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "bokchoy",
+    "name": "청경채",
+    "scientific_name": "Brassica rapa subsp. chinensis",
+    "tags_light": [
+      "mid",
+      "high"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "harvest"
+    ],
+    "tags_place": [
+      "window"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "쉬움",
+    "water_cycle": "2~3일에 한 번",
+    "light_desc": "밝은 곳이 좋아요",
+    "merit": "빨리 자라 한 달이면 따서 볶거나 국에 넣어 먹어요.",
+    "caution": "흙이 마르면 잎이 쉽게 시드니 자주 살펴 주세요.",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/bokchoy.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "jjokpa",
+    "name": "쪽파",
+    "scientific_name": "Allium fistulosum",
+    "tags_light": [
+      "mid",
+      "high"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "harvest"
+    ],
+    "tags_place": [
+      "window"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "매우 쉬움",
+    "water_cycle": "2~3일에 한 번",
+    "light_desc": "밝은 곳이 좋아요",
+    "merit": "구근을 심으면 쉽게 자라 잘라 먹고 또 자라요.",
+    "caution": "반려동물에게는 해로우니 닿지 않는 곳에 두세요.",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/jjokpa.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "buchu",
+    "name": "부추",
+    "scientific_name": "Allium tuberosum",
+    "tags_light": [
+      "mid",
+      "high"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "harvest"
+    ],
+    "tags_place": [
+      "window"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "매우 쉬움",
+    "water_cycle": "2~3일에 한 번",
+    "light_desc": "밝은 곳이 좋아요",
+    "merit": "한 번 심으면 여러 번 잘라 먹을 수 있어요.",
+    "caution": "반려동물에게는 해로우니 닿지 않는 곳에 두세요.",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/buchu.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "cilantro",
+    "name": "고수",
+    "scientific_name": "Coriandrum sativum",
+    "tags_light": [
+      "mid",
+      "high"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "harvest"
+    ],
+    "tags_place": [
+      "window"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "쉬움",
+    "water_cycle": "2~3일에 한 번",
+    "light_desc": "밝은 곳이 좋아요",
+    "merit": "독특한 향이 있어 국수나 볶음 요리에 넣어 먹어요.",
+    "caution": "더위에 약해 서늘할 때 길러야 오래 자라요.",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/cilantro.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "dill",
+    "name": "딜",
+    "scientific_name": "Anethum graveolens",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "harvest",
+      "deco"
+    ],
+    "tags_place": [
+      "window"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "쉬움",
+    "water_cycle": "2~3일에 한 번",
+    "light_desc": "볕이 잘 드는 곳이 좋아요",
+    "merit": "가는 잎에 향이 좋아 생선이나 절임 요리에 넣어 먹어요.",
+    "caution": "키가 크게 자라니 바람에 쓰러지지 않게 받쳐 주세요.",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/dill.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "oregano",
+    "name": "오레가노",
+    "scientific_name": "Origanum vulgare",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "low"
+    ],
+    "tags_purpose": [
+      "harvest",
+      "deco"
+    ],
+    "tags_place": [
+      "window"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "쉬움",
+    "water_cycle": "일주일에 한 번",
+    "light_desc": "볕이 잘 드는 곳을 좋아해요",
+    "merit": "향이 진해 면 요리나 구이에 말려 넣어 먹기 좋아요.",
+    "caution": "반려동물이 많이 먹으면 탈이 날 수 있으니 주의해 주세요.",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/oregano.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "sage",
+    "name": "세이지",
+    "scientific_name": "Salvia officinalis",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "low"
+    ],
+    "tags_purpose": [
+      "harvest",
+      "deco"
+    ],
+    "tags_place": [
+      "window"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "쉬움",
+    "water_cycle": "일주일에 한 번",
+    "light_desc": "볕이 잘 드는 곳을 좋아해요",
+    "merit": "은은한 향이 있어 고기 요리나 차에 넣어 먹어요.",
+    "caution": "흙이 너무 젖으면 무르니 마른 뒤에 물을 주세요.",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/sage.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "stevia",
+    "name": "스테비아",
+    "scientific_name": "Stevia rebaudiana",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "harvest"
+    ],
+    "tags_place": [
+      "window"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "쉬움",
+    "water_cycle": "2~3일에 한 번",
+    "light_desc": "볕이 잘 드는 곳을 좋아해요",
+    "merit": "잎에서 단맛이 나 차에 넣어 우려 마시기 좋아요.",
+    "caution": "추위에 약하니 겨울에는 따뜻한 안쪽으로 들여 주세요.",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/stevia.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "lemonbalm",
+    "name": "레몬밤",
+    "scientific_name": "Melissa officinalis",
+    "tags_light": [
+      "mid",
+      "high"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "harvest"
+    ],
+    "tags_place": [
+      "window"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "매우 쉬움",
+    "water_cycle": "2~3일에 한 번",
+    "light_desc": "밝은 곳이면 잘 자라요",
+    "merit": "잎에서 상큼한 향이 나 차로 우려 마시기 좋아요.",
+    "caution": "잘 퍼지니 화분에 따로 심는 것이 좋아요.",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/lemonbalm.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "chamomile",
+    "name": "캐모마일",
+    "scientific_name": "Anthemis nobilis",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "harvest",
+      "deco"
+    ],
+    "tags_place": [
+      "window"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "쉬움",
+    "water_cycle": "2~3일에 한 번",
+    "light_desc": "볕이 잘 드는 곳을 좋아해요",
+    "merit": "하얀 꽃이 피고 꽃을 말려 차로 우려 마실 수 있어요.",
+    "caution": "반려동물이 많이 먹으면 탈이 날 수 있으니 주의해 주세요.",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/chamomile.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "chicory",
+    "name": "치커리",
+    "scientific_name": "Cichorium intybus",
+    "tags_light": [
+      "mid",
+      "high"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "harvest"
+    ],
+    "tags_place": [
+      "window"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "쉬움",
+    "water_cycle": "2~3일에 한 번",
+    "light_desc": "밝은 곳이 좋아요",
+    "merit": "잎을 따서 쌈이나 샐러드로 바로 먹을 수 있어요.",
+    "caution": "쓴맛이 강해지지 않게 흙이 마르지 않게 챙겨 주세요.",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/chicory.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "mustardgreens",
+    "name": "겨자채",
+    "scientific_name": "Brassica juncea",
+    "tags_light": [
+      "mid",
+      "high"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "harvest"
+    ],
+    "tags_place": [
+      "window"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "쉬움",
+    "water_cycle": "2~3일에 한 번",
+    "light_desc": "밝은 곳이 좋아요",
+    "merit": "톡 쏘는 맛이 있어 쌈이나 겉절이로 먹기 좋아요.",
+    "caution": "더우면 잎이 질겨지니 서늘할 때 길러 보세요.",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/mustardgreens.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "yeolmu",
+    "name": "열무",
+    "scientific_name": "Raphanus sativus",
+    "tags_light": [
+      "mid",
+      "high"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "harvest"
+    ],
+    "tags_place": [
+      "window"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "쉬움",
+    "water_cycle": "2~3일에 한 번",
+    "light_desc": "밝은 곳이 좋아요",
+    "merit": "어린잎과 줄기를 거두어 김치나 국으로 먹어요.",
+    "caution": "촘촘히 심으면 잘 안 자라니 사이를 두고 심어 주세요.",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/yeolmu.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "danggui",
+    "name": "당귀",
+    "scientific_name": "Angelica gigas",
+    "tags_light": [
+      "mid",
+      "high"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "harvest"
+    ],
+    "tags_place": [],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "medium",
+    "difficulty": "보통",
+    "water_cycle": "2~3일에 한 번",
+    "light_desc": "밝은 곳이 좋아요",
+    "merit": "잎에서 향이 나 쌈으로 먹거나 차로 우려 마셔요.",
+    "caution": "뿌리가 깊게 자라니 깊은 화분에 심어 주세요.",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/danggui.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "tomato",
+    "name": "방울토마토",
+    "scientific_name": "Solanum lycopersicum",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "mid",
+      "high"
+    ],
+    "tags_purpose": [
+      "harvest"
+    ],
+    "tags_place": [
+      "window"
+    ],
+    "tags_interest": [
+      "fruit"
+    ],
+    "size": "medium",
+    "difficulty": "쉬움",
+    "water_cycle": "2~3일에 한 번",
+    "light_desc": "볕이 잘 드는 곳을 좋아해요",
+    "merit": "열매가 많이 달려 따 먹는 재미가 크고 키우기 쉬워요.",
+    "caution": "잎과 줄기는 반려동물에게 해로우니 익은 열매만 주세요.",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "core",
+    "image": "public/plants/tomato.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "paprika",
+    "name": "미니파프리카",
+    "scientific_name": "Capsicum annuum",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "harvest"
+    ],
+    "tags_place": [
+      "window"
+    ],
+    "tags_interest": [
+      "fruit"
+    ],
+    "size": "medium",
+    "difficulty": "보통",
+    "water_cycle": "2~3일에 한 번",
+    "light_desc": "볕이 잘 드는 곳을 좋아해요",
+    "merit": "알록달록한 열매가 달려 보기 좋고 따서 바로 먹어요.",
+    "caution": "잎과 줄기는 반려동물에게 해로우니 닿지 않게 해 주세요.",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/paprika.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "eggplant",
+    "name": "가지",
+    "scientific_name": "Solanum melongena",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "mid",
+      "high"
+    ],
+    "tags_purpose": [
+      "harvest"
+    ],
+    "tags_place": [
+      "window"
+    ],
+    "tags_interest": [
+      "fruit"
+    ],
+    "size": "medium",
+    "difficulty": "보통",
+    "water_cycle": "2~3일에 한 번",
+    "light_desc": "볕이 잘 드는 곳을 좋아해요",
+    "merit": "보랏빛 열매가 달려 보기 좋고 따서 볶아 먹어요.",
+    "caution": "잎과 줄기는 반려동물에게 해로우니 익은 열매만 주세요.",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/eggplant.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "cucumber",
+    "name": "미니오이",
+    "scientific_name": "Cucumis sativus",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "mid",
+      "high"
+    ],
+    "tags_purpose": [
+      "harvest"
+    ],
+    "tags_place": [
+      "window"
+    ],
+    "tags_interest": [
+      "fruit"
+    ],
+    "size": "medium",
+    "difficulty": "보통",
+    "water_cycle": "매일 한 번",
+    "light_desc": "볕이 잘 드는 곳을 좋아해요",
+    "merit": "덩굴이 뻗으며 작은 오이가 달려 따 먹는 재미가 있어요.",
+    "caution": "물을 많이 먹으니 흙이 마르지 않게 자주 챙겨 주세요.",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/cucumber.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "strawberry",
+    "name": "딸기",
+    "scientific_name": "Fragaria × ananassa",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "harvest",
+      "deco"
+    ],
+    "tags_place": [
+      "window"
+    ],
+    "tags_interest": [
+      "fruit"
+    ],
+    "size": "small",
+    "difficulty": "보통",
+    "water_cycle": "2~3일에 한 번",
+    "light_desc": "볕이 잘 드는 곳을 좋아해요",
+    "merit": "빨간 열매가 달려 보기 좋고 따서 바로 먹을 수 있어요.",
+    "caution": "열매가 흙에 닿으면 무르니 받쳐서 띄워 주세요.",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/strawberry.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "blueberry",
+    "name": "블루베리",
+    "scientific_name": "Vaccinium corymbosum",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "harvest",
+      "deco"
+    ],
+    "tags_place": [],
+    "tags_interest": [
+      "fruit"
+    ],
+    "size": "medium",
+    "difficulty": "보통",
+    "water_cycle": "2~3일에 한 번",
+    "light_desc": "볕이 잘 드는 곳을 좋아해요",
+    "merit": "화분에서도 열매가 달려 따 먹는 재미가 있어요.",
+    "caution": "산성 흙을 좋아하니 전용 흙에 심어 주세요.",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/blueberry.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "bittermelon",
+    "name": "여주",
+    "scientific_name": "Momordica charantia",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "mid",
+      "high"
+    ],
+    "tags_purpose": [
+      "harvest"
+    ],
+    "tags_place": [],
+    "tags_interest": [
+      "fruit"
+    ],
+    "size": "medium",
+    "difficulty": "보통",
+    "water_cycle": "매일 한 번",
+    "light_desc": "볕이 잘 드는 곳을 좋아해요",
+    "merit": "덩굴이 뻗으며 열매가 달려 그늘막처럼 기르기도 좋아요.",
+    "caution": "덩굴이 길게 자라니 타고 오를 지지대를 세워 주세요.",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/bittermelon.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "ficus_umbellata",
+    "name": "움벨라타",
+    "scientific_name": "Ficus umbellata",
+    "tags_light": [
+      "mid",
+      "high"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "deco",
+      "air"
+    ],
+    "tags_place": [
+      "living",
+      "window"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "large",
+    "difficulty": "쉬움",
+    "water_cycle": "흙 표면이 마르면 듬뿍 주어요",
+    "light_desc": "밝고 환한 창가가 좋아요",
+    "merit": "둥글고 큰 잎이 시원해 보여 거실을 환하게 꾸며 주어요.",
+    "caution": "줄기에서 나오는 흰 즙이 피부에 닿지 않게 해 주세요.",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/ficus_umbellata.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "ficus_elastica_melany",
+    "name": "멜라니고무나무",
+    "scientific_name": "Ficus elastica 'Melany'",
+    "tags_light": [
+      "mid",
+      "high"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "deco",
+      "air"
+    ],
+    "tags_place": [
+      "living",
+      "window"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "medium",
+    "difficulty": "쉬움",
+    "water_cycle": "흙이 마르면 듬뿍 주어요",
+    "light_desc": "밝은 곳이 좋아요",
+    "merit": "잎이 짙고 윤기가 돌아 차분한 분위기를 만들어 주어요.",
+    "caution": "줄기를 자르면 나오는 흰 즙을 반려동물이 핥지 않게 해 주세요.",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/ficus_elastica_melany.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "philodendron_birkin",
+    "name": "필로덴드론 버킨",
+    "scientific_name": "Philodendron 'Birkin'",
+    "tags_light": [
+      "mid"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "deco",
+      "air"
+    ],
+    "tags_place": [
+      "living",
+      "desk",
+      "window"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "쉬움",
+    "water_cycle": "흙 표면이 마르면 주어요",
+    "light_desc": "직사광선이 없는 밝은 곳이 좋아요",
+    "merit": "잎에 하얀 줄무늬가 또렷해 작아도 눈길을 끌어요.",
+    "caution": "잎을 씹으면 입안이 따가울 수 있어 반려동물 손이 닿지 않게 해 주세요.",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/philodendron_birkin.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "rhaphidophora_tetrasperma",
+    "name": "라피도포라 테트라스페르마",
+    "scientific_name": "Rhaphidophora tetrasperma",
+    "tags_light": [
+      "mid"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "deco",
+      "air"
+    ],
+    "tags_place": [
+      "living",
+      "window"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "medium",
+    "difficulty": "쉬움",
+    "water_cycle": "흙 표면이 마르면 주어요",
+    "light_desc": "직사광선이 없는 밝은 곳이 좋아요",
+    "merit": "잎이 갈라진 모양이 멋스럽고 빠르게 잘 자라요.",
+    "caution": "잎을 씹으면 입안이 따가울 수 있어 반려동물 손이 닿지 않게 해 주세요.",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/rhaphidophora_tetrasperma.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "homalomena",
+    "name": "호말로메나",
+    "scientific_name": "Homalomena rubescens",
+    "tags_light": [
+      "low",
+      "mid"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "deco",
+      "air"
+    ],
+    "tags_place": [
+      "living",
+      "window"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "medium",
+    "difficulty": "쉬움",
+    "water_cycle": "흙 표면이 마르면 주어요",
+    "light_desc": "직사광선이 없는 밝은 곳이 좋아요",
+    "merit": "붉은 줄기와 둥근 잎이 어우러져 차분한 멋이 있어요.",
+    "caution": "잎에 든 성분이 입안을 자극할 수 있어 반려동물 손이 닿지 않게 해 주세요.",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/homalomena.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "calathea_white_star",
+    "name": "칼라데아 화이트스타",
+    "scientific_name": "Goeppertia majestica 'White Star'",
+    "tags_light": [
+      "mid"
+    ],
+    "tags_water": [
+      "mid",
+      "high"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "living",
+      "desk",
+      "window"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "보통",
+    "water_cycle": "흙이 촉촉하게 유지되도록 주어요",
+    "light_desc": "직사광선이 없는 밝은 곳이 좋아요",
+    "merit": "하얗고 분홍빛 도는 줄무늬 잎이 화사해 보여요.",
+    "caution": "건조하면 잎 끝이 마르니 자주 분무해 주세요.",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/calathea_white_star.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "tillandsia_ionantha",
+    "name": "틸란드시아 이오난사",
+    "scientific_name": "Tillandsia ionantha",
+    "tags_light": [
+      "mid",
+      "high"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "deco",
+      "air"
+    ],
+    "tags_place": [
+      "desk",
+      "window",
+      "bathroom"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "쉬움",
+    "water_cycle": "일주일에 한두 번 분무하거나 물에 담가요",
+    "light_desc": "밝은 곳이 좋아요",
+    "merit": "흙 없이 키울 수 있어 어디에나 두기 좋아요.",
+    "caution": "물을 준 뒤 잘 말려야 무르지 않아요.",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/tillandsia_ionantha.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "tillandsia_usneoides",
+    "name": "수염틸란드시아",
+    "scientific_name": "Tillandsia usneoides",
+    "tags_light": [
+      "mid",
+      "high"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "deco",
+      "air"
+    ],
+    "tags_place": [
+      "window",
+      "bathroom",
+      "living"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "쉬움",
+    "water_cycle": "이삼일에 한 번 분무해 주어요",
+    "light_desc": "밝고 바람이 잘 통하는 곳이 좋아요",
+    "merit": "흙 없이 늘어뜨려 키워 공간을 멋스럽게 꾸며 주어요.",
+    "caution": "바람이 통하지 않으면 무를 수 있으니 잘 말려 주세요.",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/tillandsia_usneoides.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "poinsettia",
+    "name": "포인세티아",
+    "scientific_name": "Euphorbia pulcherrima",
+    "tags_light": [
+      "mid",
+      "high"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "deco",
+      "gift"
+    ],
+    "tags_place": [
+      "living",
+      "window"
+    ],
+    "tags_interest": [
+      "flower",
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "보통",
+    "water_cycle": "흙 표면이 마르면 주어요",
+    "light_desc": "밝은 창가가 좋아요",
+    "merit": "붉은 잎이 화사해 겨울철 분위기를 따뜻하게 만들어 주어요.",
+    "caution": "줄기에서 나오는 흰 즙이 입과 피부를 자극할 수 있어요.",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/poinsettia.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "azalea_indica",
+    "name": "영산홍",
+    "scientific_name": "Rhododendron indicum",
+    "tags_light": [
+      "mid",
+      "high"
+    ],
+    "tags_water": [
+      "mid",
+      "high"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "living",
+      "window"
+    ],
+    "tags_interest": [
+      "flower"
+    ],
+    "size": "small",
+    "difficulty": "보통",
+    "water_cycle": "흙이 마르지 않게 자주 주어요",
+    "light_desc": "밝은 창가가 좋아요",
+    "merit": "봄에 붉은 꽃이 가득 피어 화분 하나로도 화사해요.",
+    "caution": "잎과 꽃에 강한 독성이 있어 반려동물이 절대 먹지 않게 해 주세요.",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/azalea_indica.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "pomegranate_dwarf",
+    "name": "석류나무",
+    "scientific_name": "Punica granatum 'Nana'",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "window",
+      "living"
+    ],
+    "tags_interest": [
+      "flower",
+      "fruit"
+    ],
+    "size": "small",
+    "difficulty": "보통",
+    "water_cycle": "흙 표면이 마르면 주어요",
+    "light_desc": "햇빛이 잘 드는 곳이 좋아요",
+    "merit": "붉은 꽃이 피고 작은 열매까지 맺어 보는 재미가 있어요.",
+    "caution": "잎과 줄기에 자극 성분이 있어 반려동물이 먹지 않게 해 주세요.",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/pomegranate_dwarf.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "bouvardia",
+    "name": "부바르디아",
+    "scientific_name": "Bouvardia ternifolia",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "deco",
+      "gift"
+    ],
+    "tags_place": [
+      "living",
+      "window"
+    ],
+    "tags_interest": [
+      "flower"
+    ],
+    "size": "small",
+    "difficulty": "보통",
+    "water_cycle": "흙 표면이 마르면 주어요",
+    "light_desc": "햇빛이 잘 드는 곳이 좋아요",
+    "merit": "작은 별 모양 꽃이 모여 피어 화분과 꽃다발로 인기예요.",
+    "caution": "많이 먹으면 배탈이 날 수 있으니 살펴 주세요.",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/bouvardia.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "stock_flower",
+    "name": "스토크",
+    "scientific_name": "Matthiola incana",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "deco",
+      "gift"
+    ],
+    "tags_place": [
+      "window",
+      "living"
+    ],
+    "tags_interest": [
+      "flower"
+    ],
+    "size": "small",
+    "difficulty": "보통",
+    "water_cycle": "흙 표면이 마르면 주어요",
+    "light_desc": "햇빛이 잘 드는 곳이 좋아요",
+    "merit": "포근한 향이 나는 꽃이 줄기마다 풍성하게 피어요.",
+    "caution": "꽃이 진 뒤에는 시든 부분을 잘라 주어야 오래 봐요.",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/stock_flower.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "ranunculus",
+    "name": "라넌큘러스",
+    "scientific_name": "Ranunculus asiaticus",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "deco",
+      "gift"
+    ],
+    "tags_place": [
+      "window",
+      "living"
+    ],
+    "tags_interest": [
+      "flower"
+    ],
+    "size": "small",
+    "difficulty": "보통",
+    "water_cycle": "흙 표면이 마르면 주어요",
+    "light_desc": "햇빛이 잘 드는 곳이 좋아요",
+    "merit": "겹겹이 둘러싼 꽃잎이 탐스러워 봄 화분으로 사랑받아요.",
+    "caution": "씹으면 입과 배를 자극하니 반려동물이 먹지 않게 해 주세요.",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/ranunculus.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "nandina",
+    "name": "남천",
+    "scientific_name": "Nandina domestica",
+    "tags_light": [
+      "mid",
+      "high"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "window",
+      "living"
+    ],
+    "tags_interest": [
+      "foliage",
+      "fruit"
+    ],
+    "size": "medium",
+    "difficulty": "쉬움",
+    "water_cycle": "흙 표면이 마르면 주어요",
+    "light_desc": "밝은 곳이 좋아요",
+    "merit": "가을에 잎이 붉게 물들고 빨간 열매가 달려 운치가 있어요.",
+    "caution": "잎과 열매에 독성이 있어 반려동물이 먹지 않게 해 주세요.",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/nandina.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "ardisia_japonica",
+    "name": "자금우",
+    "scientific_name": "Ardisia japonica",
+    "tags_light": [
+      "low",
+      "mid"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "deco"
+    ],
+    "tags_place": [
+      "living",
+      "window"
+    ],
+    "tags_interest": [
+      "foliage",
+      "fruit"
+    ],
+    "size": "small",
+    "difficulty": "쉬움",
+    "water_cycle": "흙 표면이 마르면 주어요",
+    "light_desc": "직사광선이 없는 밝은 곳이 좋아요",
+    "merit": "낮게 퍼지며 붉은 열매가 달려 아담한 화분으로 좋아요.",
+    "caution": "많이 먹으면 배탈이 날 수 있어 반려동물이 먹지 않게 해 주세요.",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/ardisia_japonica.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "ardisia_crispa",
+    "name": "천냥금",
+    "scientific_name": "Ardisia crispa",
+    "tags_light": [
+      "low",
+      "mid"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "deco",
+      "gift"
+    ],
+    "tags_place": [
+      "living",
+      "window"
+    ],
+    "tags_interest": [
+      "foliage",
+      "fruit"
+    ],
+    "size": "small",
+    "difficulty": "쉬움",
+    "water_cycle": "흙 표면이 마르면 주어요",
+    "light_desc": "직사광선이 없는 밝은 곳이 좋아요",
+    "merit": "빨간 열매가 풍성히 달려 새해 선물 화분으로 인기예요.",
+    "caution": "열매와 잎에 자극 성분이 있어 반려동물이 먹지 않게 해 주세요.",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/ardisia_crispa.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "cymbidium_goeringii",
+    "name": "춘란",
+    "scientific_name": "Cymbidium goeringii",
+    "tags_light": [
+      "mid"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "deco",
+      "gift"
+    ],
+    "tags_place": [
+      "living",
+      "window"
+    ],
+    "tags_interest": [
+      "flower",
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "보통",
+    "water_cycle": "흙 표면이 마르면 듬뿍 주어요",
+    "light_desc": "직사광선이 없는 밝은 곳이 좋아요",
+    "merit": "은은한 향과 단정한 잎이 어우러져 예부터 사랑받아요.",
+    "caution": "물이 고이면 뿌리가 상하니 잘 빠지는 흙에 심어 주세요.",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/cymbidium_goeringii.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "lemon_cypress",
+    "name": "율마",
+    "scientific_name": "Cupressus macrocarpa 'Goldcrest'",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "deco",
+      "air"
+    ],
+    "tags_place": [
+      "window",
+      "living"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "보통",
+    "water_cycle": "흙 표면이 마르면 주어요",
+    "light_desc": "햇빛이 잘 드는 곳이 좋아요",
+    "merit": "상큼한 향이 나고 잎이 노란빛을 띠어 산뜻해 보여요.",
+    "caution": "바람이 통하지 않거나 흙이 마르면 잎이 갈색으로 변해요.",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/lemon_cypress.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "eucalyptus",
+    "name": "유칼립투스",
+    "scientific_name": "Eucalyptus gunnii",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "deco",
+      "air"
+    ],
+    "tags_place": [
+      "window",
+      "living"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "medium",
+    "difficulty": "보통",
+    "water_cycle": "흙 표면이 마르면 주어요",
+    "light_desc": "햇빛이 잘 드는 곳이 좋아요",
+    "merit": "은빛 도는 둥근 잎과 맑은 향이 공간을 산뜻하게 해 주어요.",
+    "caution": "잎에 든 성분이 자극이 되니 반려동물이 먹지 않게 해 주세요.",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/eucalyptus.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "duffii_fern",
+    "name": "더피고사리",
+    "scientific_name": "Nephrolepis cordifolia 'Duffii'",
+    "tags_light": [
+      "mid"
+    ],
+    "tags_water": [
+      "mid",
+      "high"
+    ],
+    "tags_purpose": [
+      "deco",
+      "air"
+    ],
+    "tags_place": [
+      "bathroom",
+      "desk",
+      "window"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "쉬움",
+    "water_cycle": "흙이 촉촉하게 유지되도록 주어요",
+    "light_desc": "직사광선이 없는 밝은 곳이 좋아요",
+    "merit": "동글동글한 잎이 촘촘히 달려 아담하고 귀여워요.",
+    "caution": "건조하면 잎이 마르니 자주 분무해 주세요.",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/duffii_fern.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "perilla",
+    "name": "깻잎",
+    "scientific_name": "Perilla frutescens",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "mid",
+      "high"
+    ],
+    "tags_purpose": [
+      "harvest"
+    ],
+    "tags_place": [
+      "window"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "쉬움",
+    "water_cycle": "흙이 마르지 않게 자주 주어요",
+    "light_desc": "햇빛이 잘 드는 곳이 좋아요",
+    "merit": "잎을 따서 바로 먹을 수 있고 향이 좋아 키우는 재미가 있어요.",
+    "caution": "잎의 향 성분이 반려동물에게 해로울 수 있으니 먹지 않게 해 주세요.",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/perilla.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "kale",
+    "name": "케일",
+    "scientific_name": "Brassica oleracea var. acephala",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "mid",
+      "high"
+    ],
+    "tags_purpose": [
+      "harvest"
+    ],
+    "tags_place": [
+      "window"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "쉬움",
+    "water_cycle": "흙이 마르지 않게 자주 주어요",
+    "light_desc": "햇빛이 잘 드는 곳이 좋아요",
+    "merit": "잎을 바깥쪽부터 따 먹으면 오래도록 수확할 수 있어요.",
+    "caution": "고양이가 많이 먹으면 빈혈이 올 수 있으니 먹지 않게 해 주세요.",
+    "toxic_to_pets": true,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/kale.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "celery",
+    "name": "셀러리",
+    "scientific_name": "Apium graveolens",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "high"
+    ],
+    "tags_purpose": [
+      "harvest"
+    ],
+    "tags_place": [
+      "window"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "보통",
+    "water_cycle": "흙이 마르지 않게 자주 주어요",
+    "light_desc": "햇빛이 잘 드는 곳이 좋아요",
+    "merit": "아삭한 줄기를 길러 바로 요리에 쓸 수 있어요.",
+    "caution": "물이 부족하면 줄기가 질겨지니 자주 주어야 해요.",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/celery.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "beet",
+    "name": "비트",
+    "scientific_name": "Beta vulgaris",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "harvest"
+    ],
+    "tags_place": [
+      "window"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "쉬움",
+    "water_cycle": "흙 표면이 마르면 주어요",
+    "light_desc": "햇빛이 잘 드는 곳이 좋아요",
+    "merit": "붉은 뿌리와 잎을 모두 먹을 수 있어 알차게 키워요.",
+    "caution": "포기 사이가 좁으면 뿌리가 잘 굵지 않으니 넉넉히 심어 주세요.",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/beet.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "ginger",
+    "name": "생강",
+    "scientific_name": "Zingiber officinale",
+    "tags_light": [
+      "mid"
+    ],
+    "tags_water": [
+      "mid",
+      "high"
+    ],
+    "tags_purpose": [
+      "harvest"
+    ],
+    "tags_place": [
+      "window"
+    ],
+    "tags_interest": [
+      "foliage"
+    ],
+    "size": "small",
+    "difficulty": "보통",
+    "water_cycle": "흙이 마르지 않게 자주 주어요",
+    "light_desc": "직사광선이 없는 밝은 곳이 좋아요",
+    "merit": "뿌리를 묻어 두면 잎이 올라오고 향긋한 생강을 캐 먹을 수 있어요.",
+    "caution": "추위에 약하니 따뜻한 곳에서 길러 주세요.",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/ginger.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "green_bean",
+    "name": "강낭콩",
+    "scientific_name": "Phaseolus vulgaris",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "harvest"
+    ],
+    "tags_place": [
+      "window"
+    ],
+    "tags_interest": [
+      "fruit",
+      "flower"
+    ],
+    "size": "small",
+    "difficulty": "쉬움",
+    "water_cycle": "흙 표면이 마르면 주어요",
+    "light_desc": "햇빛이 잘 드는 곳이 좋아요",
+    "merit": "꽃이 핀 뒤 꼬투리가 맺혀 아이와 함께 키우기에 좋아요.",
+    "caution": "익히지 않은 콩은 배탈이 날 수 있으니 반려동물이 먹지 않게 해 주세요.",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/green_bean.jpg",
+    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+  },
+  {
+    "id": "pea",
+    "name": "완두",
+    "scientific_name": "Pisum sativum",
+    "tags_light": [
+      "high"
+    ],
+    "tags_water": [
+      "mid"
+    ],
+    "tags_purpose": [
+      "harvest"
+    ],
+    "tags_place": [
+      "window"
+    ],
+    "tags_interest": [
+      "fruit",
+      "flower"
+    ],
+    "size": "small",
+    "difficulty": "쉬움",
+    "water_cycle": "흙 표면이 마르면 주어요",
+    "light_desc": "햇빛이 잘 드는 곳이 좋아요",
+    "merit": "덩굴이 자라며 달콤한 꼬투리가 맺혀 수확하는 재미가 있어요.",
+    "caution": "덩굴이 길어지니 타고 오를 지지대를 세워 주세요.",
+    "toxic_to_pets": false,
+    "common": true,
+    "tier": "ext",
+    "image": "public/plants/pea.jpg",
     "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
   }
 ]
