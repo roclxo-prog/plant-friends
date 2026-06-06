@@ -23,25 +23,26 @@
 | OG 이미지 | `public/og-image.png` | 자체 제작 | 브랜드 소유 (독점) | — | 아니오 | 준비중 |
 | 사진 폴백 플레이스홀더 | `public/plants/placeholder.svg` | 자체 제작 | 브랜드 소유 (독점) | — | 아니오 | 완료 |
 
-## 식물 사진 (12종 · 큐레이션)
+## 식물 사진 (12종 · 수집 완료)
 
-> 후보 출처는 `public/IMAGE-SOURCES.md` 참고. 실제 사진 확정 시 작가/URL을 채워 `완료`로 변경.
-> Unsplash/Pixabay/Pexels는 모두 저작자표시 의무가 없으나, 사용한 사진 URL은 추적용으로 반드시 기록.
+> **수집 완료(위키미디어 공용)**. 모든 사진은 CC BY 또는 CC BY-SA로, **저작자 표시 의무가 있습니다**.
+> 법적 요건(저작자명 + 라이선스명 + 라이선스 링크 + 원본 링크 4요소)은 `credits.html`에서 충족하며,
+> 전 페이지 푸터의 "사진 출처" 링크로 접근 가능합니다.
 
-| 자산명 | 파일 | 출처(예정) | 라이선스 | URL | 저작자표시 필요? | 상태 |
-|---|---|---|---|---|---|---|
-| 산세베리아 | `public/plants/sansevieria.jpg` | Unsplash/Pixabay | 무료(상업가능) | (확정 시 기입) | 아니오 | 준비중 |
-| 스파티필름 | `public/plants/spathiphyllum.jpg` | Unsplash/Pixabay/Pexels | 무료(상업가능) | (확정 시 기입) | 아니오 | 준비중 |
-| 다육식물 | `public/plants/succulent.jpg` | Unsplash/Pixabay/Pexels | 무료(상업가능) | (확정 시 기입) | 아니오 | 준비중 |
-| 스킨답서스 | `public/plants/scindapsus.jpg` | Unsplash/Pixabay/Pexels | 무료(상업가능) | (확정 시 기입) | 아니오 | 준비중 |
-| 금전수 | `public/plants/zamioculcas.jpg` | Unsplash/Pixabay/Pexels | 무료(상업가능) | (확정 시 기입) | 아니오 | 준비중 |
-| 테이블야자 | `public/plants/parlor_palm.jpg` | Unsplash/Pixabay/Pexels | 무료(상업가능) | (확정 시 기입) | 아니오 | 준비중 |
-| 고무나무 | `public/plants/rubber_plant.jpg` | Unsplash/Pixabay/Pexels | 무료(상업가능) | (확정 시 기입) | 아니오 | 준비중 |
-| 행운목 | `public/plants/lucky_bamboo.jpg` | Unsplash/Pixabay/Pexels | 무료(상업가능) | (확정 시 기입) | 아니오 | 준비중 |
-| 호접란 | `public/plants/phalaenopsis.jpg` | Unsplash/Pixabay/Pexels | 무료(상업가능) | (확정 시 기입) | 아니오 | 준비중 |
-| 아이비 | `public/plants/ivy.jpg` | Unsplash/Pixabay/Pexels | 무료(상업가능) | (확정 시 기입) | 아니오 | 준비중 |
-| 상추 | `public/plants/lettuce.jpg` | Unsplash/Pixabay/Pexels | 무료(상업가능) | (확정 시 기입) | 아니오 | 준비중 |
-| 바질 | `public/plants/basil.jpg` | Unsplash/Pixabay/Pexels | 무료(상업가능) | (확정 시 기입) | 아니오 | 준비중 |
+| 자산명 | 파일 | 저작자 | 라이선스 | 라이선스 URL | 출처(파일 페이지) | 저작자표시 필요? | 상태 |
+|---|---|---|---|---|---|---|---|
+| 산세베리아 | `public/plants/sansevieria.jpg` | Mokkie | CC BY-SA 3.0 | https://creativecommons.org/licenses/by-sa/3.0 | https://commons.wikimedia.org/wiki/File:Snake_Plant_(Sansevieria_trifasciata_%27Laurentii%27).jpg | 예 | 수집 완료 |
+| 스파티필름 | `public/plants/spathiphyllum.jpg` | JJ Harrison | CC BY-SA 3.0 | https://creativecommons.org/licenses/by-sa/3.0 | https://commons.wikimedia.org/wiki/File:Spathiphyllum_cochlearispathum_RTBG.jpg | 예 | 수집 완료 |
+| 다육식물 | `public/plants/succulent.jpg` | Eria Wei | CC BY-SA 4.0 | https://creativecommons.org/licenses/by-sa/4.0 | https://commons.wikimedia.org/wiki/File:Echeveria_elegans_-_1.jpg | 예 | 수집 완료 |
+| 스킨답서스 | `public/plants/scindapsus.jpg` | Mokkie | CC BY-SA 3.0 | https://creativecommons.org/licenses/by-sa/3.0 | https://commons.wikimedia.org/wiki/File:Money_Plant_(Epipremnum_aureum)_4.jpg | 예 | 수집 완료 |
+| 금전수 | `public/plants/zamioculcas.jpg` | WeFt | CC BY-SA 3.0 | https://creativecommons.org/licenses/by-sa/3.0 | https://commons.wikimedia.org/wiki/File:Zamioculcas_zamiifolia_1.jpg | 예 | 수집 완료 |
+| 테이블야자 | `public/plants/parlor_palm.jpg` | Bachelot Pierre J-P | CC BY-SA 3.0 | https://creativecommons.org/licenses/by-sa/3.0 | https://commons.wikimedia.org/wiki/File:Chamaedorea_elegans_Mart.JPG | 예 | 수집 완료 |
+| 고무나무 | `public/plants/rubber_plant.jpg` | B.navez | CC BY-SA 3.0 | https://creativecommons.org/licenses/by-sa/3.0 | https://commons.wikimedia.org/wiki/File:Ficus_elastica_leaves_02.JPG | 예 | 수집 완료 |
+| 행운목 | `public/plants/lucky_bamboo.jpg` | rojypala | CC BY 2.0 | https://creativecommons.org/licenses/by/2.0 | https://commons.wikimedia.org/wiki/File:Dracaena_fragrans_(2).jpg | 예 | 수집 완료 |
+| 호접란 | `public/plants/phalaenopsis.jpg` | Wikimedia Commons(저작자 미상) | CC BY-SA 3.0 | https://creativecommons.org/licenses/by-sa/3.0 | https://commons.wikimedia.org/wiki/File:Phalaenopsis_philippinensis_NationalOrchidGarden-Singapore.jpg | 예 | 수집 완료 |
+| 아이비 | `public/plants/ivy.jpg` | kallerna | CC BY-SA 4.0 | https://creativecommons.org/licenses/by-sa/4.0 | https://commons.wikimedia.org/wiki/File:Hedera_helix_Dover.jpg | 예 | 수집 완료 |
+| 상추 | `public/plants/lettuce.jpg` | User:Geographer | CC BY 1.0 | https://creativecommons.org/licenses/by/1.0 | https://commons.wikimedia.org/wiki/File:Iceberg_lettuce_in_SB.jpg | 예 | 수집 완료 |
+| 바질 | `public/plants/basil.jpg` | David J. Stang | CC BY-SA 4.0 | https://creativecommons.org/licenses/by-sa/4.0 | https://commons.wikimedia.org/wiki/File:Ocimum_basilicum_8zz.jpg | 예 | 수집 완료 |
 
 ## 일러스트 (시니어 친화 · 큐레이션)
 
@@ -57,6 +58,7 @@
 ---
 
 ## 라이선스 빠른 참조
+- **위키미디어 공용(CC BY / CC BY-SA)**: 무료 상업 이용 가능하나 **저작자 표시 필수**. 저작자명 + 라이선스명 + 라이선스 링크 + 원본 링크 4요소를 표기해야 함(`credits.html`에서 충족). CC BY-SA는 2차 저작물에 동일 라이선스 적용 의무. https://creativecommons.org/licenses/
 - **Unsplash**: 무료 상업 이용, 저작자표시 의무 없음(권장). https://unsplash.com/license
 - **Pixabay**: Pixabay Content License, 무료 상업 이용, 저작자표시 불필요. https://pixabay.com/service/license-summary/
 - **Pexels**: 무료 상업 이용, 저작자표시 불필요(권장). https://www.pexels.com/license/

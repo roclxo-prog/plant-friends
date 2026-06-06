@@ -663,6 +663,43 @@ li { margin: 0 0 8px; }
 .guide-item__diff { font-size: var(--font-caption); color: var(--color-secondary); font-weight: 600; }
 
 /* ---------------------------------------------------------------------
+   사진 출처 목록 (credits.html) — 기존 토큰만 사용, 본문 18px+·대비 유지
+   --------------------------------------------------------------------- */
+.credits-list {
+  list-style: none;
+  margin: var(--space-2) 0 var(--space-3);
+  padding: 0;
+}
+.credits-list li {
+  margin: 0 0 var(--gap-min);
+  padding: var(--space-2) var(--space-3);
+  background: var(--color-surface);
+  border: 1px solid var(--color-soft);
+  border-radius: var(--radius);
+}
+.credits-list strong {
+  display: block;
+  font-size: var(--font-h3);
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+.credits-list__meta {
+  display: block;
+  font-size: var(--font-base);
+  line-height: var(--line-height);
+  color: var(--color-text);
+}
+.credits-list__meta a {
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.credits-list__meta a:hover,
+.credits-list__meta a:focus-visible {
+  color: var(--color-primary);
+}
+
+/* ---------------------------------------------------------------------
    8. 상세 페이지 보조 요소
    (breadcrumb / guide-figure / related-plants / ad-disclosure)
    기존 토큰만 사용, 본문 18px+·대비 4.5:1+ 유지
@@ -807,4 +844,17 @@ figure > figcaption {
   .bottomnav__btn { padding-left: 6px; padding-right: 6px; }
   /* 진행바 한글 단어 줄바꿈 방지 */
   .progress__text { word-break: keep-all; }
+}
+
+/* 9. 사진 출처 안내(결과 화면) */
+.photo-credit-note {
+  margin: var(--space-4, 16px) auto 0;
+  max-width: 60ch;
+  text-align: center;
+  font-size: var(--font-caption, 18px);
+  color: var(--color-point, #5D4037);
+}
+.photo-credit-note a {
+  color: var(--color-primary-dark, #1B5E20);
+  font-weight: 700;
 }
