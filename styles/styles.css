@@ -56,11 +56,15 @@
 
   /* 간격: 기존 styles.css 규칙이 쓰는 옛 이름(--space-1..4) 유지.
      tokens.css 의 --space-1..6 과 이름이 겹치므로, 순환 참조를 피하려고
-     tokens.css 의 의도(12/16/24/32)에 맞춰 별칭 변수로 새로 정의한다. */
-  --sp-1: 12px;
-  --sp-2: 16px;
-  --sp-3: 24px;
-  --sp-4: 32px;
+     중립 별칭(--sp-*)으로 새로 정의한다. 이 사이트 본문 스케일은 12/16/24/32 로
+     tokens.css 의 --space-2..5(12/16/24/32)와 한 단계씩 대응한다.
+     특히 --space-4(=32px)는 tokens.css 의 --space-5(32px)와 같은 값이며,
+     tokens.css 의 --space-4(24px) 값은 이 본문 스케일에선 --space-3 로 쓰인다.
+     수치 출처는 tokens.css(8/12/16/24/32/48), 여기선 그 값을 그대로 인용만 한다. */
+  --sp-1: 12px;   /* = tokens --space-2 */
+  --sp-2: 16px;   /* = tokens --space-3 */
+  --sp-3: 24px;   /* = tokens --space-4 */
+  --sp-4: 32px;   /* = tokens --space-5 */
   --space-1: var(--sp-1);
   --space-2: var(--sp-2);
   --space-3: var(--sp-3);
@@ -435,10 +439,17 @@ li { margin: 0 0 8px; }
 /* ---------------------------------------------------------------------
    3. 진행바 .progress
    --------------------------------------------------------------------- */
+/* quiz.html <nav class="progress"> 컨테이너 — 가로 넘침 방지 보호막.
+   내부 .progress__list 가 실제 칸을 그린다(quiz.js 렌더). */
+.progress {
+  width: 100%;
+  overflow-x: hidden;   /* 만일의 미세 넘침에도 가로스크롤 차단 */
+}
 .progress__list {
   display: flex;
-  justify-content: space-between;
-  gap: var(--space-1);
+  flex-wrap: nowrap;            /* 7칸일 때도 줄바꿈/넘침 없이 한 줄 유지 */
+  justify-content: center;
+  gap: 4px;                     /* 7칸이 320px 안에 들어가도록 간격 축소 */
   list-style: none; margin: 0; padding: var(--space-2) 0;
 }
 .progress__step {
@@ -527,7 +538,7 @@ li { margin: 0 0 8px; }
 
 .btn {
   display: flex; align-items: center; justify-content: center; gap: 8px;
-  min-height: var(--tap-min);       /* 48px */
+  min-height: var(--btn-min-h);     /* 56px — 보조 버튼도 주 CTA와 높이 통일 */
   padding: var(--space-1) var(--space-3);
   font-family: var(--font-sans);
   font-size: var(--font-base); font-weight: 700;
@@ -932,13 +943,7 @@ figure > figcaption {
   :root {
     --content-max: 760px;
   }
-  /* 결과 카드 2열로 여유 있게 */
-  .result-cards {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--space-3);
-  }
-  .result-cards .plant-card { margin-bottom: 0; }
+  /* .result-cards 2열 전환은 768px 미디어쿼리에서 이미 적용됨(중복 제거). */
 }
 
 @media (min-width: 1920px) {
@@ -946,6 +951,12 @@ figure > figcaption {
     --content-max: 880px;
     --font-base: 20px;
   }
+}
+
+/* 진행바 7칸(정밀 추천) 대응: 화면이 좁아질수록 동그라미 지름 축소.
+   숫자/체크는 18px 이상 유지(시니어 가독). 320px에서도 가로 넘침 없음. */
+@media (max-width: 414px) {
+  .progress__num { width: 40px; height: 40px; }
 }
 
 /* 아주 좁은 화면(320px) 보호: 가로 스크롤 금지 */
@@ -957,6 +968,10 @@ figure > figcaption {
   /* 하단 네비 버튼 글자 빠듯함 완화(18px 미만 금지, 패딩만 축소) */
   .bottomnav { gap: var(--space-1); padding-left: var(--space-1); padding-right: var(--space-1); }
   .bottomnav__btn { padding-left: 6px; padding-right: 6px; }
+  /* 진행바: 7칸이 320px 안에 들어가도록 동그라미·간격 축소.
+     숫자/체크 font-size 는 18px(--font-base) 로 18px 하한 유지. */
+  .progress__num { width: 34px; height: 34px; font-size: var(--font-base); }
+  .progress__list { gap: 2px; }
   /* 진행바 한글 단어 줄바꿈 방지 */
   .progress__text { word-break: keep-all; }
 }

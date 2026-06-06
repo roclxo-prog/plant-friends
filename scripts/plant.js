@@ -41,6 +41,18 @@
     return (p.get("id") || "").trim();
   }
 
+  // 쿠팡 href 방어: https:// 로 시작하지 않거나 placeholder면 안전한 검색 URL로 폴백.
+  // (App.coupangUrl 의 폴백과 일관) esc() 는 호출부에서 그대로 유지.
+  function safeCoupang(plant) {
+    var url = window.App.coupangUrl(plant);
+    if (typeof url === "string" && url.indexOf("https://") === 0 &&
+        url.indexOf("여기에_") === -1) {
+      return url;
+    }
+    var name = (plant && plant.name) ? plant.name : "식물";
+    return "https://www.coupang.com/np/search?q=" + encodeURIComponent(name);
+  }
+
   /* --- 관련 식물 3개: 같은 목적/장소 우선 ------------------------- */
   function relatedPlants(plant, plants) {
     var picks = [];
@@ -94,7 +106,7 @@
     // 페이지 제목 갱신
     document.title = plant.name + " | 우리집 초록친구";
 
-    var coupang = window.App.coupangUrl(plant);
+    var coupang = safeCoupang(plant);
 
     var html = '';
 

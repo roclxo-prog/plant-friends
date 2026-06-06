@@ -25,6 +25,18 @@
   var INTEREST = ["flower", "foliage", "fruit"];
   var LEVEL = ["beginner", "experienced"];
 
+  // 쿠팡 href 방어: https:// 로 시작하지 않거나 placeholder면 안전한 검색 URL로 폴백.
+  // (App.coupangUrl 의 폴백과 일관) esc() 는 호출부에서 그대로 유지.
+  function safeCoupang(plant) {
+    var url = window.App.coupangUrl(plant);
+    if (typeof url === "string" && url.indexOf("https://") === 0 &&
+        url.indexOf("여기에_") === -1) {
+      return url;
+    }
+    var name = (plant && plant.name) ? plant.name : "식물";
+    return "https://www.coupang.com/np/search?q=" + encodeURIComponent(name);
+  }
+
   function pickFrom(list, val) {
     return list.indexOf(val) !== -1 ? val : undefined;
   }
@@ -120,7 +132,7 @@
 
   function cardHTML(plant, a) {
     var reason = buildReason(plant, a);
-    var coupang = window.App.coupangUrl(plant);
+    var coupang = safeCoupang(plant);
     var img = "/" + String(plant.image || "").replace(/^\/+/, "");
     var name = esc(plant.name);
     var id = esc(plant.id);
