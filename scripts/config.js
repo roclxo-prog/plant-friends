@@ -10,5 +10,5 @@ window.CONFIG = {
   ADSENSE_CLIENT_ID: "여기에_애드센스_ID",
   KAKAO_JS_KEY: "여기에_카카오_JS_키",
   CONTACT_EMAIL: "여기에_이메일@example.com",
-  SITE_URL: "https://초록친구.example.pages.dev"
+  SITE_URL: "https://plant-friends.pages.dev"
 };

@@ -9,5 +9,5 @@ Allow: /
 # (정책상 차단하지 않으며, 색인 제어는 페이지 canonical 로 처리합니다.)
 
 # 사이트맵 위치 — 배포 시 scripts/config.js 의 SITE_URL 도메인으로 맞춰 주세요.
-# placeholder: https://example.pages.dev
-Sitemap: https://example.pages.dev/sitemap.xml
+# placeholder: https://plant-friends.pages.dev
+Sitemap: https://plant-friends.pages.dev/sitemap.xml
