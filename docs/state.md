@@ -3,7 +3,7 @@
 > 현재 Wave / 태스크별 상태(대기·진행·완료·실패) / 재시도 횟수. 매 배치 종료 시 갱신.
 
 ## 현재 상태
-- **현재 Wave**: PRE-WAVE → WAVE 1 진입 예정
+- **현재 Wave**: WAVE 1 ✅완료(GATE 1 통과) → WAVE 2 진입
 - **마지막 갱신**: 2026-06-06
 - **종료 조건**: 95점 통과 OR 12시간 OR 동일 태스크 5회 연속 실패
 
@@ -21,12 +21,12 @@
 ## WAVE 1 — 기획·기준 수립
 | ID | 태스크 | 담당 | 배치 | 상태 | 재시도 |
 |---|---|---|---|---|---|
-| W1-1 | docs/prd/main.md | req-lead | 1A | 대기 | 0 |
-| W1-3 | plants.json (12종) | plant-domain-expert | 1A | 대기 | 0 |
-| W1-4 | senior-ux-guide.md | senior-ux-specialist | 1A | 대기 | 0 |
-| W1-5 | brand.md | brand-strategist | 1A | 대기 | 0 |
-| W1-2 | architecture/static-site.md | arch-lead | 1B | 대기 | 0 |
-| GATE 1 | PRD·아키텍처·plants(12)·UX·brand 5종 존재 + plants 유효 | — | — | 대기 | — |
+| W1-1 | docs/prd/main.md | req-lead | 1A | ✅완료 | 0 |
+| W1-3 | plants.json (12종) | plant-domain-expert | 1A | ✅완료 | 0 |
+| W1-4 | senior-ux-guide.md | senior-ux-specialist | 1A | ✅완료 | 0 |
+| W1-5 | brand.md | brand-strategist | 1A | ✅완료 | 0 |
+| W1-2 | architecture/static-site.md | arch-lead | 1B | ✅완료 | 0 |
+| GATE 1 | PRD·아키텍처·plants(12)·UX·brand 5종 존재 + plants 유효 | — | — | ✅통과 | — |
 
 ## WAVE 2 — 디자인·콘텐츠·코드 (배치 2A~2E)
 | ID | 태스크 | 담당 | 배치 | 상태 |
