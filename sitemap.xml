@@ -4,7 +4,7 @@
   URL 기준(origin)은 배포 시 scripts/config.js 의 SITE_URL 로 맞춰 주세요.
   현재 placeholder: https://example.pages.dev  (실제 예: https://초록친구.example.pages.dev)
   아래 <loc> 의 https://example.pages.dev 부분만 실제 도메인으로 일괄 치환하면 됩니다.
-  상세 페이지는 실내 식물 10종만 존재합니다(상추·바질은 상세 페이지 없음 → 제외).
+  상세 페이지는 실내 식물 10종과 텃밭 식물 2종(상추·바질), 모두 12종이 존재합니다.
 -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -119,6 +119,20 @@
   </url>
   <url>
     <loc>https://example.pages.dev/plants/ivy.html</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 텃밭 식물(길러 먹는 식물 2종) -->
+  <url>
+    <loc>https://example.pages.dev/plants/lettuce.html</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://example.pages.dev/plants/basil.html</loc>
     <lastmod>2026-06-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

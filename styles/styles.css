@@ -643,6 +643,108 @@ li { margin: 0 0 8px; }
 .guide-item__diff { font-size: var(--font-caption); color: var(--color-secondary); font-weight: 600; }
 
 /* ---------------------------------------------------------------------
+   8. 상세 페이지 보조 요소
+   (breadcrumb / guide-figure / related-plants / ad-disclosure)
+   기존 토큰만 사용, 본문 18px+·대비 4.5:1+ 유지
+   --------------------------------------------------------------------- */
+
+/* 현재 위치(빵부스러기) */
+.breadcrumb {
+  font-size: var(--font-caption);
+  color: var(--color-text);
+  margin: 0 0 var(--space-2);
+  line-height: var(--line-height);
+}
+.breadcrumb a {
+  display: inline-block;
+  min-height: var(--tap-min);
+  line-height: var(--tap-min);
+  color: var(--color-secondary);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.breadcrumb a:hover,
+.breadcrumb a:focus-visible {
+  color: var(--color-primary);
+}
+.breadcrumb [aria-current="page"] {
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+/* 본문 중간 설명 사진 */
+.guide-figure {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  margin: var(--space-2) 0 var(--space-3);
+  background: var(--color-soft);
+  border: 1px solid var(--color-soft);
+  border-radius: var(--radius);
+}
+.guide-figure + figcaption,
+figure > figcaption {
+  margin: calc(-1 * var(--space-2)) 0 var(--space-3);
+  font-size: var(--font-caption);
+  color: var(--color-secondary);
+  text-align: center;
+}
+
+/* 관련 식물 카드 그리드 */
+.related-plants {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--gap-min);
+  list-style: none;
+  margin: var(--space-2) 0 var(--space-3);
+  padding: 0;
+}
+.related-plants li { margin: 0; }
+.related-plants a {
+  display: flex;
+  align-items: center;
+  min-height: var(--tap-card);
+  padding: var(--space-2) var(--space-3);
+  font-size: var(--font-h3);
+  font-weight: 600;
+  color: var(--color-text);
+  background: var(--color-surface);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius);
+  text-decoration: none;
+}
+.related-plants a::before {
+  content: "🌿";
+  margin-right: var(--space-2);
+  flex: 0 0 auto;
+}
+.related-plants a:hover,
+.related-plants a:focus-visible {
+  outline: var(--focus-width) solid var(--color-primary);
+  outline-offset: 2px;
+}
+.related-plants a:active { transform: translateY(1px); }
+
+/* 광고/제휴 고지 문구 */
+.ad-disclosure {
+  margin: var(--space-1) 0 var(--space-3);
+  padding: var(--space-2) var(--space-3);
+  font-size: var(--font-caption);
+  color: var(--color-text);
+  background: var(--color-surface);
+  border: 1px solid var(--color-soft);
+  border-left: 6px solid var(--color-secondary);
+  border-radius: var(--radius);
+}
+
+@media (min-width: 768px) {
+  .related-plants { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ---------------------------------------------------------------------
    반응형 (모바일 우선 → 큰 화면 확장)
    기준: 320 / 375 / 414 / 768 / 1024 / 1920
    --------------------------------------------------------------------- */

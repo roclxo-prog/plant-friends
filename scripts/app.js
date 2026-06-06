@@ -70,6 +70,38 @@
     return "https://www.coupang.com/np/search?q=" + encodeURIComponent(name);
   };
 
+  // 페이지에서 식물 이름 추정(쿠팡 검색 폴백용)
+  // 1) 버튼의 data-coupang-name → 2) <h1> 텍스트에서 "키우는 법" 제거 → 3) 기본값
+  App.guessPlantName = function (el) {
+    if (el && el.getAttribute) {
+      var attr = el.getAttribute("data-coupang-name");
+      if (attr && attr.trim()) return attr.trim();
+    }
+    var h1 = document.querySelector("h1");
+    if (h1 && h1.textContent) {
+      var t = h1.textContent.replace(/키우는\s*법/g, "").trim();
+      if (t) return t;
+    }
+    return "식물";
+  };
+
+  // DOM의 쿠팡 버튼(a[data-coupang]) href가 placeholder면 검색 URL로 교체.
+  // plants.json 없이도 안전하게 빈 링크를 막습니다. 공통 init에서 1회 실행.
+  App.bindCoupangLinks = function () {
+    var links = document.querySelectorAll("a[data-coupang]");
+    for (var i = 0; i < links.length; i++) {
+      var a = links[i];
+      if (a.dataset.coupangBound) continue;
+      a.dataset.coupangBound = "1";
+      var href = a.getAttribute("href");
+      if (App.isPlaceholder(href)) {
+        var name = App.guessPlantName(a);
+        a.setAttribute("href",
+          "https://www.coupang.com/np/search?q=" + encodeURIComponent(name));
+      }
+    }
+  };
+
   /* --- 공유 함수 -------------------------------------------------- */
   // navigator.share 우선, 없으면 현재 URL 클립보드 복사 + 안내
   App.share = function (opts) {
@@ -186,6 +218,9 @@
       mails[j].textContent = email;
       if (mails[j].tagName === "A") mails[j].setAttribute("href", "mailto:" + email);
     }
+
+    // 쿠팡 버튼 placeholder 링크 → 검색 URL 폴백
+    App.bindCoupangLinks();
 
     // 광고(콘텐츠 하단 .ad-slot 있는 페이지만 실제 로드)
     if (document.querySelector(".ad-slot")) App.loadAds();

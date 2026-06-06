@@ -28,7 +28,7 @@
   <script src="/scripts/app.js" defer></script>
   <script src="/scripts/guide.js" defer></script>
 
-  <!-- 구조화 데이터: CollectionPage + 식물 10종 ItemList. 절대 URL은 배포 시 SITE_URL(placeholder: https://example.pages.dev)로 일괄 치환하세요. -->
+  <!-- 구조화 데이터: CollectionPage + 식물 12종 ItemList. 절대 URL은 배포 시 SITE_URL(placeholder: https://example.pages.dev)로 일괄 치환하세요. -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -37,12 +37,12 @@
     "url": "https://example.pages.dev/guide.html",
     "name": "케어가이드 — 식물 키우는 법 모음",
     "inLanguage": "ko-KR",
-    "description": "키우기 쉬운 실내 식물 10종의 물 주기·햇빛·주의할 점을 큰 글씨로 안내합니다.",
+    "description": "키우기 쉬운 실내 식물과 길러 먹는 텃밭 식물 12종의 물 주기·햇빛·주의할 점을 큰 글씨로 안내합니다.",
     "isPartOf": { "@id": "https://example.pages.dev/#website" },
     "mainEntity": {
       "@type": "ItemList",
       "itemListOrder": "https://schema.org/ItemListUnordered",
-      "numberOfItems": 10,
+      "numberOfItems": 12,
       "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "산세베리아 키우는 법", "url": "https://example.pages.dev/plants/sansevieria.html" },
         { "@type": "ListItem", "position": 2, "name": "스파티필름 키우는 법", "url": "https://example.pages.dev/plants/spathiphyllum.html" },
@@ -53,7 +53,9 @@
         { "@type": "ListItem", "position": 7, "name": "고무나무 키우는 법", "url": "https://example.pages.dev/plants/rubber_plant.html" },
         { "@type": "ListItem", "position": 8, "name": "행운목 키우는 법", "url": "https://example.pages.dev/plants/lucky_bamboo.html" },
         { "@type": "ListItem", "position": 9, "name": "호접란 키우는 법", "url": "https://example.pages.dev/plants/phalaenopsis.html" },
-        { "@type": "ListItem", "position": 10, "name": "아이비 키우는 법", "url": "https://example.pages.dev/plants/ivy.html" }
+        { "@type": "ListItem", "position": 10, "name": "아이비 키우는 법", "url": "https://example.pages.dev/plants/ivy.html" },
+        { "@type": "ListItem", "position": 11, "name": "상추 키우는 법", "url": "https://example.pages.dev/plants/lettuce.html" },
+        { "@type": "ListItem", "position": 12, "name": "바질 키우는 법", "url": "https://example.pages.dev/plants/basil.html" }
       ]
     }
   }
@@ -82,6 +84,7 @@
 
     <section class="section" aria-label="식물 키우는 법 목록">
       <h2>식물별 키우는 법</h2>
+      <p>키우기 쉬운 실내 식물과, 길러 먹는 텃밭 식물(상추·바질)까지 함께 안내해요.</p>
       <ul class="guide-list" id="guide-list">
         <li class="guide-item">불러오는 중이에요.</li>
       </ul>
