@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>식물 추천받기 — 우리집 초록친구</title>
+  <meta name="description" content="빛·물·목적 질문 3개에 큰 버튼으로 답하면 우리집에 맞는 식물을 찾아 드려요. 가입도 사진도 필요 없어요." />
+
+  <link rel="icon" href="/public/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/public/favicon.svg" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="식물 추천받기 — 우리집 초록친구" />
+  <meta property="og:description" content="질문 3개만 답하면 우리집에 맞는 식물을 찾아 드려요." />
+  <meta property="og:image" content="/public/og-image.svg" />
+  <link rel="canonical" href="/quiz.html" />
+
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" as="style" crossorigin
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" />
+
+  <link rel="stylesheet" href="/styles/styles.css" />
+  <script src="/scripts/config.js"></script>
+  <script src="/scripts/app.js" defer></script>
+  <script src="/scripts/quiz.js" defer></script>
+</head>
+<body class="has-bottomnav">
+  <a class="skip-link" href="#main">본문 바로가기</a>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-header__logo" href="/index.html">
+        <img src="/public/favicon.svg" alt="" aria-hidden="true" />
+        초록친구
+      </a>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <nav class="progress" id="quiz-progress" aria-label="진행 단계"></nav>
+    <p class="lead" id="quiz-hint" aria-live="polite">천천히 고르셔도 돼요.</p>
+
+    <section id="quiz-container" aria-live="polite">
+      <!-- quiz.js가 질문을 채웁니다 -->
+      <p>질문을 불러오고 있어요.</p>
+    </section>
+  </main>
+
+  <nav class="bottomnav" aria-label="화면 이동">
+    <button class="bottomnav__btn bottomnav__btn--back" type="button" id="nav-back" disabled>
+      <span aria-hidden="true">←</span> 이전
+    </button>
+    <button class="bottomnav__btn bottomnav__btn--restart" type="button" id="nav-restart">
+      <span aria-hidden="true">🔄</span> 처음부터 다시
+    </button>
+  </nav>
+</body>
+</html>

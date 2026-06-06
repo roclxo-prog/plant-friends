@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>우리집 초록친구 — 우리집에 맞는 식물, 1분이면 찾아요</title>
+  <meta name="description" content="50대 이후, 처음 키우는 식물도 실수해도 괜찮아요. 질문 3개만 답하면 우리집에 잘 맞는 키우기 쉬운 식물을 찾아 드려요. 가입도, 사진도 필요 없어요." />
+
+  <!-- 파비콘 -->
+  <link rel="icon" href="/public/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/public/favicon.svg" />
+
+  <!-- OG -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="우리집 초록친구" />
+  <meta property="og:description" content="50대 이후, 처음 키우는 식물도 실수해도 괜찮아요. 어울리는 초록친구를 천천히 골라드려요." />
+  <meta property="og:image" content="/public/og-image.svg" />
+  <link rel="canonical" href="/index.html" />
+
+  <!-- 폰트: Pretendard(우선) + Noto Sans KR(폴백) -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" as="style" crossorigin
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" />
+
+  <link rel="stylesheet" href="/styles/styles.css" />
+  <script src="/scripts/config.js"></script>
+  <script src="/scripts/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">본문 바로가기</a>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-header__logo" href="/index.html">
+        <img src="/public/favicon.svg" alt="" aria-hidden="true" />
+        초록친구
+      </a>
+      <nav class="site-nav" aria-label="주요 메뉴">
+        <a href="/guide.html">케어가이드</a>
+        <a href="/about.html">소개</a>
+        <a href="/contact.html">문의</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <section class="hero">
+      <img class="hero__logo" src="/public/logo.svg" alt="" aria-hidden="true" />
+      <h1 class="hero__title">우리집에 맞는 식물,<br />1분이면 찾아요</h1>
+      <p class="hero__subtitle">질문 3개만 답하면 돼요.</p>
+      <p class="hero__subtitle hero__subtitle--soft">가입도, 사진도 필요 없어요.</p>
+
+      <div class="hero__cta">
+        <a class="btn-primary" href="/quiz.html">
+          <span aria-hidden="true">🌱</span>
+          <span>식물 추천받기</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="reassure" aria-label="안심 안내">
+      <ul>
+        <li>처음이라도 괜찮아요.</li>
+        <li>실수해도 다시 키울 수 있어요.</li>
+        <li>큰 글씨로 쉽게 알려 드려요.</li>
+      </ul>
+    </section>
+
+    <section class="section" aria-label="이용 방법">
+      <h2>이렇게 찾아 드려요</h2>
+      <ol class="steps-3" style="list-style:none;margin:0;padding:0;">
+        <li class="step-item">
+          <span class="step-item__num" aria-hidden="true">1</span>
+          <p class="step-item__text"><strong>질문 3개에 답하기</strong>큰 버튼으로 빛·물·목적을 골라 주세요.</p>
+        </li>
+        <li class="step-item">
+          <span class="step-item__num" aria-hidden="true">2</span>
+          <p class="step-item__text"><strong>맞춤 추천 받기</strong>우리집에 잘 맞는 식물 3가지를 보여 드려요.</p>
+        </li>
+        <li class="step-item">
+          <span class="step-item__num" aria-hidden="true">3</span>
+          <p class="step-item__text"><strong>키우는 법·구매까지</strong>큰 글씨 안내와 쿠팡 구매 링크를 드려요.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="reassure" aria-label="보조 안내">
+      <ul>
+        <li>키우기 쉬운 식물만 골랐어요.</li>
+        <li>한국에서 쉽게 살 수 있어요.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <ul class="site-footer__links">
+        <li><a href="/about.html">소개</a></li>
+        <li><a href="/privacy.html">개인정보처리방침</a></li>
+        <li><a href="/contact.html">문의</a></li>
+        <li><a href="/guide.html">케어가이드</a></li>
+      </ul>
+      <p class="site-footer__note">우리집 초록친구 · 처음이라도, 실수해도 괜찮아요.</p>
+    </div>
+  </footer>
+</body>
+</html>
