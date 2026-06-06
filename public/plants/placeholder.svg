@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="사진 준비중">
+  <!-- 브랜드 크림 배경 -->
+  <rect width="400" height="300" fill="#F5F0E1"/>
+  <!-- 잎 심볼 (둥근 곡선, 브랜드 초록/연초록) -->
+  <g transform="translate(200 130)">
+    <!-- 큰 잎 -->
+    <path d="M0 40 C-46 20 -52 -40 -8 -58 C-2 -16 -2 16 0 40 Z" fill="#2E7D32"/>
+    <!-- 작은 잎 -->
+    <path d="M0 40 C40 24 50 -24 18 -44 C8 -10 4 18 0 40 Z" fill="#A5D6A7"/>
+    <!-- 줄기 -->
+    <rect x="-3" y="36" width="6" height="26" rx="3" fill="#5D4037"/>
+  </g>
+  <!-- "사진 준비중" 작은 텍스트 -->
+  <text x="200" y="240" text-anchor="middle"
+        font-family="'Pretendard','Noto Sans KR',sans-serif"
+        font-size="20" font-weight="600" fill="#5D4037">사진 준비중</text>
+</svg>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="우리집 초록친구 - 우리집에 맞는 식물, 1분이면 찾아요">
+  <title>우리집 초록친구</title>
+  <!-- 배경 크림 -->
+  <rect width="1200" height="630" fill="#F5F0E1"/>
+  <!-- 상단 연초록 라인 장식 -->
+  <rect x="0" y="0" width="1200" height="12" fill="#A5D6A7"/>
+
+  <!-- 좌측 심볼 (잎 + 화분) -->
+  <g transform="translate(120 200) scale(2.4)">
+    <!-- 화분 -->
+    <rect x="18" y="40" width="28" height="7" rx="3.5" fill="#5D4037"/>
+    <path d="M20 47 h24 l-3.5 12 a4 4 0 0 1 -4 3 h-9 a4 4 0 0 1 -4 -3 z" fill="#5D4037"/>
+    <!-- 큰 잎 -->
+    <path d="M32 40 C 18 31 17 14 30 8 C 39 21 40 31 32 40 Z" fill="#2E7D32"/>
+    <!-- 작은 잎 -->
+    <path d="M32 40 C 42 33 54 32 55 20 C 44 19 35 27 32 40 Z" fill="#A5D6A7"/>
+    <!-- 잎맥 -->
+    <path d="M31 37 C 27 27 27 18 30 11" fill="none" stroke="#F5F0E1" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- 우측 텍스트 영역 -->
+  <!-- 워드마크 -->
+  <text x="420" y="160" font-family="Pretendard, 'Noto Sans KR', sans-serif" font-size="48" font-weight="700" fill="#2E7D32">우리집 초록친구</text>
+
+  <!-- 큰 제목 -->
+  <text x="420" y="290" font-family="Pretendard, 'Noto Sans KR', sans-serif" font-size="76" font-weight="700" fill="#1B1B1B">우리집에 맞는 식물,</text>
+  <text x="420" y="390" font-family="Pretendard, 'Noto Sans KR', sans-serif" font-size="76" font-weight="700" fill="#1B1B1B">1분이면 찾아요</text>
+
+  <!-- 약속 한 줄 (브라운) -->
+  <text x="420" y="480" font-family="Pretendard, 'Noto Sans KR', sans-serif" font-size="40" font-weight="500" fill="#5D4037">실수해도 괜찮아요. 당신의 첫 식물 친구.</text>
+</svg>
