@@ -139,6 +139,11 @@
 
     state.answers[q.key] = btn.getAttribute("data-value");
 
+    // 모션 최소화 사용자는 전환 지연 없이 즉시 이동(점프감 제거)
+    var reduceMotion = window.matchMedia &&
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    var delay = reduceMotion ? 0 : 220;
+
     // 명시적 동작(클릭)으로만 전환 — 자동 점프지만 사용자 동작 직후라 허용
     setTimeout(function () {
       if (state.index < QUESTIONS.length - 1) {
@@ -147,7 +152,7 @@
       } else {
         finish();
       }
-    }, 220);
+    }, delay);
   }
 
   function goBack() {

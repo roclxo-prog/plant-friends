@@ -15,7 +15,7 @@
 
   /* 글자 크기 (본문 18px 미만 금지) */
   --font-base: 18px;     /* 본문 최소 */
-  --font-caption: 16px;  /* 보조 텍스트 최소, 그 이하 금지 */
+  --font-caption: 18px;  /* 보조 텍스트 최소, 그 이하 금지 (16px 이하 금지) */
   --font-h3: 22px;       /* 소제목 */
   --font-h2: 26px;       /* 부제목 */
   --font-h1: 30px;       /* 대제목 */
@@ -91,7 +91,7 @@ img {
 }
 
 a {
-  color: var(--color-primary);
+  color: var(--color-primary-dark);   /* 크림 위 대비 여유 확보(약 6:1) */
 }
 
 /* 사용자가 모션 최소화를 켜면 모든 애니메이션·전환 제거 */
@@ -102,6 +102,15 @@ a {
     animation: none !important;
     transition: none !important;
     scroll-behavior: auto !important;
+  }
+  /* :active 등 눌림 이동(transform)도 제거해 화면 점프 방지 */
+  *:active,
+  .btn-primary:active,
+  .btn:active,
+  .choice-card:active,
+  .bottomnav__btn:active,
+  .related-plants a:active {
+    transform: none !important;
   }
 }
 
@@ -601,6 +610,17 @@ li { margin: 0 0 8px; }
 .result-head__title { font-size: var(--font-h1); margin: 0 0 4px; }
 .result-head__subtitle { font-size: var(--font-h3); color: var(--color-secondary); margin: 0; }
 
+/* 결과 카드 그리드(모바일 1열 → 768px↑ 2열) */
+.result-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--gap-min);
+}
+.result-cards .plant-card { margin-bottom: 0; }
+@media (min-width: 768px) {
+  .result-cards { grid-template-columns: repeat(2, 1fr); gap: var(--space-3); }
+}
+
 .notice {
   padding: var(--space-3);
   background: var(--color-soft);
@@ -779,5 +799,12 @@ figure > figcaption {
 /* 아주 좁은 화면(320px) 보호: 가로 스크롤 금지 */
 @media (max-width: 360px) {
   .container { padding: var(--space-1); }
-  .site-nav a { padding: 0 8px; }
+  /* 내비 글자는 18px 유지하되 패딩/간격을 줄여 줄바꿈·가로스크롤 방지 */
+  .site-nav { gap: 2px; }
+  .site-nav a { font-size: var(--font-base); padding: 0 6px; }
+  /* 하단 네비 버튼 글자 빠듯함 완화(18px 미만 금지, 패딩만 축소) */
+  .bottomnav { gap: var(--space-1); padding-left: var(--space-1); padding-right: var(--space-1); }
+  .bottomnav__btn { padding-left: 6px; padding-right: 6px; }
+  /* 진행바 한글 단어 줄바꿈 방지 */
+  .progress__text { word-break: keep-all; }
 }

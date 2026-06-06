@@ -118,7 +118,7 @@
 
     // 폴백: 클립보드 복사
     var url = shareData.url;
-    var notify = function () { App.toast("링크를 복사했어요. 카톡에 붙여 넣어 공유해 주세요."); };
+    var notify = function () { App.toast("링크를 복사했어요. 카톡에 붙여 넣으세요."); };
 
     if (navigator.clipboard && navigator.clipboard.writeText) {
       return navigator.clipboard.writeText(url).then(notify, function () {

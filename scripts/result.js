@@ -99,7 +99,7 @@
     container.innerHTML =
       '<div class="state-box">' +
       '<h1>딱 맞는 친구를 못 찾았어요.</h1>' +
-      '<p>질문에 답하면 우리집에 맞는 식물을 찾아 드려요.</p>' +
+      '<p>답을 해 주시면 식물을 찾아 드려요.</p>' +
       '<a class="btn-primary" href="/quiz.html">🌱 식물 추천받기</a>' +
       '</div>';
   }
@@ -135,11 +135,11 @@
     var html = '';
     html += '<div class="result-head">';
     html += '<h1 class="result-head__title">우리집에 딱 맞는 친구예요</h1>';
-    html += '<p class="result-head__subtitle">어르신께 잘 어울리는 식물 3가지예요.</p>';
+    html += '<p class="result-head__subtitle">우리집에 잘 맞는 식물 3가지예요.</p>';
     html += '</div>';
 
     if (allZeroFallback) {
-      html += '<p class="notice">환경에 딱 맞는 식물은 적지만, 누구나 키우기 쉬운 식물을 추천해요.</p>';
+      html += '<p class="notice">딱 맞는 건 적지만, 쉬운 식물로 골랐어요.</p>';
     } else {
       html += '<p class="notice">어느 친구든 키우기 쉬워요. 천천히 골라 보세요.</p>';
     }
