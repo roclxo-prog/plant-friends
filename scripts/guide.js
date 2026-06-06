@@ -28,13 +28,24 @@
     return html;
   }
 
+  // 긴 케어가이드(정적 상세페이지)가 있는 식물만 이 허브에 노출 → 깨진 링크 방지.
+  // 나머지 200여 종은 추천 도구(quiz)와 동적 상세(plant.html)로 만남.
+  var STATIC_GUIDE_IDS = [
+    "sansevieria", "spathiphyllum", "succulent", "scindapsus", "zamioculcas",
+    "parlor_palm", "rubber_plant", "lucky_bamboo", "phalaenopsis", "ivy",
+    "lettuce", "basil"
+  ];
+
   function init() {
     var list = document.getElementById("guide-list");
     if (!list) return;
 
     window.App.loadPlants().then(function (plants) {
+      var byId = {};
+      for (var k = 0; k < plants.length; k++) byId[plants[k].id] = plants[k];
+      var guided = STATIC_GUIDE_IDS.map(function (id) { return byId[id]; }).filter(Boolean);
       var html = "";
-      for (var i = 0; i < plants.length; i++) html += itemHTML(plants[i]);
+      for (var i = 0; i < guided.length; i++) html += itemHTML(guided[i]);
       list.innerHTML = html;
       var imgs = list.querySelectorAll("img[data-fallback]");
       for (var j = 0; j < imgs.length; j++) window.App.attachImageFallback(imgs[j]);
