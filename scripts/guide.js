@@ -5,15 +5,24 @@
 (function () {
   "use strict";
 
+  // HTML 이스케이프 헬퍼 — plants.json은 신뢰 데이터지만 방어적으로 적용
+  function esc(s) {
+    return String(s).replace(/[&<>"']/g, function (c) {
+      return ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c];
+    });
+  }
+
   function itemHTML(plant) {
-    var img = "/" + String(plant.image || "").replace(/^\/+/, "");
+    var img = esc("/" + String(plant.image || "").replace(/^\/+/, ""));
+    var name = esc(plant.name);
+    var id = esc(plant.id);
     var html = '';
     html += '<li class="guide-item">';
-    html += '<a href="/plants/' + plant.id + '.html">';
-    html += '<img class="guide-item__thumb" src="' + img + '" alt="' + plant.name + ' 사진"'
+    html += '<a href="/plants/' + id + '.html">';
+    html += '<img class="guide-item__thumb" src="' + img + '" alt="' + name + ' 사진"'
       + ' loading="lazy" decoding="async" width="64" height="64" data-fallback="1" />';
-    html += '<span class="guide-item__name">' + plant.name + ' 키우는 법</span>';
-    html += '<span class="guide-item__diff">' + (plant.difficulty || '') + '</span>';
+    html += '<span class="guide-item__name">' + name + ' 키우는 법</span>';
+    html += '<span class="guide-item__diff">' + esc(plant.difficulty || '') + '</span>';
     html += '</a>';
     html += '</li>';
     return html;

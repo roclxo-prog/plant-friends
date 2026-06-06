@@ -91,11 +91,11 @@
 
 ## 8. 행운목 (lucky_bamboo)
 - **권장 파일명**: `public/plants/lucky_bamboo.jpg`
-- **추천 검색어**: 행운목 lucky bamboo, *Dracaena sanderiana*
+- **추천 검색어**: 행운목 corn plant, *Dracaena fragrans* 'Massangeana'
 - **CC0/무료 출처 후보**:
-  - Unsplash 검색: https://unsplash.com/s/photos/lucky-bamboo
-  - Pixabay 검색: https://pixabay.com/images/search/lucky%20bamboo/
-  - Pexels 검색: https://www.pexels.com/search/lucky%20bamboo/
+  - Unsplash 검색: https://unsplash.com/s/photos/dracaena-fragrans
+  - Pixabay 검색: https://pixabay.com/images/search/dracaena%20fragrans/
+  - Pexels 검색: https://www.pexels.com/search/dracaena%20massangeana/
 - **한국어 alt 텍스트**: "곧은 줄기 끝에 초록 잎이 달린 행운목"
 - **라이선스 주의**: 저작자 표시 의무 없음(상업 이용 가능).
 

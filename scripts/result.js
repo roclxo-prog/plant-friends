@@ -7,6 +7,13 @@
 (function () {
   "use strict";
 
+  // HTML 이스케이프 헬퍼 — plants.json은 신뢰 데이터지만 방어적으로 적용
+  function esc(s) {
+    return String(s).replace(/[&<>"']/g, function (c) {
+      return ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c];
+    });
+  }
+
   var LIGHT = ["low", "mid", "high"];
   var WATER = ["low", "mid", "high"];
   var PURPOSE = ["air", "deco", "gift", "harvest"];
@@ -33,9 +40,9 @@
 
   // "왜 맞는지" 한 줄 이유 — 빛/물/목적 일치 근거로 동적 생성(카피덱 템플릿 기반)
   function buildReason(plant, a) {
-    var lightMatch = a.light && plant.tags_light && plant.tags_light.indexOf(a.light) !== -1;
-    var waterMatch = a.water && plant.tags_water && plant.tags_water.indexOf(a.water) !== -1;
-    var purposeMatch = a.purpose && plant.tags_purpose && plant.tags_purpose.indexOf(a.purpose) !== -1;
+    var lightMatch = a.light && Array.isArray(plant.tags_light) && plant.tags_light.indexOf(a.light) !== -1;
+    var waterMatch = a.water && Array.isArray(plant.tags_water) && plant.tags_water.indexOf(a.water) !== -1;
+    var purposeMatch = a.purpose && Array.isArray(plant.tags_purpose) && plant.tags_purpose.indexOf(a.purpose) !== -1;
 
     // 빛+물 조합 우선
     if (lightMatch && waterMatch) {
@@ -66,6 +73,8 @@
     var reason = buildReason(plant, a);
     var coupang = window.App.coupangUrl(plant);
     var img = "/" + String(plant.image || "").replace(/^\/+/, "");
+    var name = esc(plant.name);
+    var id = esc(plant.id);
 
     var badges = "";
     if (plant.difficulty === "매우 쉬움") {
@@ -77,17 +86,17 @@
 
     var html = '';
     html += '<article class="plant-card">';
-    html += '<img class="plant-card__photo" src="' + img + '" alt="' + plant.name + ' 사진"'
+    html += '<img class="plant-card__photo" src="' + esc(img) + '" alt="' + name + ' 사진"'
       + ' loading="lazy" decoding="async" width="480" height="320" data-fallback="1" />';
     html += '<div class="plant-card__body">';
     if (badges) html += '<div class="plant-card__badges">' + badges + '</div>';
-    html += '<h2 class="plant-card__name">' + plant.name + '</h2>';
-    html += '<p class="plant-card__why">' + reason + '</p>';
+    html += '<h2 class="plant-card__name">' + name + '</h2>';
+    html += '<p class="plant-card__why">' + esc(reason) + '</p>';
     html += '<div class="plant-card__actions">';
-    html += '<a class="btn btn--detail" href="/plants/' + plant.id + '.html">🔎 자세히 보기</a>';
-    html += '<a class="btn btn--shop" href="' + coupang + '" target="_blank" rel="noopener nofollow sponsored">'
+    html += '<a class="btn btn--detail" href="/plants/' + id + '.html">🔎 자세히 보기</a>';
+    html += '<a class="btn btn--shop" href="' + esc(coupang) + '" target="_blank" rel="noopener nofollow sponsored">'
       + '쿠팡에서 보기 <span aria-hidden="true">🛒</span></a>';
-    html += '<button class="btn btn--share" type="button" data-share-id="' + plant.id + '" data-share-name="' + plant.name + '">'
+    html += '<button class="btn btn--share" type="button" data-share-id="' + id + '" data-share-name="' + name + '">'
       + '카톡으로 공유 <span aria-hidden="true">💬</span></button>';
     html += '</div>';   // actions
     html += '</div>';   // body
@@ -126,9 +135,9 @@
     var picks = window.matchPlants(a, plants);
     var allZeroFallback = picks.every(function (p) {
       var s = 0;
-      if (a.light && p.tags_light.indexOf(a.light) !== -1) s += 3;
-      if (a.water && p.tags_water.indexOf(a.water) !== -1) s += 3;
-      if (a.purpose && p.tags_purpose.indexOf(a.purpose) !== -1) s += 2;
+      if (a.light && Array.isArray(p.tags_light) && p.tags_light.indexOf(a.light) !== -1) s += 3;
+      if (a.water && Array.isArray(p.tags_water) && p.tags_water.indexOf(a.water) !== -1) s += 3;
+      if (a.purpose && Array.isArray(p.tags_purpose) && p.tags_purpose.indexOf(a.purpose) !== -1) s += 2;
       return s === 0;
     });
 
