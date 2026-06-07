@@ -3,3 +3,10 @@ Thumbs.db
 node_modules/
 *.log
 .vscode/
+
+# secrets (절대 커밋 금지)
+coupang*.keys.json
+*.keys.json
+.env
+_secret*
+coupang-deeplinks.raw.json

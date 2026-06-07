@@ -33,7 +33,7 @@
     "common": true,
     "tier": "core",
     "image": "public/plants/sansevieria.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVK590nnw"
   },
   {
     "id": "spathiphyllum",
@@ -67,7 +67,7 @@
     "common": true,
     "tier": "core",
     "image": "public/plants/spathiphyllum.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVK6c0Llc"
   },
   {
     "id": "succulent",
@@ -100,7 +100,7 @@
     "common": true,
     "tier": "core",
     "image": "public/plants/succulent.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVK6gcMGy"
   },
   {
     "id": "scindapsus",
@@ -133,7 +133,7 @@
     "common": true,
     "tier": "core",
     "image": "public/plants/scindapsus.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVK6jWkVM"
   },
   {
     "id": "zamioculcas",
@@ -165,7 +165,7 @@
     "common": true,
     "tier": "core",
     "image": "public/plants/zamioculcas.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVK6mWITs"
   },
   {
     "id": "parlor_palm",
@@ -198,7 +198,7 @@
     "common": true,
     "tier": "core",
     "image": "public/plants/parlor_palm.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVK6qc1yS"
   },
   {
     "id": "rubber_plant",
@@ -231,7 +231,7 @@
     "common": true,
     "tier": "core",
     "image": "public/plants/rubber_plant.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVK6sG8po"
   },
   {
     "id": "lucky_bamboo",
@@ -263,7 +263,7 @@
     "common": true,
     "tier": "core",
     "image": "public/plants/lucky_bamboo.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVK6wA5jE"
   },
   {
     "id": "phalaenopsis",
@@ -297,7 +297,7 @@
     "common": true,
     "tier": "core",
     "image": "public/plants/phalaenopsis.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVK6zRnY4"
   },
   {
     "id": "ivy",
@@ -329,7 +329,7 @@
     "common": true,
     "tier": "core",
     "image": "public/plants/ivy.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVK6CluPA"
   },
   {
     "id": "lettuce",
@@ -361,7 +361,7 @@
     "common": true,
     "tier": "core",
     "image": "public/plants/lettuce.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVK6FNrWK"
   },
   {
     "id": "basil",
@@ -392,7 +392,7 @@
     "common": true,
     "tier": "core",
     "image": "public/plants/basil.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVK6I5q2u"
   },
   {
     "id": "monstera",
@@ -425,7 +425,7 @@
     "common": true,
     "tier": "core",
     "image": "public/plants/monstera.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVK6MUVX2"
   },
   {
     "id": "monstera_adansonii",
@@ -457,7 +457,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/monstera_adansonii.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVK6Po2Oy"
   },
   {
     "id": "philodendron_selloum",
@@ -489,7 +489,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/philodendron_selloum.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVK6SQZVI"
   },
   {
     "id": "philodendron_heartleaf",
@@ -523,7 +523,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/philodendron_heartleaf.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVK6VqTRY"
   },
   {
     "id": "syngonium",
@@ -557,7 +557,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/syngonium.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVK6YcBQy"
   },
   {
     "id": "aglaonema",
@@ -591,7 +591,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/aglaonema.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVK61EyXI"
   },
   {
     "id": "dieffenbachia",
@@ -623,7 +623,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/dieffenbachia.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVK9beqK4"
   },
   {
     "id": "alocasia_amazonica",
@@ -655,7 +655,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/alocasia_amazonica.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVK9euJqu"
   },
   {
     "id": "anthurium",
@@ -688,7 +688,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/anthurium.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVK9gHe8W"
   },
   {
     "id": "caladium",
@@ -720,7 +720,7 @@
     "common": false,
     "tier": "ext",
     "image": "public/plants/caladium.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVK9j9cf6"
   },
   {
     "id": "calathea_orbifolia",
@@ -753,7 +753,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/calathea_orbifolia.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVK9mRY5I"
   },
   {
     "id": "calathea_makoyana",
@@ -786,7 +786,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/calathea_makoyana.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVK9puOaW"
   },
   {
     "id": "calathea_lancifolia",
@@ -818,7 +818,7 @@
     "common": false,
     "tier": "ext",
     "image": "public/plants/calathea_lancifolia.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVK9sE992"
   },
   {
     "id": "maranta",
@@ -850,7 +850,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/maranta.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVK9vW9fM"
   },
   {
     "id": "stromanthe_triostar",
@@ -882,7 +882,7 @@
     "common": false,
     "tier": "ext",
     "image": "public/plants/stromanthe_triostar.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVK9yVQM8"
   },
   {
     "id": "ctenanthe",
@@ -914,7 +914,7 @@
     "common": false,
     "tier": "ext",
     "image": "public/plants/ctenanthe.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVK9BpXDE"
   },
   {
     "id": "peperomia_obtusifolia",
@@ -946,7 +946,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/peperomia_obtusifolia.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVK9E9vSS"
   },
   {
     "id": "peperomia_watermelon",
@@ -978,7 +978,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/peperomia_watermelon.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVK9H9TQy"
   },
   {
     "id": "pilea_peperomioides",
@@ -1011,7 +1011,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/pilea_peperomioides.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVK9KMIVM"
   },
   {
     "id": "pilea_cadierei",
@@ -1043,7 +1043,7 @@
     "common": false,
     "tier": "ext",
     "image": "public/plants/pilea_cadierei.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVK9OeF2W"
   },
   {
     "id": "fittonia",
@@ -1075,7 +1075,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/fittonia.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVK9Q1TNc"
   },
   {
     "id": "hypoestes",
@@ -1107,7 +1107,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/hypoestes.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVK9TNsbc"
   },
   {
     "id": "aphelandra",
@@ -1140,7 +1140,7 @@
     "common": false,
     "tier": "ext",
     "image": "public/plants/aphelandra.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVK9WHSou"
   },
   {
     "id": "chlorophytum",
@@ -1175,7 +1175,7 @@
     "common": true,
     "tier": "core",
     "image": "public/plants/chlorophytum.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVK9ZSenA"
   },
   {
     "id": "boston_fern",
@@ -1208,7 +1208,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/boston_fern.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLcQSI4O"
   },
   {
     "id": "adiantum",
@@ -1240,7 +1240,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/adiantum.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLcT81Ke"
   },
   {
     "id": "birds_nest_fern",
@@ -1274,7 +1274,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/birds_nest_fern.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLcWFT88"
   },
   {
     "id": "staghorn_fern",
@@ -1306,7 +1306,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/staghorn_fern.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLc14hCn"
   },
   {
     "id": "dracaena_marginata",
@@ -1339,7 +1339,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/dracaena_marginata.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLc5mgH6"
   },
   {
     "id": "dracaena_reflexa",
@@ -1373,7 +1373,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/dracaena_reflexa.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLc8yh3s"
   },
   {
     "id": "cordyline",
@@ -1405,7 +1405,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/cordyline.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLdbID2y"
   },
   {
     "id": "croton",
@@ -1437,7 +1437,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/croton.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLdeI10e"
   },
   {
     "id": "schefflera",
@@ -1471,7 +1471,7 @@
     "common": true,
     "tier": "core",
     "image": "public/plants/schefflera.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLdhZkFE"
   },
   {
     "id": "rhapis_palm",
@@ -1504,7 +1504,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/rhapis_palm.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLdkK2Ee"
   },
   {
     "id": "areca_palm",
@@ -1538,7 +1538,7 @@
     "common": true,
     "tier": "core",
     "image": "public/plants/areca_palm.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLdocZLo"
   },
   {
     "id": "tradescantia_zebrina",
@@ -1571,7 +1571,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/tradescantia_zebrina.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLdrdnI4"
   },
   {
     "id": "asparagus_fern",
@@ -1603,7 +1603,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/asparagus_fern.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLdutGou"
   },
   {
     "id": "begonia_rex",
@@ -1635,7 +1635,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/begonia_rex.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLdxOADc"
   },
   {
     "id": "banana_plant",
@@ -1667,7 +1667,7 @@
     "common": false,
     "tier": "ext",
     "image": "public/plants/banana_plant.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLdAYWCi"
   },
   {
     "id": "echeveria",
@@ -1700,7 +1700,7 @@
     "common": true,
     "tier": "core",
     "image": "public/plants/echeveria.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLdEpDWK"
   },
   {
     "id": "haworthia",
@@ -1733,7 +1733,7 @@
     "common": true,
     "tier": "core",
     "image": "public/plants/haworthia.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLdHsW3o"
   },
   {
     "id": "zebra_haworthia",
@@ -1766,7 +1766,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/zebra_haworthia.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLdKNHHw"
   },
   {
     "id": "gasteria",
@@ -1798,7 +1798,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/gasteria.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLgmW5S0"
   },
   {
     "id": "sedum_morganianum",
@@ -1830,7 +1830,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/sedum_morganianum.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLgp7rR6"
   },
   {
     "id": "sedum_rubrotinctum",
@@ -1862,7 +1862,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/sedum_rubrotinctum.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLgsQeHI"
   },
   {
     "id": "graptopetalum",
@@ -1894,7 +1894,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/graptopetalum.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLgwXkLk"
   },
   {
     "id": "pachyphytum",
@@ -1926,7 +1926,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/pachyphytum.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLgzI2JU"
   },
   {
     "id": "aeonium",
@@ -1958,7 +1958,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/aeonium.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLgCBNAW"
   },
   {
     "id": "cotyledon_bear_paw",
@@ -1991,7 +1991,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/cotyledon_bear_paw.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLgFkAqy"
   },
   {
     "id": "crassula_jade",
@@ -2024,7 +2024,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/crassula_jade.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLgIjhXU"
   },
   {
     "id": "crassula_string_of_buttons",
@@ -2056,7 +2056,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/crassula_string_of_buttons.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLgKvNGm"
   },
   {
     "id": "kalanchoe_blossfeldiana",
@@ -2090,7 +2090,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/kalanchoe_blossfeldiana.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLgNoyxo"
   },
   {
     "id": "kalanchoe_mother_of_thousands",
@@ -2122,7 +2122,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/kalanchoe_mother_of_thousands.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLgPYstE"
   },
   {
     "id": "kalanchoe_tomentosa",
@@ -2154,7 +2154,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/kalanchoe_tomentosa.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLgSFJxA"
   },
   {
     "id": "aloe_vera",
@@ -2186,7 +2186,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/aloe_vera.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLgVEq4W"
   },
   {
     "id": "aloe_aristata",
@@ -2218,7 +2218,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/aloe_aristata.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLgXQWNo"
   },
   {
     "id": "agave",
@@ -2249,7 +2249,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/agave.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLg01iMu"
   },
   {
     "id": "euphorbia_milii",
@@ -2283,7 +2283,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/euphorbia_milii.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLg3J5B6"
   },
   {
     "id": "euphorbia_tirucalli",
@@ -2314,7 +2314,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/euphorbia_tirucalli.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLg6rb1o"
   },
   {
     "id": "senecio_string_of_pearls",
@@ -2346,7 +2346,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/senecio_string_of_pearls.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLg8DHJQ"
   },
   {
     "id": "senecio_candle_plant",
@@ -2378,7 +2378,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/senecio_candle_plant.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLjy46F2"
   },
   {
     "id": "portulacaria_afra",
@@ -2410,7 +2410,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/portulacaria_afra.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLjCpRka"
   },
   {
     "id": "gymnocalycium_moon_cactus",
@@ -2443,7 +2443,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/gymnocalycium_moon_cactus.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLjFBSFw"
   },
   {
     "id": "mammillaria",
@@ -2476,7 +2476,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/mammillaria.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLjIE2bA"
   },
   {
     "id": "echinopsis",
@@ -2509,7 +2509,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/echinopsis.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLjM2dBA"
   },
   {
     "id": "opuntia",
@@ -2541,7 +2541,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/opuntia.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLjSavIq"
   },
   {
     "id": "cereus",
@@ -2572,7 +2572,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/cereus.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLjUm1qS"
   },
   {
     "id": "astrophytum",
@@ -2604,7 +2604,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/astrophytum.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLjXZnc4"
   },
   {
     "id": "rhipsalis",
@@ -2636,7 +2636,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/rhipsalis.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLj1vLeS"
   },
   {
     "id": "schlumbergera",
@@ -2670,7 +2670,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/schlumbergera.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLj4iYY8"
   },
   {
     "id": "lithops",
@@ -2702,7 +2702,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/lithops.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLj7KV6i"
   },
   {
     "id": "conophytum",
@@ -2734,7 +2734,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/conophytum.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLkgipLU"
   },
   {
     "id": "sempervivum",
@@ -2766,7 +2766,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/sempervivum.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLkiuVum"
   },
   {
     "id": "fenestraria",
@@ -2798,7 +2798,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/fenestraria.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLklx40q"
   },
   {
     "id": "clivia",
@@ -2832,7 +2832,7 @@
     "common": true,
     "tier": "core",
     "image": "public/plants/clivia.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLkoOnFQ"
   },
   {
     "id": "cyclamen",
@@ -2865,7 +2865,7 @@
     "common": true,
     "tier": "core",
     "image": "public/plants/cyclamen.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLkqJige"
   },
   {
     "id": "geranium",
@@ -2896,7 +2896,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/geranium.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLktMrMi"
   },
   {
     "id": "african_violet",
@@ -2929,7 +2929,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/african_violet.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLkw1eF2"
   },
   {
     "id": "begonia",
@@ -2962,7 +2962,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/begonia.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLmEGltA"
   },
   {
     "id": "cineraria",
@@ -2993,7 +2993,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/cineraria.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLmH8iAK"
   },
   {
     "id": "primula",
@@ -3024,7 +3024,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/primula.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLmLHSOy"
   },
   {
     "id": "calla_lily",
@@ -3057,7 +3057,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/calla_lily.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLmPNs6u"
   },
   {
     "id": "hydrangea",
@@ -3090,7 +3090,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/hydrangea.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLmTEEsm"
   },
   {
     "id": "camellia",
@@ -3124,7 +3124,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/camellia.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLmWTrl6"
   },
   {
     "id": "gardenia",
@@ -3156,7 +3156,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/gardenia.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLm0bqrQ"
   },
   {
     "id": "jasmine",
@@ -3187,7 +3187,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/jasmine.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLm3rI7g"
   },
   {
     "id": "lantana",
@@ -3218,7 +3218,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/lantana.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLm5zNU6"
   },
   {
     "id": "cymbidium",
@@ -3252,7 +3252,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/cymbidium.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLm9Foc0"
   },
   {
     "id": "dendrobium",
@@ -3286,7 +3286,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/dendrobium.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLncKc5k"
   },
   {
     "id": "oncidium",
@@ -3320,7 +3320,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/oncidium.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLngD9ZA"
   },
   {
     "id": "cattleya",
@@ -3354,7 +3354,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/cattleya.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLnjQbkW"
   },
   {
     "id": "hyacinth",
@@ -3388,7 +3388,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/hyacinth.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLnnh8r6"
   },
   {
     "id": "narcissus",
@@ -3422,7 +3422,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/narcissus.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLnqRIFU"
   },
   {
     "id": "tulip",
@@ -3456,7 +3456,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/tulip.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLnt71lk"
   },
   {
     "id": "chrysanthemum",
@@ -3490,7 +3490,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/chrysanthemum.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLnwB8bQ"
   },
   {
     "id": "petunia",
@@ -3521,7 +3521,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/petunia.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLnCT4BE"
   },
   {
     "id": "calendula",
@@ -3552,7 +3552,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/calendula.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLpK3WKG"
   },
   {
     "id": "brunfelsia",
@@ -3584,7 +3584,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/brunfelsia.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLpOAkMu"
   },
   {
     "id": "mandevilla",
@@ -3615,7 +3615,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/mandevilla.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLpR9U0i"
   },
   {
     "id": "marigold",
@@ -3646,7 +3646,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/marigold.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLpVoHT2"
   },
   {
     "id": "hibiscus",
@@ -3677,7 +3677,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/hibiscus.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLpYPpeu"
   },
   {
     "id": "gerbera",
@@ -3710,7 +3710,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/gerbera.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLp01UWW"
   },
   {
     "id": "bougainvillea",
@@ -3741,7 +3741,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/bougainvillea.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLp4mFA4"
   },
   {
     "id": "pachira",
@@ -3775,7 +3775,7 @@
     "common": true,
     "tier": "core",
     "image": "public/plants/pachira.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLp7jRmK"
   },
   {
     "id": "kentia_palm",
@@ -3807,7 +3807,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/kentia_palm.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLqasXy8"
   },
   {
     "id": "bengal_fig",
@@ -3840,7 +3840,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/bengal_fig.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLqcW4pE"
   },
   {
     "id": "fiddle_leaf_fig",
@@ -3872,7 +3872,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/fiddle_leaf_fig.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLqf0dVI"
   },
   {
     "id": "polyscias",
@@ -3905,7 +3905,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/polyscias.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLqje0Ps"
   },
   {
     "id": "yucca",
@@ -3937,7 +3937,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/yucca.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLqmn61Q"
   },
   {
     "id": "strelitzia",
@@ -3969,7 +3969,7 @@
     "common": true,
     "tier": "core",
     "image": "public/plants/strelitzia.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLqoACKi"
   },
   {
     "id": "bird_of_paradise",
@@ -4001,7 +4001,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/bird_of_paradise.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLqrDMgm"
   },
   {
     "id": "rhapis_humilis",
@@ -4034,7 +4034,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/rhapis_humilis.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLqwiyOr"
   },
   {
     "id": "cycas",
@@ -4066,7 +4066,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/cycas.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLqAREE8"
   },
   {
     "id": "olive_tree",
@@ -4099,7 +4099,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/olive_tree.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLqC4anA"
   },
   {
     "id": "heteropanax",
@@ -4133,7 +4133,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/heteropanax.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLszlECi"
   },
   {
     "id": "washingtonia",
@@ -4165,7 +4165,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/washingtonia.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLsC9DMa"
   },
   {
     "id": "cocos_palm",
@@ -4197,7 +4197,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/cocos_palm.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLsGv3My"
   },
   {
     "id": "tree_fern",
@@ -4229,7 +4229,7 @@
     "common": false,
     "tier": "ext",
     "image": "public/plants/tree_fern.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLsJqkpg"
   },
   {
     "id": "china_doll",
@@ -4262,7 +4262,7 @@
     "common": false,
     "tier": "ext",
     "image": "public/plants/china_doll.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLsLypc4"
   },
   {
     "id": "hoya",
@@ -4297,7 +4297,7 @@
     "common": true,
     "tier": "core",
     "image": "public/plants/hoya.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLsONb6O"
   },
   {
     "id": "string_of_hearts",
@@ -4330,7 +4330,7 @@
     "common": true,
     "tier": "core",
     "image": "public/plants/string_of_hearts.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLsSrdfg"
   },
   {
     "id": "dischidia",
@@ -4363,7 +4363,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/dischidia.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLsVcLDg"
   },
   {
     "id": "tradescantia_pallida",
@@ -4395,7 +4395,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/tradescantia_pallida.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLsYryw0"
   },
   {
     "id": "maori_sophora",
@@ -4428,7 +4428,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/maori_sophora.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLs1wnpk"
   },
   {
     "id": "glechoma",
@@ -4460,7 +4460,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/glechoma.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLs4ZQia"
   },
   {
     "id": "fishbone_cactus",
@@ -4494,7 +4494,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/fishbone_cactus.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLs7pwd3"
   },
   {
     "id": "balloon_vine",
@@ -4526,7 +4526,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/balloon_vine.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLtaEi7N"
   },
   {
     "id": "hoya_kerrii",
@@ -4560,7 +4560,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/hoya_kerrii.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLtd0I8a"
   },
   {
     "id": "hoya_bella",
@@ -4594,7 +4594,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/hoya_bella.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLthcASW"
   },
   {
     "id": "string_of_bananas",
@@ -4626,7 +4626,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/string_of_bananas.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLtjkFGK"
   },
   {
     "id": "string_of_beans",
@@ -4658,7 +4658,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/string_of_beans.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLto7QK4"
   },
   {
     "id": "string_of_turtles",
@@ -4690,7 +4690,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/string_of_turtles.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLtsugLs"
   },
   {
     "id": "string_of_dolphins",
@@ -4722,7 +4722,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/string_of_dolphins.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLv8PcZg"
   },
   {
     "id": "ruby_necklace",
@@ -4755,7 +4755,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/ruby_necklace.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLwcg96q"
   },
   {
     "id": "lipstick_plant",
@@ -4789,7 +4789,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/lipstick_plant.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLwfhx36"
   },
   {
     "id": "goldfish_plant",
@@ -4823,7 +4823,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/goldfish_plant.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLwiPrRA"
   },
   {
     "id": "ripple_peperomia",
@@ -4855,7 +4855,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/ripple_peperomia.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLwljyH6"
   },
   {
     "id": "mini_calathea",
@@ -4887,7 +4887,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/mini_calathea.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLwpkH5o"
   },
   {
     "id": "table_fern",
@@ -4919,7 +4919,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/table_fern.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLwsk524"
   },
   {
     "id": "blue_star_fern",
@@ -4951,7 +4951,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/blue_star_fern.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLwvBoIu"
   },
   {
     "id": "selaginella",
@@ -4984,7 +4984,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/selaginella.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLwx5vy0"
   },
   {
     "id": "baby_tears",
@@ -5016,7 +5016,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/baby_tears.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLwBfRx6"
   },
   {
     "id": "watercoin",
@@ -5050,7 +5050,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/watercoin.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLwEgfvM"
   },
   {
     "id": "mini_aglaonema",
@@ -5084,7 +5084,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/mini_aglaonema.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLwHwybc"
   },
   {
     "id": "philodendron_congo",
@@ -5117,7 +5117,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/philodendron_congo.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLwJ0E1I"
   },
   {
     "id": "coral_berry",
@@ -5150,7 +5150,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/coral_berry.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLwNsB8S"
   },
   {
     "id": "rosemary",
@@ -5183,7 +5183,7 @@
     "common": true,
     "tier": "core",
     "image": "public/plants/rosemary.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLwQTjtk"
   },
   {
     "id": "thyme",
@@ -5215,7 +5215,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/thyme.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLwTnqjQ"
   },
   {
     "id": "mint",
@@ -5248,7 +5248,7 @@
     "common": true,
     "tier": "core",
     "image": "public/plants/mint.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLwWxMiW"
   },
   {
     "id": "applemint",
@@ -5281,7 +5281,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/applemint.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLwZyagC"
   },
   {
     "id": "parsley",
@@ -5313,7 +5313,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/parsley.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLy57D6i"
   },
   {
     "id": "arugula",
@@ -5345,7 +5345,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/arugula.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLy9D176"
   },
   {
     "id": "bokchoy",
@@ -5377,7 +5377,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/bokchoy.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLzdh3gy"
   },
   {
     "id": "jjokpa",
@@ -5409,7 +5409,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/jjokpa.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLzglcMC"
   },
   {
     "id": "buchu",
@@ -5441,7 +5441,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/buchu.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLzjOPf2"
   },
   {
     "id": "cilantro",
@@ -5473,7 +5473,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/cilantro.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLzmRYL6"
   },
   {
     "id": "dill",
@@ -5505,7 +5505,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/dill.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLzpPaxM"
   },
   {
     "id": "oregano",
@@ -5537,7 +5537,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/oregano.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLzsGFB6"
   },
   {
     "id": "sage",
@@ -5569,7 +5569,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/sage.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLzuTbky"
   },
   {
     "id": "stevia",
@@ -5600,7 +5600,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/stevia.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLzxWkQC"
   },
   {
     "id": "lemonbalm",
@@ -5632,7 +5632,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/lemonbalm.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLzBa7Km"
   },
   {
     "id": "chamomile",
@@ -5664,7 +5664,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/chamomile.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLzD2COG"
   },
   {
     "id": "chicory",
@@ -5696,7 +5696,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/chicory.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLzGsiKy"
   },
   {
     "id": "mustardgreens",
@@ -5728,7 +5728,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/mustardgreens.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLzJYGMm"
   },
   {
     "id": "yeolmu",
@@ -5760,7 +5760,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/yeolmu.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLzMQbQG"
   },
   {
     "id": "danggui",
@@ -5790,7 +5790,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/danggui.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLzPkiHc"
   },
   {
     "id": "tomato",
@@ -5822,7 +5822,7 @@
     "common": true,
     "tier": "core",
     "image": "public/plants/tomato.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLzSuEGi"
   },
   {
     "id": "paprika",
@@ -5853,7 +5853,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/paprika.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLzVDKSG"
   },
   {
     "id": "eggplant",
@@ -5885,7 +5885,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/eggplant.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLBPRLSS"
   },
   {
     "id": "cucumber",
@@ -5917,7 +5917,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/cucumber.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLBS6yMC"
   },
   {
     "id": "strawberry",
@@ -5949,7 +5949,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/strawberry.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLBVX3QW"
   },
   {
     "id": "blueberry",
@@ -5979,7 +5979,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/blueberry.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLBX58EK"
   },
   {
     "id": "bittermelon",
@@ -6009,7 +6009,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/bittermelon.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLB0LJim"
   },
   {
     "id": "ficus_umbellata",
@@ -6043,7 +6043,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/ficus_umbellata.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLB3yW2C"
   },
   {
     "id": "ficus_elastica_melany",
@@ -6077,7 +6077,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/ficus_elastica_melany.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLB6tdFk"
   },
   {
     "id": "philodendron_birkin",
@@ -6111,7 +6111,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/philodendron_birkin.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLB8Bis8"
   },
   {
     "id": "rhaphidophora_tetrasperma",
@@ -6144,7 +6144,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/rhaphidophora_tetrasperma.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLCdf41c"
   },
   {
     "id": "homalomena",
@@ -6178,7 +6178,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/homalomena.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLCf3iLs"
   },
   {
     "id": "calathea_white_star",
@@ -6212,7 +6212,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/calathea_white_star.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLCiFYf6"
   },
   {
     "id": "tillandsia_ionantha",
@@ -6247,7 +6247,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/tillandsia_ionantha.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLCkwrVR"
   },
   {
     "id": "tillandsia_usneoides",
@@ -6282,7 +6282,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/tillandsia_usneoides.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLCnLePA"
   },
   {
     "id": "poinsettia",
@@ -6317,7 +6317,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/poinsettia.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLCq7EPY"
   },
   {
     "id": "azalea_indica",
@@ -6351,7 +6351,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/azalea_indica.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLCtKkkC"
   },
   {
     "id": "pomegranate_dwarf",
@@ -6384,7 +6384,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/pomegranate_dwarf.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLCvSo8q"
   },
   {
     "id": "bouvardia",
@@ -6417,7 +6417,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/bouvardia.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLCzXZqm"
   },
   {
     "id": "stock_flower",
@@ -6450,7 +6450,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/stock_flower.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLCCLdaC"
   },
   {
     "id": "ranunculus",
@@ -6483,7 +6483,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/ranunculus.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLE6mX5U"
   },
   {
     "id": "nandina",
@@ -6517,7 +6517,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/nandina.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLE9nl3A"
   },
   {
     "id": "ardisia_japonica",
@@ -6551,7 +6551,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/ardisia_japonica.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLFcDEI0"
   },
   {
     "id": "ardisia_crispa",
@@ -6586,7 +6586,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/ardisia_crispa.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLFeQars"
   },
   {
     "id": "cymbidium_goeringii",
@@ -6620,7 +6620,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/cymbidium_goeringii.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLFiswdE"
   },
   {
     "id": "lemon_cypress",
@@ -6653,7 +6653,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/lemon_cypress.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLFmh09c"
   },
   {
     "id": "eucalyptus",
@@ -6686,7 +6686,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/eucalyptus.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLFo3I7M"
   },
   {
     "id": "duffii_fern",
@@ -6721,7 +6721,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/duffii_fern.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLFsd46S"
   },
   {
     "id": "perilla",
@@ -6753,7 +6753,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/perilla.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLFves4y"
   },
   {
     "id": "kale",
@@ -6785,7 +6785,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/kale.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLFyMmR2"
   },
   {
     "id": "celery",
@@ -6816,7 +6816,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/celery.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLFBgtIy"
   },
   {
     "id": "beet",
@@ -6847,7 +6847,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/beet.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLFEBemG"
   },
   {
     "id": "ginger",
@@ -6879,7 +6879,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/ginger.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLFIqJie"
   },
   {
     "id": "green_bean",
@@ -6911,7 +6911,7 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/green_bean.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLFKUP8K"
   },
   {
     "id": "pea",
@@ -6943,6 +6943,6 @@
     "common": true,
     "tier": "ext",
     "image": "public/plants/pea.jpg",
-    "coupang_url": "https://link.coupang.com/여기에_쿠팡_링크"
+    "coupang_url": "https://link.coupang.com/a/enVLFN5b7Q"
   }
 ]
