@@ -35,10 +35,10 @@
       key: "purpose",
       question: "어떤 식물을 찾으세요?",
       options: [
-        { value: "air",     emoji: "🌳", label: "공기 맑게 하는 식물" },
-        { value: "deco",    emoji: "🌸", label: "꽃이 예쁜 식물" },
-        { value: "gift",    emoji: "🪴", label: "작고 귀여운 식물" },
-        { value: "harvest", emoji: "🥬", label: "먹을 수 있는 식물" }
+        { value: "air",     emoji: "🌬️", label: "공기를 맑게" },
+        { value: "deco",    emoji: "🌸", label: "꽃·예쁜 모양" },
+        { value: "harvest", emoji: "🥬", label: "길러서 먹기" },
+        { value: "gift",    emoji: "🎁", label: "선물·상징(행운·재물)" }
       ]
     },
     {

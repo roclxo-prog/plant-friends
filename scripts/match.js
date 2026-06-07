@@ -170,9 +170,9 @@
       var fillPool = base.filter(function (p) { return !have[p.id] && p.common === true; });
       // harvest 특례: 먹는 식물을 원했으면 먹는 것 위주로 먼저
       if (purpose === "harvest") {
-        take(fillPool.filter(function (p) { return inTags(p.tags_purpose, "harvest"); }).sort(sortByEnv), "fill");
+        take(fillPool.filter(function (p) { return inTags(p.tags_purpose, "harvest"); }).slice().sort(sortByEnv), "fill");
       }
-      take(fillPool.sort(sortByEnv), "fill");
+      take(fillPool.slice().sort(sortByEnv), "fill");
     }
 
     if (picks.length < 3) {

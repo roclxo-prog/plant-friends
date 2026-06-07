@@ -1,6 +1,6 @@
 /* =====================================================================
    scripts/result.js — 결과 화면 v2
-   URL 쿼리 파싱(light/water/purpose/place/pet/size/interest/level)
+   URL 쿼리 파싱(light/water/purpose/place/pet/size/interest)
    → 화이트리스트 검증 → plants.json fetch → matchPlants → 식물 3종 카드 렌더.
    각 카드: 사진 + 이름 + "왜 맞는지" 이유(새 차원 반영) + 버튼 3개 + 배지.
    "자세히 보기"는 모든 식물 → /plant.html?id={id} (동적 상세, 213종 전부 동작).
@@ -23,12 +23,13 @@
   var PET = ["yes", "no"];
   var SIZE = ["small", "medium", "large"];
   var INTEREST = ["flower", "foliage", "fruit"];
-  var LEVEL = ["beginner", "experienced"];
 
   // 쿠팡 href 방어: https:// 로 시작하지 않거나 placeholder면 안전한 검색 URL로 폴백.
   // (App.coupangUrl 의 폴백과 일관) esc() 는 호출부에서 그대로 유지.
   function safeCoupang(plant) {
-    var url = window.App.coupangUrl(plant);
+    var url = (window.App && typeof window.App.coupangUrl === "function")
+      ? window.App.coupangUrl(plant)
+      : null;
     if (typeof url === "string" && url.indexOf("https://") === 0 &&
         url.indexOf("여기에_") === -1) {
       return url;
@@ -52,7 +53,6 @@
     if ((v = pickFrom(PET, p.get("pet"))) !== undefined) a.pet = v;
     if ((v = pickFrom(SIZE, p.get("size"))) !== undefined) a.size = v;
     if ((v = pickFrom(INTEREST, p.get("interest"))) !== undefined) a.interest = v;
-    if ((v = pickFrom(LEVEL, p.get("level"))) !== undefined) a.level = v;
     return a;
   }
 
@@ -101,7 +101,7 @@
     if (purposeMatch) {
       if (a.purpose === "air")     return "공기를 맑게 해 주는 식물이에요.";
       if (a.purpose === "deco")    return "보기 좋게 집을 꾸며 주는 식물이에요.";
-      if (a.purpose === "gift")    return "작고 키우기 쉬워 곁에 두기 좋아요.";
+      if (a.purpose === "gift")    return "선물·행운의 의미가 담긴 식물이에요.";
       if (a.purpose === "harvest") return "길러서 드실 수 있는 식물이에요.";
     }
 
