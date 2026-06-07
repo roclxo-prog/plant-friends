@@ -200,23 +200,35 @@
   };
 
   /* --- 광고 로드(애드센스) --------------------------------------- */
-  // ADSENSE_CLIENT_ID가 placeholder면 로드하지 않음.
-  // 콘텐츠 하단 .ad-slot 안에서만 호출.
+  // ADSENSE_CLIENT_ID가 placeholder면 아무것도 로드하지 않음(현행 유지).
+  // 실제 ID(ca-pub-…)일 때:
+  //   1) 애드센스 로더 스크립트를 head에 1회 주입(심사·자동광고용, 모든 페이지).
+  //   2) 콘텐츠 하단 .ad-slot__body 가 있는 페이지에서만 광고 단위 push.
+
+  // 로더 스크립트 1회 주입(심사 크롤러가 사이트 전역에서 코드를 확인).
+  App.injectAdsenseLoader = function () {
+    var cfg = App.config();
+    var id = cfg.ADSENSE_CLIENT_ID;
+    if (App.isPlaceholder(id)) return false; // 실제 ID 없으면 미주입
+    if (document.querySelector('script[data-adsbygoogle-loaded]')) return true; // 중복 방지
+
+    var s = document.createElement("script");
+    s.async = true;
+    s.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=" + encodeURIComponent(id);
+    s.crossOrigin = "anonymous";
+    s.setAttribute("data-adsbygoogle-loaded", "1");
+    document.head.appendChild(s);
+    return true;
+  };
+
+  // .ad-slot__body 안에 광고 단위 삽입(콘텐츠 하단 슬롯이 있을 때만).
   App.loadAds = function () {
     var cfg = App.config();
     var id = cfg.ADSENSE_CLIENT_ID;
     if (App.isPlaceholder(id)) return; // 실제 ID 없으면 광고 미로드
 
-    if (!document.querySelector('script[data-adsbygoogle-loaded]')) {
-      var s = document.createElement("script");
-      s.async = true;
-      s.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=" + encodeURIComponent(id);
-      s.crossOrigin = "anonymous";
-      s.setAttribute("data-adsbygoogle-loaded", "1");
-      document.head.appendChild(s);
-    }
+    if (!App.injectAdsenseLoader()) return;
 
-    // .ad-slot__body 안에 광고 단위 삽입(있을 때만)
     var bodies = document.querySelectorAll(".ad-slot__body");
     for (var i = 0; i < bodies.length; i++) {
       if (bodies[i].dataset.adFilled) continue;
@@ -255,8 +267,14 @@
     // 공유 버튼(data-share) 바인딩 — 정적 상세·글 페이지에서 사용
     App.bindShareButtons();
 
-    // 광고(콘텐츠 하단 .ad-slot 있는 페이지만 실제 로드)
-    if (document.querySelector(".ad-slot")) App.loadAds();
+    // 광고(애드센스)
+    // - 실제 ID면 로더는 모든 페이지 head에 1회 주입(심사·자동광고용).
+    // - 광고 단위 push 는 콘텐츠 하단 .ad-slot 이 있는 페이지에서만.
+    if (document.querySelector(".ad-slot")) {
+      App.loadAds();
+    } else {
+      App.injectAdsenseLoader();
+    }
   };
 
   global.App = App;
