@@ -1,0 +1,1224 @@
+[
+  {
+    "slug": "air-plants-bathroom",
+    "title": "욕실에 두기 좋은 공기정화 식물 6가지",
+    "main_keyword": "욕실 공기정화 식물",
+    "sub_keywords": [
+      "욕실 식물 추천",
+      "습한 곳 식물",
+      "화장실 식물"
+    ],
+    "plant_ids": [
+      "boston_fern",
+      "birds_nest_fern",
+      "adiantum",
+      "scindapsus",
+      "spathiphyllum",
+      "calathea_orbifolia"
+    ],
+    "intent": "정보형",
+    "status": "queued"
+  },
+  {
+    "slug": "air-plants-fine-dust",
+    "title": "미세먼지에 도움 되는 실내 식물 7가지",
+    "main_keyword": "미세먼지 식물",
+    "sub_keywords": [
+      "공기정화 식물",
+      "미세먼지 좋은 식물",
+      "실내 공기 식물"
+    ],
+    "plant_ids": [
+      "sansevieria",
+      "areca_palm",
+      "rubber_plant",
+      "schefflera",
+      "rhapis_palm",
+      "spathiphyllum",
+      "chlorophytum"
+    ],
+    "intent": "정보형",
+    "status": "queued"
+  },
+  {
+    "slug": "air-plants-large-living",
+    "title": "거실에 두는 큰 공기정화 식물 6가지",
+    "main_keyword": "큰 공기정화 식물",
+    "sub_keywords": [
+      "거실 큰 식물",
+      "대형 화분 추천",
+      "거실 나무 식물"
+    ],
+    "plant_ids": [
+      "areca_palm",
+      "rubber_plant",
+      "schefflera",
+      "rhapis_palm",
+      "kentia_palm",
+      "monstera"
+    ],
+    "intent": "정보형",
+    "status": "queued"
+  },
+  {
+    "slug": "air-plants-new-home",
+    "title": "새집 이사 후 두면 좋은 식물 6가지",
+    "main_keyword": "새집 식물",
+    "sub_keywords": [
+      "이사 식물",
+      "새 아파트 식물",
+      "실내 공기 식물"
+    ],
+    "plant_ids": [
+      "sansevieria",
+      "spathiphyllum",
+      "areca_palm",
+      "chlorophytum",
+      "scindapsus",
+      "rhapis_palm"
+    ],
+    "intent": "정보형",
+    "status": "queued"
+  },
+  {
+    "slug": "hard-to-kill-plants",
+    "title": "아무리 신경 못 써도 안 죽는 식물 8가지",
+    "main_keyword": "안 죽는 식물",
+    "sub_keywords": [
+      "키우기 쉬운 식물",
+      "손 안 가는 식물",
+      "초보 실내 식물"
+    ],
+    "plant_ids": [
+      "sansevieria",
+      "zamioculcas",
+      "scindapsus",
+      "chlorophytum",
+      "schefflera",
+      "dracaena_marginata",
+      "aglaonema",
+      "syngonium"
+    ],
+    "intent": "정보형",
+    "status": "queued"
+  },
+  {
+    "slug": "plants-for-beginners-first",
+    "title": "식물 처음 키우는 분께 권하는 첫 식물 7가지",
+    "main_keyword": "처음 키우는 식물",
+    "sub_keywords": [
+      "초보 식물 추천",
+      "입문 식물",
+      "쉬운 실내 식물"
+    ],
+    "plant_ids": [
+      "sansevieria",
+      "scindapsus",
+      "zamioculcas",
+      "succulent",
+      "peperomia_obtusifolia",
+      "chlorophytum",
+      "syngonium"
+    ],
+    "intent": "정보형",
+    "status": "queued"
+  },
+  {
+    "slug": "plants-for-seniors",
+    "title": "어르신이 키우기 좋은 실내 식물 7가지",
+    "main_keyword": "어르신 식물",
+    "sub_keywords": [
+      "부모님 식물",
+      "시니어 식물 키우기",
+      "손쉬운 화분"
+    ],
+    "plant_ids": [
+      "sansevieria",
+      "zamioculcas",
+      "clivia",
+      "schefflera",
+      "rhapis_palm",
+      "phalaenopsis",
+      "echeveria"
+    ],
+    "intent": "정보형",
+    "status": "queued"
+  },
+  {
+    "slug": "plants-for-busy-people",
+    "title": "바빠서 자주 못 돌봐도 잘 크는 식물 7가지",
+    "main_keyword": "바쁜 사람 식물",
+    "sub_keywords": [
+      "손 안 가는 식물",
+      "방치형 식물",
+      "키우기 쉬운 식물"
+    ],
+    "plant_ids": [
+      "zamioculcas",
+      "sansevieria",
+      "dracaena_marginata",
+      "succulent",
+      "haworthia",
+      "peperomia_obtusifolia",
+      "scindapsus"
+    ],
+    "intent": "정보형",
+    "status": "queued"
+  },
+  {
+    "slug": "dog-safe-plants",
+    "title": "강아지 키워도 안심하는 식물 8가지",
+    "main_keyword": "강아지 안전 식물",
+    "sub_keywords": [
+      "강아지 키우는 집 식물",
+      "반려견 식물",
+      "강아지 무해 식물"
+    ],
+    "plant_ids": [
+      "parlor_palm",
+      "areca_palm",
+      "calathea_orbifolia",
+      "calathea_makoyana",
+      "maranta",
+      "boston_fern",
+      "peperomia_watermelon",
+      "chlorophytum"
+    ],
+    "intent": "정보형",
+    "status": "queued"
+  },
+  {
+    "slug": "cat-safe-plants",
+    "title": "고양이와 함께 키울 수 있는 식물 8가지",
+    "main_keyword": "고양이 안전 식물",
+    "sub_keywords": [
+      "고양이 무해 식물",
+      "고양이 키우는 집 식물",
+      "반려묘 식물"
+    ],
+    "plant_ids": [
+      "parlor_palm",
+      "calathea_orbifolia",
+      "maranta",
+      "peperomia_obtusifolia",
+      "pilea_peperomioides",
+      "boston_fern",
+      "haworthia",
+      "rhapis_palm"
+    ],
+    "intent": "정보형",
+    "status": "queued"
+  },
+  {
+    "slug": "toxic-plants-to-avoid-pets",
+    "title": "반려동물 있는 집에서 조심해야 할 식물",
+    "main_keyword": "반려동물 위험 식물",
+    "sub_keywords": [
+      "강아지 독성 식물",
+      "고양이 위험 식물",
+      "먹으면 안 되는 식물"
+    ],
+    "plant_ids": [
+      "dieffenbachia",
+      "monstera",
+      "ivy",
+      "alocasia_amazonica",
+      "euphorbia_milii",
+      "caladium"
+    ],
+    "intent": "정보형",
+    "status": "queued"
+  },
+  {
+    "slug": "living-room-corner-plants",
+    "title": "거실 빈 코너를 채우는 식물 6가지",
+    "main_keyword": "거실 코너 식물",
+    "sub_keywords": [
+      "거실 큰 식물",
+      "거실 인테리어 식물",
+      "빈 공간 식물"
+    ],
+    "plant_ids": [
+      "areca_palm",
+      "kentia_palm",
+      "rhapis_palm",
+      "schefflera",
+      "monstera",
+      "strelitzia"
+    ],
+    "intent": "정보형",
+    "status": "queued"
+  },
+  {
+    "slug": "entrance-plants",
+    "title": "현관에 두기 좋은 식물 6가지",
+    "main_keyword": "현관 식물",
+    "sub_keywords": [
+      "현관 화분",
+      "어두운 현관 식물",
+      "입구 식물"
+    ],
+    "plant_ids": [
+      "zamioculcas",
+      "sansevieria",
+      "aglaonema",
+      "dracaena_marginata",
+      "scindapsus",
+      "rhapis_palm"
+    ],
+    "intent": "정보형",
+    "status": "queued"
+  },
+  {
+    "slug": "north-facing-home-plants",
+    "title": "북향 집에서도 잘 크는 식물 7가지",
+    "main_keyword": "북향 집 식물",
+    "sub_keywords": [
+      "햇빛 적은 집 식물",
+      "음지 식물",
+      "빛 적은 곳 식물"
+    ],
+    "plant_ids": [
+      "sansevieria",
+      "zamioculcas",
+      "aglaonema",
+      "scindapsus",
+      "chlorophytum",
+      "dracaena_marginata",
+      "birds_nest_fern"
+    ],
+    "intent": "정보형",
+    "status": "queued"
+  },
+  {
+    "slug": "kitchen-plants",
+    "title": "주방에 두기 좋은 식물과 허브 6가지",
+    "main_keyword": "주방 식물",
+    "sub_keywords": [
+      "부엌 식물",
+      "주방 허브",
+      "요리 허브 키우기"
+    ],
+    "plant_ids": [
+      "basil",
+      "rosemary",
+      "mint",
+      "thyme",
+      "scindapsus",
+      "peperomia_obtusifolia"
+    ],
+    "intent": "정보형",
+    "status": "queued"
+  },
+  {
+    "slug": "housewarming-gift-plants",
+    "title": "집들이 선물로 좋은 화분 6가지",
+    "main_keyword": "집들이 선물 화분",
+    "sub_keywords": [
+      "집들이 식물 선물",
+      "개업 화분",
+      "집들이 선물 추천"
+    ],
+    "plant_ids": [
+      "phalaenopsis",
+      "zamioculcas",
+      "lucky_bamboo",
+      "pachira",
+      "spathiphyllum",
+      "anthurium"
+    ],
+    "intent": "정보형",
+    "status": "queued"
+  },
+  {
+    "slug": "opening-gift-plants",
+    "title": "개업 선물로 좋은 식물 6가지",
+    "main_keyword": "개업 선물 식물",
+    "sub_keywords": [
+      "개업 화분",
+      "개업 축하 식물",
+      "사업 번창 식물"
+    ],
+    "plant_ids": [
+      "pachira",
+      "zamioculcas",
+      "lucky_bamboo",
+      "schefflera",
+      "areca_palm",
+      "cymbidium"
+    ],
+    "intent": "정보형",
+    "status": "queued"
+  },
+  {
+    "slug": "parents-gift-plants",
+    "title": "부모님께 드리기 좋은 식물 선물 6가지",
+    "main_keyword": "부모님 선물 식물",
+    "sub_keywords": [
+      "어버이날 화분",
+      "부모님 화분 선물",
+      "어르신 선물 식물"
+    ],
+    "plant_ids": [
+      "phalaenopsis",
+      "clivia",
+      "cymbidium",
+      "camellia",
+      "anthurium",
+      "gardenia"
+    ],
+    "intent": "정보형",
+    "status": "queued"
+  },
+  {
+    "slug": "long-lasting-flower-gift",
+    "title": "오래가는 꽃 화분 선물 6가지",
+    "main_keyword": "오래가는 꽃 화분",
+    "sub_keywords": [
+      "꽃 화분 선물",
+      "오래 피는 꽃",
+      "선물 꽃 화분"
+    ],
+    "plant_ids": [
+      "phalaenopsis",
+      "anthurium",
+      "cymbidium",
+      "kalanchoe_blossfeldiana",
+      "african_violet",
+      "clivia"
+    ],
+    "intent": "정보형",
+    "status": "queued"
+  },
+  {
+    "slug": "cactus-for-beginners",
+    "title": "처음 키우는 선인장 7가지와 물 주는 법",
+    "main_keyword": "선인장 키우기",
+    "sub_keywords": [
+      "선인장 물주기",
+      "초보 선인장",
+      "키우기 쉬운 선인장"
+    ],
+    "plant_ids": [
+      "mammillaria",
+      "gymnocalycium_moon_cactus",
+      "echinopsis",
+      "opuntia",
+      "astrophytum",
+      "cereus",
+      "rhipsalis"
+    ],
+    "intent": "정보형",
+    "status": "queued"
+  },
+  {
+    "slug": "once-a-month-water-plants",
+    "title": "한 달에 한 번만 물 줘도 되는 식물 7가지",
+    "main_keyword": "한 달에 한 번 물주는 식물",
+    "sub_keywords": [
+      "물 적게 주는 식물",
+      "물 안 주는 식물",
+      "방치 식물"
+    ],
+    "plant_ids": [
+      "sansevieria",
+      "zamioculcas",
+      "succulent",
+      "haworthia",
+      "echeveria",
+      "dracaena_marginata",
+      "gasteria"
+    ],
+    "intent": "정보형",
+    "status": "queued"
+  },
+  {
+    "slug": "vacation-proof-plants",
+    "title": "여행 길게 가도 괜찮은 식물 6가지",
+    "main_keyword": "여행 가도 되는 식물",
+    "sub_keywords": [
+      "물 안 줘도 되는 식물",
+      "집 비울 때 식물",
+      "방치 식물"
+    ],
+    "plant_ids": [
+      "sansevieria",
+      "zamioculcas",
+      "succulent",
+      "haworthia",
+      "mammillaria",
+      "portulacaria_afra"
+    ],
+    "intent": "정보형",
+    "status": "queued"
+  },
+  {
+    "slug": "fluorescent-light-plants",
+    "title": "형광등 불빛만으로도 크는 식물 6가지",
+    "main_keyword": "형광등 식물",
+    "sub_keywords": [
+      "빛 없는 곳 식물",
+      "사무실 음지 식물",
+      "조명으로 키우는 식물"
+    ],
+    "plant_ids": [
+      "zamioculcas",
+      "sansevieria",
+      "aglaonema",
+      "scindapsus",
+      "chlorophytum",
+      "dracaena_marginata"
+    ],
+    "intent": "정보형",
+    "status": "queued"
+  },
+  {
+    "slug": "balcony-veggie-garden",
+    "title": "베란다에서 키우는 채소 7가지",
+    "main_keyword": "베란다 텃밭",
+    "sub_keywords": [
+      "베란다 채소",
+      "집에서 채소 키우기",
+      "화분 채소"
+    ],
+    "plant_ids": [
+      "lettuce",
+      "arugula",
+      "bokchoy",
+      "mustardgreens",
+      "kale",
+      "perilla",
+      "yeolmu"
+    ],
+    "intent": "정보형",
+    "status": "queued"
+  },
+  {
+    "slug": "windowsill-herbs",
+    "title": "창가에서 키우는 허브 7가지",
+    "main_keyword": "창가 허브",
+    "sub_keywords": [
+      "집에서 허브 키우기",
+      "주방 허브",
+      "허브 화분"
+    ],
+    "plant_ids": [
+      "basil",
+      "rosemary",
+      "thyme",
+      "mint",
+      "sage",
+      "oregano",
+      "lemonbalm"
+    ],
+    "intent": "정보형",
+    "status": "queued"
+  },
+  {
+    "slug": "cherry-tomato-pot",
+    "title": "화분에 방울토마토 키우기 — 심기부터 수확까지",
+    "main_keyword": "방울토마토 키우기",
+    "sub_keywords": [
+      "베란다 토마토",
+      "화분 토마토",
+      "방울토마토 재배"
+    ],
+    "plant_ids": [
+      "tomato",
+      "paprika",
+      "eggplant",
+      "cucumber"
+    ],
+    "intent": "정보형",
+    "status": "queued"
+  },
+  {
+    "slug": "lettuce-pot-growing",
+    "title": "상추 화분에서 키우는 법 — 따 먹는 재미",
+    "main_keyword": "상추 키우기",
+    "sub_keywords": [
+      "베란다 상추",
+      "화분 상추",
+      "집에서 상추"
+    ],
+    "plant_ids": [
+      "lettuce",
+      "arugula",
+      "bokchoy",
+      "perilla"
+    ],
+    "intent": "정보형",
+    "status": "queued"
+  },
+  {
+    "slug": "easy-vegetables-indoor",
+    "title": "집에서 키우기 쉬운 채소 7가지",
+    "main_keyword": "키우기 쉬운 채소",
+    "sub_keywords": [
+      "실내 채소",
+      "베란다 채소",
+      "초보 채소 재배"
+    ],
+    "plant_ids": [
+      "lettuce",
+      "arugula",
+      "mint",
+      "perilla",
+      "bokchoy",
+      "jjokpa",
+      "mustardgreens"
+    ],
+    "intent": "정보형",
+    "status": "queued"
+  },
+  {
+    "slug": "strawberry-pot-growing",
+    "title": "화분에서 딸기 키우는 법",
+    "main_keyword": "딸기 키우기",
+    "sub_keywords": [
+      "베란다 딸기",
+      "화분 딸기",
+      "집에서 딸기"
+    ],
+    "plant_ids": [
+      "strawberry",
+      "blueberry"
+    ],
+    "intent": "정보형",
+    "status": "queued"
+  },
+  {
+    "slug": "kitchen-herb-cooking",
+    "title": "요리에 바로 쓰는 허브 6가지 키우기",
+    "main_keyword": "요리 허브",
+    "sub_keywords": [
+      "요리용 허브",
+      "집 허브 키우기",
+      "주방 허브"
+    ],
+    "plant_ids": [
+      "basil",
+      "parsley",
+      "cilantro",
+      "dill",
+      "rosemary",
+      "thyme"
+    ],
+    "intent": "정보형",
+    "status": "queued"
+  },
+  {
+    "slug": "how-to-water-plants",
+    "title": "실내 식물 물주기 — 언제 얼마나 줄까요",
+    "main_keyword": "식물 물주기",
+    "sub_keywords": [
+      "식물 물 주는 법",
+      "화분 물주기",
+      "물 주는 시기"
+    ],
+    "plant_ids": [
+      "sansevieria",
+      "spathiphyllum",
+      "scindapsus",
+      "succulent",
+      "monstera"
+    ],
+    "intent": "정보형",
+    "status": "queued"
+  },
+  {
+    "slug": "how-to-repot",
+    "title": "화분 분갈이 하는 법 — 쉬운 순서대로",
+    "main_keyword": "분갈이 하는 법",
+    "sub_keywords": [
+      "화분 갈이",
+      "분갈이 시기",
+      "화분 흙 갈기"
+    ],
+    "plant_ids": [
+      "monstera",
+      "sansevieria",
+      "rubber_plant",
+      "spathiphyllum"
+    ],
+    "intent": "정보형",
+    "status": "queued"
+  },
+  {
+    "slug": "yellow-leaves-fix",
+    "title": "잎이 누렇게 변할 때 원인과 해결",
+    "main_keyword": "잎이 누렇게",
+    "sub_keywords": [
+      "잎 노랗게 변함",
+      "식물 잎 색",
+      "잎 변색 원인"
+    ],
+    "plant_ids": [
+      "spathiphyllum",
+      "scindapsus",
+      "rubber_plant",
+      "monstera",
+      "areca_palm"
+    ],
+    "intent": "정보형",
+    "status": "queued"
+  },
+  {
+    "slug": "plant-bugs-fix",
+    "title": "식물에 벌레가 생겼을 때 대처법",
+    "main_keyword": "식물 벌레",
+    "sub_keywords": [
+      "화분 벌레",
+      "날파리 식물",
+      "식물 진딧물"
+    ],
+    "plant_ids": [
+      "monstera",
+      "rubber_plant",
+      "basil",
+      "rosemary",
+      "spathiphyllum"
+    ],
+    "intent": "정보형",
+    "status": "queued"
+  },
+  {
+    "slug": "light-needs-basics",
+    "title": "우리집 빛이 식물에 맞는지 확인하는 법",
+    "main_keyword": "식물 햇빛",
+    "sub_keywords": [
+      "식물 빛 요구",
+      "실내 빛 식물",
+      "밝은 곳 어두운 곳"
+    ],
+    "plant_ids": [
+      "sansevieria",
+      "monstera",
+      "succulent",
+      "spathiphyllum",
+      "croton"
+    ],
+    "intent": "정보형",
+    "status": "queued"
+  },
+  {
+    "slug": "when-soil-dry",
+    "title": "흙이 말랐는지 확인하고 물 주는 법",
+    "main_keyword": "흙 마름 확인",
+    "sub_keywords": [
+      "물 주는 시기",
+      "흙 상태 확인",
+      "과습 방지"
+    ],
+    "plant_ids": [
+      "succulent",
+      "sansevieria",
+      "zamioculcas",
+      "scindapsus",
+      "monstera"
+    ],
+    "intent": "정보형",
+    "status": "queued"
+  },
+  {
+    "slug": "overwatering-rescue",
+    "title": "물을 너무 많이 줘서 무를 때 살리는 법",
+    "main_keyword": "과습 식물 살리기",
+    "sub_keywords": [
+      "뿌리 무름",
+      "과습 회복",
+      "식물 살리기"
+    ],
+    "plant_ids": [
+      "sansevieria",
+      "zamioculcas",
+      "succulent",
+      "spathiphyllum",
+      "scindapsus"
+    ],
+    "intent": "정보형",
+    "status": "queued"
+  },
+  {
+    "slug": "how-to-prune",
+    "title": "웃자란 식물 가지치기·모양 잡는 법",
+    "main_keyword": "식물 가지치기",
+    "sub_keywords": [
+      "식물 전정",
+      "화분 모양 잡기",
+      "줄기 자르기"
+    ],
+    "plant_ids": [
+      "scindapsus",
+      "pilea_peperomioides",
+      "schefflera",
+      "rubber_plant",
+      "ivy"
+    ],
+    "intent": "정보형",
+    "status": "queued"
+  },
+  {
+    "slug": "fertilizer-basics",
+    "title": "실내 식물 비료 주는 법 — 쉽게 시작",
+    "main_keyword": "식물 비료",
+    "sub_keywords": [
+      "화분 영양제",
+      "비료 주는 시기",
+      "식물 영양"
+    ],
+    "plant_ids": [
+      "monstera",
+      "spathiphyllum",
+      "rubber_plant",
+      "basil"
+    ],
+    "intent": "정보형",
+    "status": "queued"
+  },
+  {
+    "slug": "humidity-for-plants",
+    "title": "건조한 집에서 잎 끝 마름 막는 법",
+    "main_keyword": "식물 가습",
+    "sub_keywords": [
+      "잎 끝 마름",
+      "건조한 집 식물",
+      "공중 습도"
+    ],
+    "plant_ids": [
+      "calathea_orbifolia",
+      "adiantum",
+      "boston_fern",
+      "maranta",
+      "areca_palm"
+    ],
+    "intent": "정보형",
+    "status": "queued"
+  },
+  {
+    "slug": "summer-plant-care",
+    "title": "여름철 실내 식물 관리법 — 더위와 과습 주의",
+    "main_keyword": "여름 식물 관리",
+    "sub_keywords": [
+      "여름 화분 관리",
+      "무더위 식물",
+      "장마철 식물"
+    ],
+    "plant_ids": [
+      "monstera",
+      "spathiphyllum",
+      "areca_palm",
+      "succulent",
+      "basil"
+    ],
+    "intent": "정보형",
+    "status": "queued"
+  },
+  {
+    "slug": "spring-repot-season",
+    "title": "봄에 하면 좋은 식물 돌봄 — 분갈이와 새순",
+    "main_keyword": "봄 식물 관리",
+    "sub_keywords": [
+      "봄 분갈이",
+      "봄 화분 관리",
+      "새순 관리"
+    ],
+    "plant_ids": [
+      "monstera",
+      "rubber_plant",
+      "spathiphyllum",
+      "schefflera",
+      "clivia"
+    ],
+    "intent": "정보형",
+    "status": "queued"
+  },
+  {
+    "slug": "autumn-plant-care",
+    "title": "가을철 실내 식물 관리법",
+    "main_keyword": "가을 식물 관리",
+    "sub_keywords": [
+      "가을 화분 관리",
+      "환절기 식물",
+      "가을 물주기"
+    ],
+    "plant_ids": [
+      "sansevieria",
+      "spathiphyllum",
+      "croton",
+      "cyclamen",
+      "chrysanthemum"
+    ],
+    "intent": "정보형",
+    "status": "queued"
+  },
+  {
+    "slug": "flowering-indoor-plants",
+    "title": "집에서 꽃 보는 실내 식물 7가지",
+    "main_keyword": "꽃 피는 실내 식물",
+    "sub_keywords": [
+      "실내 꽃 식물",
+      "꽃 화분 추천",
+      "집에서 꽃"
+    ],
+    "plant_ids": [
+      "spathiphyllum",
+      "anthurium",
+      "phalaenopsis",
+      "african_violet",
+      "kalanchoe_blossfeldiana",
+      "clivia",
+      "gardenia"
+    ],
+    "intent": "정보형",
+    "status": "queued"
+  },
+  {
+    "slug": "winter-blooming-plants",
+    "title": "겨울에 꽃 피는 실내 식물 6가지",
+    "main_keyword": "겨울 꽃 식물",
+    "sub_keywords": [
+      "겨울 화분",
+      "겨울에 피는 꽃",
+      "실내 겨울 꽃"
+    ],
+    "plant_ids": [
+      "cyclamen",
+      "poinsettia",
+      "camellia",
+      "clivia",
+      "kalanchoe_blossfeldiana",
+      "azalea_indica"
+    ],
+    "intent": "정보형",
+    "status": "queued"
+  },
+  {
+    "slug": "orchids-for-beginners",
+    "title": "처음 키우는 난 6가지와 관리법",
+    "main_keyword": "난 키우기",
+    "sub_keywords": [
+      "호접란 키우기",
+      "난 물주기",
+      "집에서 난"
+    ],
+    "plant_ids": [
+      "phalaenopsis",
+      "cymbidium",
+      "dendrobium",
+      "oncidium",
+      "cattleya",
+      "cymbidium_goeringii"
+    ],
+    "intent": "정보형",
+    "status": "queued"
+  },
+  {
+    "slug": "colorful-leaf-plants",
+    "title": "잎 색이 화려한 무늬 식물 7가지",
+    "main_keyword": "무늬 식물",
+    "sub_keywords": [
+      "컬러 잎 식물",
+      "잎 예쁜 식물",
+      "무늬 관엽"
+    ],
+    "plant_ids": [
+      "calathea_makoyana",
+      "croton",
+      "caladium",
+      "aglaonema",
+      "fittonia",
+      "hypoestes",
+      "begonia_rex"
+    ],
+    "intent": "정보형",
+    "status": "queued"
+  },
+  {
+    "slug": "african-violet-care",
+    "title": "아프리칸바이올렛 키우는 법 — 사계절 꽃",
+    "main_keyword": "아프리칸바이올렛 키우기",
+    "sub_keywords": [
+      "아프리칸바이올렛 물주기",
+      "실내 꽃 식물",
+      "작은 꽃 화분"
+    ],
+    "plant_ids": [
+      "african_violet",
+      "cyclamen",
+      "kalanchoe_blossfeldiana"
+    ],
+    "intent": "정보형",
+    "status": "queued"
+  },
+  {
+    "slug": "hanging-trailing-plants",
+    "title": "늘어뜨려 키우는 행잉 식물 7가지",
+    "main_keyword": "늘어지는 식물",
+    "sub_keywords": [
+      "행잉 식물",
+      "매달아 키우는 식물",
+      "늘어뜨리는 화분"
+    ],
+    "plant_ids": [
+      "scindapsus",
+      "philodendron_heartleaf",
+      "ivy",
+      "string_of_hearts",
+      "senecio_string_of_pearls",
+      "tradescantia_zebrina",
+      "hoya"
+    ],
+    "intent": "정보형",
+    "status": "queued"
+  },
+  {
+    "slug": "string-of-pearls-care",
+    "title": "늘어지는 다육 식물 키우는 법",
+    "main_keyword": "늘어지는 다육",
+    "sub_keywords": [
+      "행잉 다육",
+      "줄 다육 식물",
+      "드리워 키우는 다육"
+    ],
+    "plant_ids": [
+      "senecio_string_of_pearls",
+      "string_of_bananas",
+      "string_of_dolphins",
+      "sedum_morganianum",
+      "ruby_necklace"
+    ],
+    "intent": "정보형",
+    "status": "queued"
+  },
+  {
+    "slug": "hoya-care",
+    "title": "호야 키우는 법 — 향기 나는 꽃까지",
+    "main_keyword": "호야 키우기",
+    "sub_keywords": [
+      "호야 물주기",
+      "호야 꽃",
+      "왁스플라워"
+    ],
+    "plant_ids": [
+      "hoya",
+      "hoya_kerrii",
+      "hoya_bella"
+    ],
+    "intent": "정보형",
+    "status": "queued"
+  },
+  {
+    "slug": "sansevieria-care",
+    "title": "산세베리아 키우는 법 — 물주기와 햇빛",
+    "main_keyword": "산세베리아 키우는 법",
+    "sub_keywords": [
+      "산세베리아 물주기",
+      "산세베리아 햇빛",
+      "산세 키우기"
+    ],
+    "plant_ids": [
+      "sansevieria"
+    ],
+    "intent": "정보형",
+    "status": "queued"
+  },
+  {
+    "slug": "monstera-care",
+    "title": "몬스테라 키우는 법 — 잎 갈라지게 키우기",
+    "main_keyword": "몬스테라 키우는 법",
+    "sub_keywords": [
+      "몬스테라 물주기",
+      "몬스테라 햇빛",
+      "몬스테라 잎"
+    ],
+    "plant_ids": [
+      "monstera",
+      "monstera_adansonii"
+    ],
+    "intent": "정보형",
+    "status": "queued"
+  },
+  {
+    "slug": "zamioculcas-care",
+    "title": "금전수 키우는 법 — 잘 안 죽는 비결",
+    "main_keyword": "금전수 키우는 법",
+    "sub_keywords": [
+      "금전수 물주기",
+      "금전수 햇빛",
+      "돈나무 키우기"
+    ],
+    "plant_ids": [
+      "zamioculcas"
+    ],
+    "intent": "정보형",
+    "status": "queued"
+  },
+  {
+    "slug": "rubber-plant-care",
+    "title": "고무나무 키우는 법 — 잎 윤기 나게",
+    "main_keyword": "고무나무 키우는 법",
+    "sub_keywords": [
+      "고무나무 물주기",
+      "고무나무 햇빛",
+      "인도고무나무"
+    ],
+    "plant_ids": [
+      "rubber_plant",
+      "ficus_elastica_melany"
+    ],
+    "intent": "정보형",
+    "status": "queued"
+  },
+  {
+    "slug": "scindapsus-care",
+    "title": "스킨답서스 키우는 법 — 물꽂이로 늘리기",
+    "main_keyword": "스킨답서스 키우는 법",
+    "sub_keywords": [
+      "스킨답서스 물주기",
+      "스킨답서스 번식",
+      "스킨답서스 햇빛"
+    ],
+    "plant_ids": [
+      "scindapsus"
+    ],
+    "intent": "정보형",
+    "status": "queued"
+  },
+  {
+    "slug": "phalaenopsis-care",
+    "title": "호접란 꽃 오래 보는 관리법",
+    "main_keyword": "호접란 키우는 법",
+    "sub_keywords": [
+      "호접란 물주기",
+      "호접란 꽃",
+      "나비란 관리"
+    ],
+    "plant_ids": [
+      "phalaenopsis"
+    ],
+    "intent": "정보형",
+    "status": "queued"
+  },
+  {
+    "slug": "aloe-care",
+    "title": "알로에 키우는 법 — 물주기와 활용",
+    "main_keyword": "알로에 키우기",
+    "sub_keywords": [
+      "알로에 물주기",
+      "알로에 햇빛",
+      "알로에 베라"
+    ],
+    "plant_ids": [
+      "aloe_vera",
+      "aloe_aristata"
+    ],
+    "intent": "정보형",
+    "status": "queued"
+  },
+  {
+    "slug": "clivia-care",
+    "title": "군자란 키우는 법 — 해마다 꽃 보기",
+    "main_keyword": "군자란 키우기",
+    "sub_keywords": [
+      "군자란 물주기",
+      "군자란 꽃",
+      "클리비아"
+    ],
+    "plant_ids": [
+      "clivia"
+    ],
+    "intent": "정보형",
+    "status": "queued"
+  },
+  {
+    "slug": "areca-palm-care",
+    "title": "아레카야자 키우는 법 — 잎 끝 안 마르게",
+    "main_keyword": "아레카야자 키우는 법",
+    "sub_keywords": [
+      "아레카야자 물주기",
+      "아레카야자 잎마름",
+      "야자 키우기"
+    ],
+    "plant_ids": [
+      "areca_palm",
+      "kentia_palm"
+    ],
+    "intent": "정보형",
+    "status": "queued"
+  },
+  {
+    "slug": "fiddle-leaf-fig-care",
+    "title": "떡갈잎고무나무 키우는 법",
+    "main_keyword": "떡갈잎고무나무 키우기",
+    "sub_keywords": [
+      "폭스 키우기",
+      "잎 큰 나무",
+      "휘카스 리라타"
+    ],
+    "plant_ids": [
+      "fiddle_leaf_fig",
+      "bengal_fig",
+      "ficus_umbellata"
+    ],
+    "intent": "정보형",
+    "status": "queued"
+  },
+  {
+    "slug": "tabletop-small-plants",
+    "title": "식탁·탁자에 두는 작은 식물 7가지",
+    "main_keyword": "작은 화분 식물",
+    "sub_keywords": [
+      "탁상 식물",
+      "미니 화분",
+      "작은 식물 추천"
+    ],
+    "plant_ids": [
+      "succulent",
+      "haworthia",
+      "peperomia_obtusifolia",
+      "pilea_peperomioides",
+      "fittonia",
+      "echeveria",
+      "syngonium"
+    ],
+    "intent": "정보형",
+    "status": "queued"
+  },
+  {
+    "slug": "air-plant-no-soil",
+    "title": "흙 없이 키우는 공중식물 키우는 법",
+    "main_keyword": "공중식물 키우기",
+    "sub_keywords": [
+      "틸란드시아 키우기",
+      "흙 없는 식물",
+      "에어플랜트"
+    ],
+    "plant_ids": [
+      "tillandsia_ionantha",
+      "tillandsia_usneoides"
+    ],
+    "intent": "정보형",
+    "status": "queued"
+  },
+  {
+    "slug": "big-statement-trees",
+    "title": "집 안 분위기 살리는 큰 나무 식물 6가지",
+    "main_keyword": "실내 큰 나무",
+    "sub_keywords": [
+      "대형 식물",
+      "거실 나무",
+      "인테리어 나무"
+    ],
+    "plant_ids": [
+      "fiddle_leaf_fig",
+      "strelitzia",
+      "olive_tree",
+      "kentia_palm",
+      "monstera",
+      "bird_of_paradise"
+    ],
+    "intent": "정보형",
+    "status": "queued"
+  }
+]
