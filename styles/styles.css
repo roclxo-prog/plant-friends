@@ -249,6 +249,13 @@ a {
   text-decoration: underline;
   text-underline-offset: 4px;
 }
+/* 현재 페이지 강조 — 색 단독 의존 금지: 초록색 + 굵게 + 밑줄 병기 */
+.site-nav a[aria-current="page"] {
+  color: var(--color-primary-dark);   /* green-700: 유리 띠 위 대비 강화 */
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 6px;
+}
 
 .site-footer {
   margin-top: var(--space-4);
@@ -976,13 +983,34 @@ figure > figcaption {
   }
 }
 
+/* 좁은 폰(≤414px): 로고+메뉴 4개를 한 줄에 넣으면 18px 유지 시 넘친다.
+   → 헤더를 2행으로(로고 윗줄, 메뉴 아랫줄 풀폭) 바꿔 줄바꿈·가로넘침을 막고
+     메뉴는 균등 배분해 한 줄에 4개가 모두 보이게 한다. 글자 18px 유지. */
+@media (max-width: 414px) {
+  .site-header__inner {
+    flex-wrap: wrap;
+    row-gap: var(--space-1);
+  }
+  .site-nav {
+    flex: 1 0 100%;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 2px;
+  }
+  .site-nav a {
+    font-size: var(--fs-body);   /* 18px 유지 */
+    padding: 0 4px;
+    white-space: nowrap;         /* 항목 내부 줄바꿈 방지 */
+  }
+}
+
 /* 아주 좁은 화면(320px) 보호: 가로 스크롤 금지
    (진행바 점 7개 축소는 위 .progress 블록의 360px 미디어쿼리에서 처리) */
 @media (max-width: 360px) {
   .container { padding: var(--space-1); }
-  /* 내비 글자는 18px 유지하되 패딩/간격을 줄여 줄바꿈·가로스크롤 방지 */
-  .site-nav { gap: 2px; }
-  .site-nav a { font-size: var(--fs-body); padding: 0 6px; }
+  /* 헤더 좌우 패딩·메뉴 항목 패딩을 더 줄여 320px에서도 4개 한 줄 유지(18px). */
+  .site-header__inner { padding-left: var(--space-1); padding-right: var(--space-1); }
+  .site-nav a { padding: 0 2px; letter-spacing: -0.01em; }
   /* 하단 네비 버튼 글자 빠듯함 완화(18px 미만 금지, 패딩만 축소) */
   .bottomnav { gap: var(--space-1); padding-left: var(--space-1); padding-right: var(--space-1); }
   .bottomnav__btn { padding-left: 6px; padding-right: 6px; }
@@ -1051,6 +1079,13 @@ figure > figcaption {
   font-size: var(--font-base); /* 18px */
   color: var(--color-text);
   margin: 0 0 var(--space-2);
+  /* 특징 문장 길이 차이로 카드 높이가 들쭉날쭉해지지 않도록 3줄로 고정.
+     줄임표 처리(글자 18px 유지). 자세한 설명은 '자세히 보기'로 연결. */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  overflow: hidden;
 }
 .featured-card__audience {
   display: flex;
@@ -1083,7 +1118,11 @@ figure > figcaption {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   scroll-snap-type: x mandatory;
+  scroll-padding-left: 4px;           /* 첫 카드가 모서리에 딱 붙어 잘려 보이지 않게 */
   padding: 4px 4px var(--space-2);   /* 그림자·포커스링 잘림 방지 */
+  /* 오른쪽에 여유 패딩을 둬 마지막 카드 그림자가 잘리지 않고,
+     스크롤 전 '다음 카드가 살짝 보이는' 힌트를 자연스럽게 만든다. */
+  padding-right: var(--space-4);
   margin: 0 calc(-1 * var(--space-1));
 }
 .rank-row::-webkit-scrollbar { height: 8px; }

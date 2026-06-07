@@ -227,11 +227,18 @@
     if (!window.App || typeof window.App.loadPlants !== "function") return;
 
     window.App.loadPlants().then(function (plants) {
-      if (!Array.isArray(plants)) return;
-      if (featured) renderFeatured(featured, plants);
-      if (rankings) renderRankings(rankings, plants);
+      if (!Array.isArray(plants)) throw new Error("plants not array");
+      // 섹션별 독립 처리 — 한 곳이 실패해도 다른 곳은 정상 노출, 로딩 문구 잔존 방지
+      if (featured) {
+        try { renderFeatured(featured, plants); }
+        catch (e) { featured.parentNode.style.display = "none"; }
+      }
+      if (rankings) {
+        try { renderRankings(rankings, plants); }
+        catch (e) { rankings.parentNode.style.display = "none"; }
+      }
     }).catch(function () {
-      // 조용히 실패 — 정적 콘텐츠(히어로·이용방법)는 그대로 보임
+      // 데이터 로드 자체 실패 — 정적 콘텐츠(히어로·이용방법)는 그대로 보임
       if (featured) featured.parentNode.style.display = "none";
       if (rankings) rankings.parentNode.style.display = "none";
     });
