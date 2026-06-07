@@ -988,6 +988,192 @@ figure > figcaption {
   .bottomnav__btn { padding-left: 6px; padding-right: 6px; }
 }
 
+/* ---------------------------------------------------------------------
+   10. 메인 — 오늘의 초록친구(featured) / 목적별 랭킹(rankings) / 제휴 표시
+   home.js가 채움. 모두 불투명 흰 카드 + 18px+ + 사진 위 글씨 금지 + 버튼 56px.
+   유리 효과는 헤더·네비에만(여기선 사용 안 함).
+   --------------------------------------------------------------------- */
+
+/* (공통) 로딩 안내 */
+.featured__loading {
+  font-size: var(--font-base);
+  color: var(--color-text-sub);
+  padding: var(--space-2) 0;
+}
+
+/* (A) 오늘의 초록친구 -------------------------------------------------- */
+.featured h2 { font-size: var(--font-h2); }
+.featured__lead {
+  font-size: var(--font-base);
+  color: var(--color-text-sub);
+  margin: 0 0 var(--space-3);
+}
+
+/* 모바일 1열 → 768px+ 3열 */
+.featured-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-3);
+}
+@media (min-width: 768px) {
+  .featured-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+.featured-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--card);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+}
+/* 상단 사진 — 사진 위 글씨 금지(장식·식별용) */
+.featured-card__photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  background: var(--green-100);
+}
+.featured-card__body {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  padding: var(--space-3);
+}
+.featured-card__name {
+  font-size: var(--font-h2);   /* 24px */
+  font-weight: 700;
+  margin: 0 0 var(--space-1);
+}
+.featured-card__merit {
+  font-size: var(--font-base); /* 18px */
+  color: var(--color-text);
+  margin: 0 0 var(--space-2);
+}
+.featured-card__audience {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 var(--space-3);
+}
+/* 추천 대상 알약은 .badge 재사용 */
+.featured-card__actions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-min);
+  margin-top: auto;   /* 카드 높이 달라도 버튼 줄을 바닥에 정렬 */
+}
+
+/* (B) 목적별 랭킹(쿠팡 구매 유도) ------------------------------------- */
+.rankings h2 { font-size: var(--font-h2); }
+
+.rank-block { margin: 0 0 var(--space-4); }
+.rank-block__title {
+  font-size: var(--font-h3);   /* 20px */
+  font-weight: 700;
+  margin: 0 0 var(--space-2);
+}
+
+/* 가로 스크롤 + 스냅(모바일). 카드는 고정 폭. 320px에서도 본문 무넘침. */
+.rank-row {
+  display: flex;
+  gap: var(--space-2);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+  padding: 4px 4px var(--space-2);   /* 그림자·포커스링 잘림 방지 */
+  margin: 0 calc(-1 * var(--space-1));
+}
+.rank-row::-webkit-scrollbar { height: 8px; }
+.rank-row::-webkit-scrollbar-thumb {
+  background: var(--color-soft);
+  border-radius: var(--radius-pill);
+}
+
+.rank-card {
+  flex: 0 0 auto;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  scroll-snap-align: start;
+  background: var(--card);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+}
+/* 카드 본체(사진+이름+특징)는 통째로 상세 링크 */
+.rank-card__link {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  color: var(--color-text);
+  text-decoration: none;
+}
+.rank-card__link:hover,
+.rank-card__link:focus-visible {
+  outline: var(--focus-width) solid var(--color-primary);
+  outline-offset: -2px;
+}
+/* 순위 번호 배지 — 원형, green-600, 사진 위 모서리(장식 숫자) */
+.rank-card__num {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 1;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-h3);
+  font-weight: 700;
+  color: var(--on-green);
+  background: var(--green-600);
+  border: 2px solid var(--card);
+  border-radius: 999px;
+  box-shadow: var(--shadow-card);
+}
+.rank-card__photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  background: var(--green-100);
+}
+.rank-card__name {
+  font-size: var(--font-h3);   /* 20px */
+  font-weight: 700;
+  padding: var(--space-2) var(--space-2) 0;
+}
+.rank-card__merit {
+  font-size: var(--font-base); /* 18px */
+  color: var(--color-text-sub);
+  padding: 4px var(--space-2) var(--space-2);
+}
+.rank-card__shop {
+  margin: auto var(--space-2) var(--space-2);
+}
+
+/* (C) 제휴 표시 — 작지만 18px+, 흰 카드, 사진 위 글씨 아님 */
+.affiliate-note {
+  margin: var(--space-2) 0 0;
+  padding: var(--space-2) var(--space-3);
+  font-size: var(--font-base);   /* 18px 하한 유지 */
+  color: var(--color-text);
+  background: var(--color-surface);
+  border: 1px solid var(--color-soft);
+  border-left: 6px solid var(--color-secondary);
+  border-radius: var(--radius);
+}
+
+/* 320px 보호: 랭킹 카드 폭만 살짝 축소(글자 18px+ 유지) */
+@media (max-width: 360px) {
+  .rank-card { width: 168px; }
+}
+
 /* 9. 사진 출처 안내(결과 화면) */
 .photo-credit-note {
   margin: var(--space-4, 16px) auto 0;

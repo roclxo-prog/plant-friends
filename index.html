@@ -42,6 +42,7 @@
   <link rel="stylesheet" href="/styles/styles.css" />
   <script src="/scripts/config.js"></script>
   <script src="/scripts/app.js" defer></script>
+  <script src="/scripts/home.js" defer></script>
 
   <!-- 구조화 데이터: Organization + WebSite. 절대 URL은 배포 시 SITE_URL(placeholder: https://plant-friends.pages.dev)로 일괄 치환하세요. -->
   <script type="application/ld+json">
@@ -86,9 +87,10 @@
         초록친구
       </a>
       <nav class="site-nav" aria-label="주요 메뉴">
+        <a href="/quiz.html">추천받기</a>
         <a href="/guide.html">돌봄 안내</a>
+        <a href="/articles.html">읽을거리</a>
         <a href="/about.html">소개</a>
-        <a href="/contact.html">문의</a>
       </nav>
     </div>
   </header>
@@ -109,6 +111,27 @@
           </a>
         </div>
       </div>
+    </section>
+
+    <!-- (A) 오늘의 추천 식물 3종 — 접속할 때마다 바뀜. home.js가 채움. -->
+    <section class="section featured" id="featured" aria-label="오늘의 추천 식물">
+      <h2>오늘의 초록친구 🌿</h2>
+      <p class="featured__lead">접속하실 때마다 새로운 초록친구를 보여 드려요.</p>
+      <div id="featured-cards">
+        <p class="featured__loading" role="status">초록친구를 고르고 있어요.</p>
+      </div>
+    </section>
+
+    <!-- (B) 랭킹 4구좌 + (C) 제휴 표시. home.js가 채움. -->
+    <section class="section rankings" id="rankings" aria-label="목적별 추천 식물">
+      <h2>이런 식물은 어떠세요</h2>
+      <div id="rankings-blocks">
+        <p class="featured__loading" role="status">추천 식물을 고르고 있어요.</p>
+      </div>
+      <p class="affiliate-note">
+        이 추천은 우리집 초록친구가 식물 특징을 기준으로 고른 것이며,
+        쿠팡 파트너스 활동으로 일정액의 수수료를 받을 수 있어요.
+      </p>
     </section>
 
     <section class="reassure" aria-label="안심 안내">
