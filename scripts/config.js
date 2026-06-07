@@ -7,7 +7,7 @@
    ===================================================================== */
 window.CONFIG = {
   COUPANG_TRACKING_ID: "여기에_쿠팡_ID",
-  ADSENSE_CLIENT_ID: "여기에_애드센스_ID",
+  ADSENSE_CLIENT_ID: "ca-pub-4865224730315219",
   KAKAO_JS_KEY: "여기에_카카오_JS_키",
   CONTACT_EMAIL: "roclxo@gmail.com",
   SITE_URL: "https://plant-friends.pages.dev"

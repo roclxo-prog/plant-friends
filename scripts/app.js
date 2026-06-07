@@ -210,7 +210,9 @@
     var cfg = App.config();
     var id = cfg.ADSENSE_CLIENT_ID;
     if (App.isPlaceholder(id)) return false; // 실제 ID 없으면 미주입
-    if (document.querySelector('script[data-adsbygoogle-loaded]')) return true; // 중복 방지
+    // 중복 방지: 자체 마커 또는 페이지 <head>에 하드코딩된 adsbygoogle.js가 이미 있으면 재주입 안 함
+    if (document.querySelector('script[data-adsbygoogle-loaded]') ||
+        document.querySelector('script[src*="adsbygoogle.js"]')) return true;
 
     var s = document.createElement("script");
     s.async = true;
