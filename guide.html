@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>돌봄 안내 — 식물 키우는 법 모음 | 우리집 초록친구</title>
-  <meta name="description" content="산세베리아, 스킨답서스, 다육식물 등 키우기 쉬운 식물의 물 주기·햇빛·주의할 점을 큰 글씨로 안내합니다. 계절 관리 안내도 함께 보세요." />
+  <meta name="description" content="식물 213종 키우는 법을 한눈에. 물 주기·햇빛·주의할 점을 목적별로 묶어 큰 글씨로 안내합니다. 계절 관리 안내도 함께 보세요." />
 
   <meta name="color-scheme" content="light" />
   <link rel="icon" href="/public/favicon.svg" type="image/svg+xml" />
@@ -46,10 +46,11 @@
     "url": "https://plant-friends.pages.dev/guide.html",
     "name": "돌봄 안내 — 식물 키우는 법 모음",
     "inLanguage": "ko-KR",
-    "description": "키우기 쉬운 실내 식물과 길러 먹는 텃밭 식물 12종의 물 주기·햇빛·주의할 점을 큰 글씨로 안내합니다.",
+    "description": "식물 213종의 물 주기·햇빛·주의할 점을 목적별로 묶어 큰 글씨로 안내합니다. 아래는 자세한 가이드가 있는 대표 12종입니다.",
     "isPartOf": { "@id": "https://plant-friends.pages.dev/#website" },
     "mainEntity": {
       "@type": "ItemList",
+      "name": "자세한 케어가이드 대표 12종",
       "itemListOrder": "https://schema.org/ItemListUnordered",
       "numberOfItems": 12,
       "itemListElement": [
@@ -90,15 +91,23 @@
 
   <main id="main" class="container">
     <h1>돌봄 안내</h1>
-    <p class="lead">키우는 법을 큰 글씨로 또박또박 알려 드려요.</p>
+    <p class="lead">식물 213종 키우는 법을 한눈에. 큰 글씨로 또박또박 알려 드려요.</p>
 
     <section class="section" aria-label="식물 키우는 법 목록">
-      <h2>식물별 키우는 법</h2>
-      <p>키우기 쉬운 실내 식물과, 길러 먹는 텃밭 식물(상추·바질)까지 함께 안내해요.</p>
+      <p>목적별로 묶어 두었어요. 찾는 식물 이름을 적으면 바로 골라 드려요.</p>
       <p>더 읽어보기: <a href="/articles.html">목적에 맞게 식물 고르기 안내 글 모음</a></p>
-      <ul class="guide-list" id="guide-list">
-        <li class="guide-item">불러오는 중이에요.</li>
-      </ul>
+
+      <div class="guide-filter">
+        <label class="guide-filter__label" for="guide-filter">식물 이름으로 찾기</label>
+        <input class="guide-filter__input" id="guide-filter" type="search"
+          inputmode="search" autocomplete="off"
+          placeholder="예: 산세베리아, 상추" aria-describedby="guide-filter-status" />
+        <p class="guide-filter__status" id="guide-filter-status" role="status" aria-live="polite"></p>
+      </div>
+
+      <div id="guide-list">
+        <p class="guide-loading">불러오는 중이에요.</p>
+      </div>
     </section>
 
     <section class="section" aria-label="계절 관리 안내">

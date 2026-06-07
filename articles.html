@@ -36,7 +36,7 @@
   <script src="/scripts/config.js"></script>
   <script src="/scripts/app.js" defer></script>
 
-  <!-- 구조화 데이터: CollectionPage + 글 3편 ItemList. 절대 URL은 배포 시 SITE_URL(placeholder: https://plant-friends.pages.dev)로 일괄 치환하세요. -->
+  <!-- 구조화 데이터: CollectionPage + 글 10편 ItemList. 절대 URL은 배포 시 SITE_URL(placeholder: https://plant-friends.pages.dev)로 일괄 치환하세요. -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -49,11 +49,18 @@
     "mainEntity": {
       "@type": "ItemList",
       "itemListOrder": "https://schema.org/ItemListUnordered",
-      "numberOfItems": 3,
+      "numberOfItems": 10,
       "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "거실에 두기 좋은 공기정화 식물 5가지", "url": "https://plant-friends.pages.dev/articles/air-purifying-plants.html" },
         { "@type": "ListItem", "position": 2, "name": "물 자주 안 줘도 되는 식물 7가지 — 깜빡해도 잘 커요", "url": "https://plant-friends.pages.dev/articles/easy-low-water-plants.html" },
-        { "@type": "ListItem", "position": 3, "name": "강아지·고양이 키워도 안전한 식물 8가지", "url": "https://plant-friends.pages.dev/articles/pet-safe-plants.html" }
+        { "@type": "ListItem", "position": 3, "name": "강아지·고양이 키워도 안전한 식물 8가지", "url": "https://plant-friends.pages.dev/articles/pet-safe-plants.html" },
+        { "@type": "ListItem", "position": 4, "name": "침실에 두면 좋은 식물 6가지 — 밤에도 공기를 맑게", "url": "https://plant-friends.pages.dev/articles/bedroom-plants.html" },
+        { "@type": "ListItem", "position": 5, "name": "햇빛 안 드는 곳에서도 잘 크는 식물 7가지", "url": "https://plant-friends.pages.dev/articles/low-light-plants.html" },
+        { "@type": "ListItem", "position": 6, "name": "집들이·개업 선물로 좋은 식물 6가지", "url": "https://plant-friends.pages.dev/articles/gift-plants.html" },
+        { "@type": "ListItem", "position": 7, "name": "사무실 책상에 두기 좋은 작은 식물 6가지", "url": "https://plant-friends.pages.dev/articles/desk-office-plants.html" },
+        { "@type": "ListItem", "position": 8, "name": "처음 키우는 다육이 6가지와 물 주는 법", "url": "https://plant-friends.pages.dev/articles/beginner-succulents.html" },
+        { "@type": "ListItem", "position": 9, "name": "겨울철 실내 식물 관리법", "url": "https://plant-friends.pages.dev/articles/winter-plant-care.html" },
+        { "@type": "ListItem", "position": 10, "name": "물꽂이·수경재배로 키우는 식물 6가지", "url": "https://plant-friends.pages.dev/articles/water-propagation-plants.html" }
       ]
     }
   }
@@ -110,6 +117,69 @@
               alt="반려동물에게 안전한 테이블야자 사진" loading="lazy" width="64" height="64" />
             <span class="guide-item__name">강아지·고양이 키워도 안전한 식물 8가지</span>
             <span class="guide-item__diff">반려동물 안전</span>
+          </a>
+        </li>
+        <li class="guide-item">
+          <a href="/articles/bedroom-plants.html">
+            <img class="guide-item__thumb" src="/public/plants/sansevieria.jpg"
+              data-fallback="/public/plants/placeholder.svg"
+              alt="침실에 좋은 산세베리아 사진" loading="lazy" width="64" height="64" />
+            <span class="guide-item__name">침실에 두면 좋은 식물 6가지 — 밤에도 공기를 맑게</span>
+            <span class="guide-item__diff">침실</span>
+          </a>
+        </li>
+        <li class="guide-item">
+          <a href="/articles/low-light-plants.html">
+            <img class="guide-item__thumb" src="/public/plants/aglaonema.jpg"
+              data-fallback="/public/plants/placeholder.svg"
+              alt="어두운 곳에서 잘 크는 아글라오네마 사진" loading="lazy" width="64" height="64" />
+            <span class="guide-item__name">햇빛 안 드는 곳에서도 잘 크는 식물 7가지</span>
+            <span class="guide-item__diff">그늘</span>
+          </a>
+        </li>
+        <li class="guide-item">
+          <a href="/articles/gift-plants.html">
+            <img class="guide-item__thumb" src="/public/plants/zamioculcas.jpg"
+              data-fallback="/public/plants/placeholder.svg"
+              alt="선물로 좋은 금전수 사진" loading="lazy" width="64" height="64" />
+            <span class="guide-item__name">집들이·개업 선물로 좋은 식물 6가지</span>
+            <span class="guide-item__diff">선물</span>
+          </a>
+        </li>
+        <li class="guide-item">
+          <a href="/articles/desk-office-plants.html">
+            <img class="guide-item__thumb" src="/public/plants/peperomia_obtusifolia.jpg"
+              data-fallback="/public/plants/placeholder.svg"
+              alt="책상에 두기 좋은 페페로미아 사진" loading="lazy" width="64" height="64" />
+            <span class="guide-item__name">사무실 책상에 두기 좋은 작은 식물 6가지</span>
+            <span class="guide-item__diff">책상</span>
+          </a>
+        </li>
+        <li class="guide-item">
+          <a href="/articles/beginner-succulents.html">
+            <img class="guide-item__thumb" src="/public/plants/echeveria.jpg"
+              data-fallback="/public/plants/placeholder.svg"
+              alt="처음 키우는 다육이 에케베리아 사진" loading="lazy" width="64" height="64" />
+            <span class="guide-item__name">처음 키우는 다육이 6가지와 물 주는 법</span>
+            <span class="guide-item__diff">다육이</span>
+          </a>
+        </li>
+        <li class="guide-item">
+          <a href="/articles/winter-plant-care.html">
+            <img class="guide-item__thumb" src="/public/plants/succulent.jpg"
+              data-fallback="/public/plants/placeholder.svg"
+              alt="겨울철 식물 관리 사진" loading="lazy" width="64" height="64" />
+            <span class="guide-item__name">겨울철 실내 식물 관리법</span>
+            <span class="guide-item__diff">계절 관리</span>
+          </a>
+        </li>
+        <li class="guide-item">
+          <a href="/articles/water-propagation-plants.html">
+            <img class="guide-item__thumb" src="/public/plants/scindapsus.jpg"
+              data-fallback="/public/plants/placeholder.svg"
+              alt="물꽂이로 키우는 스킨답서스 사진" loading="lazy" width="64" height="64" />
+            <span class="guide-item__name">물꽂이·수경재배로 키우는 식물 6가지</span>
+            <span class="guide-item__diff">물꽂이</span>
           </a>
         </li>
       </ul>

@@ -50,7 +50,7 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- 안내 글 3편 -->
+  <!-- 안내 글 10편 -->
   <url>
     <loc>https://plant-friends.pages.dev/articles/air-purifying-plants.html</loc>
     <lastmod>2026-06-07</lastmod>
@@ -65,6 +65,48 @@
   </url>
   <url>
     <loc>https://plant-friends.pages.dev/articles/pet-safe-plants.html</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://plant-friends.pages.dev/articles/bedroom-plants.html</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://plant-friends.pages.dev/articles/low-light-plants.html</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://plant-friends.pages.dev/articles/gift-plants.html</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://plant-friends.pages.dev/articles/desk-office-plants.html</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://plant-friends.pages.dev/articles/beginner-succulents.html</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://plant-friends.pages.dev/articles/winter-plant-care.html</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://plant-friends.pages.dev/articles/water-propagation-plants.html</loc>
     <lastmod>2026-06-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

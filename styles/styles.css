@@ -793,30 +793,98 @@ li { margin: 0 0 8px; }
 .state-box h2 { margin-top: 0; }
 .state-box .btn-primary { margin-top: var(--space-3); }
 
-/* 케어가이드 허브 목록 */
-.guide-list { display: flex; flex-direction: column; gap: var(--space-2); list-style: none; margin: 0; padding: 0; }
-.guide-item a {
-  display: flex; align-items: center; gap: var(--space-2);
-  min-height: var(--tap-card);
+/* 케어가이드 허브 — 이름 필터 */
+.guide-filter {
+  margin: var(--space-3) 0;
+  padding: var(--space-3);
+  background: var(--color-surface);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius);
+}
+.guide-filter__label {
+  display: block; margin-bottom: var(--space-1);
+  font-size: var(--font-h3); font-weight: 700;
+  color: var(--color-text);
+}
+.guide-filter__input {
+  display: block; width: 100%; box-sizing: border-box;
+  min-height: var(--btn-min-h, 56px);
   padding: var(--space-2) var(--space-3);
-  font-size: var(--font-h3); font-weight: 600;
+  font-family: var(--font-sans);
+  font-size: var(--font-h3);
   color: var(--color-text);
   background: var(--color-surface);
   border: 2px solid var(--color-border);
   border-radius: var(--radius);
-  text-decoration: none;
 }
-.guide-item a:hover, .guide-item a:focus-visible {
+.guide-filter__input:focus-visible {
   outline: var(--focus-width) solid var(--color-primary);
   outline-offset: 2px;
 }
-.guide-item__thumb {
-  width: 64px; height: 64px; flex: 0 0 auto;
-  object-fit: cover; border-radius: var(--radius);
+.guide-filter__status {
+  margin: var(--space-1) 0 0;
+  font-size: var(--font-base); font-weight: 600;
+  color: var(--color-secondary);
+}
+.guide-loading { font-size: var(--font-base); color: var(--color-secondary); }
+.guide-error { font-size: var(--font-base); color: var(--color-warning-text); }
+
+/* 케어가이드 허브 — 목적별 섹션 + 카드 그리드 */
+.guide-section { margin: var(--space-4) 0; }
+.guide-section__title {
+  display: flex; align-items: baseline; flex-wrap: wrap; gap: 8px;
+  margin: 0 0 var(--space-2);
+}
+.guide-section__icon { font-size: 1.1em; }
+.guide-section__count {
+  font-size: var(--font-caption); font-weight: 600;
+  color: var(--color-secondary);
+}
+.guide-grid {
+  display: grid; grid-template-columns: 1fr; gap: var(--space-3);
+  list-style: none; margin: 0; padding: 0;
+}
+@media (min-width: 600px) {
+  .guide-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 900px) {
+  .guide-grid { grid-template-columns: repeat(3, 1fr); }
+}
+.guide-card { display: block; }
+.guide-card__link {
+  display: flex; flex-direction: column; height: 100%;
+  background: var(--card, var(--color-surface));
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-card, var(--radius));
+  overflow: hidden;
+  text-decoration: none;
+  color: var(--color-text);
+}
+.guide-card__link:hover, .guide-card__link:focus-visible {
+  outline: var(--focus-width) solid var(--color-primary);
+  outline-offset: 2px;
+}
+.guide-card__photo {
+  display: block; width: 100%; height: auto;
+  aspect-ratio: 3 / 2; object-fit: cover;
   background: var(--color-soft);
 }
-.guide-item__name { flex: 1 1 auto; }
-.guide-item__diff { font-size: var(--font-caption); color: var(--color-secondary); font-weight: 600; }
+.guide-card__body {
+  display: flex; flex-direction: column; gap: 4px;
+  padding: var(--space-2) var(--space-3) var(--space-3);
+}
+.guide-card__name {
+  font-size: var(--font-h3); font-weight: 700;
+  color: var(--color-text);
+}
+.guide-card__diff {
+  font-size: var(--font-base); font-weight: 600;
+  color: var(--color-secondary);
+}
+.guide-card__merit {
+  font-size: var(--font-base);
+  color: var(--color-text);
+}
 
 /* ---------------------------------------------------------------------
    사진 출처 목록 (credits.html) — 기존 토큰만 사용, 본문 18px+·대비 유지

@@ -10,7 +10,7 @@
    - STEP B: purpose 일치 식물만 1차 후보(목적 불일치는 상위3 진입 불가).
    - STEP C: interest 일치 우선군 → 불일치 후순위군 2층 분리(우선군 3+면 후순위 배제).
    - STEP D: 환경 점수(빛+3·물+3·장소+2·크기+2)로 후보 내부 정렬.
-   - STEP E: 최소 3종 단계적 완화(primary→secondary→purpose-fill→base→pet 해제).
+   - STEP E: 쉬움 우선 → 최소 3종 단계적 완화(easy primary→easy secondary→보통→purpose-fill→base→pet 해제).
    - level 점수 제거. answers.level 들어와도 무시.
    ===================================================================== */
 (function (global) {
@@ -21,6 +21,12 @@
   function diffRank(p) {
     var r = DIFFICULTY_ORDER[p.difficulty];
     return typeof r === "number" ? r : 99; // 알 수 없는 난이도는 뒤로
+  }
+
+  // 시니어 안전: '보통'(어려움)은 후순위. 쉬운 식물(매우 쉬움·쉬움)을 우선 추천.
+  function isHard(p) { return p.difficulty === "보통"; }
+  function easyOnly(list) {
+    return list.filter(function (p) { return !isHard(p); });
   }
 
   function inTags(tags, val) {
@@ -46,9 +52,12 @@
     return b;
   }
 
-  // 결정론적 정렬: envScore↓ → tieBonus↓ → diffRank↑ → id 사전순
+  // 결정론적 정렬: (보통 뒤로) → envScore↓ → tieBonus↓ → diffRank↑ → id 사전순
   function makeSorter(a) {
     return function (x, y) {
+      // 시니어 안전: 같은 그룹 안에서 '보통'(어려움)은 항상 뒤로
+      var hx = isHard(x) ? 1 : 0, hy = isHard(y) ? 1 : 0;
+      if (hx !== hy) return hx - hy;
       var d = envScore(y, a) - envScore(x, a);
       if (d) return d;
       d = tieBonus(y) - tieBonus(x);
@@ -146,7 +155,7 @@
     primary = primary.slice().sort(sortByEnv);
     secondary = secondary.slice().sort(sortByEnv);
 
-    // ── STEP E. 결과 조립 — 최소 3종, 의도 최대 유지하며 단계적 완화 ──
+    // ── STEP E. 결과 조립 — 쉬움 우선 · 최소 3종, 의도 최대 유지하며 단계적 완화 ──
     var picks = [];   // {plant, tier}
     var have = {};
     function take(list, tier) {
@@ -157,11 +166,19 @@
       }
     }
 
-    take(primary, "primary"); // ① 목적+보는재미 완전일치(최우선)
+    // ① 쉬운 식물 우선: 목적+보는재미 완전일치(매우 쉬움·쉬움만)
+    take(easyOnly(primary), "primary");
 
     if (picks.length < 3) {
       if (interest) relaxed.push("interest"); // 보는재미 양보 기록
-      take(secondary, "secondary"); // ② 목적만 일치
+      take(easyOnly(secondary), "secondary"); // ② 쉬운 식물 · 목적만 일치
+    }
+
+    if (picks.length < 3) {
+      // ②-b 쉬운 식물이 3종에 못 미치면 '보통'(어려운) 식물까지 허용(정직히 기록)
+      relaxed.push("difficulty");
+      take(primary, "primary");   // 보통 포함(이미 뽑힌 식물은 take가 자동 제외)
+      take(secondary, "secondary");
     }
 
     if (picks.length < 3) {
@@ -191,7 +208,7 @@
     });
   }
 
-  // 노출: 브라우저(window) + Node(module.exports) 모두 지원
+  // 노출: 브라우저(window) + Node(module.exports) 모두 지원 (v3.1 난이도 게이트)
   global.matchPlants = matchPlants;
   global.DIFFICULTY_ORDER = global.DIFFICULTY_ORDER || DIFFICULTY_ORDER;
 
