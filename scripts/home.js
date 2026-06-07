@@ -18,21 +18,21 @@
   // 사진 없는 종(오십령옥) 제외 — 사진 위 글씨 금지 원칙상 카드엔 사진 필수
   var NO_PHOTO_IDS = { fenestraria: true };
 
-  function hasPhoto(plant) {
-    return !!plant && !NO_PHOTO_IDS[plant.id];
+  // 정적 케어 가이드(상세)가 있는 core 12종 — 있으면 /plants/{id}.html로 연결
+  var STATIC_CORE = {
+    sansevieria: 1, spathiphyllum: 1, succulent: 1, scindapsus: 1,
+    zamioculcas: 1, parlor_palm: 1, rubber_plant: 1, lucky_bamboo: 1,
+    phalaenopsis: 1, ivy: 1, lettuce: 1, basil: 1
+  };
+
+  // 카드 기본 행동: core 12종은 정적 상세, 나머지는 동적 상세(?id=)
+  function detailHref(plant) {
+    var id = encodeURIComponent(plant.id);
+    return STATIC_CORE[plant.id] ? ("/plants/" + id + ".html") : ("/plant.html?id=" + id);
   }
 
-  // 쿠팡 href 안전 처리 — app.js coupangUrl 폴백과 일관(https://만 허용, placeholder 차단)
-  function safeCoupang(plant) {
-    var url = (window.App && typeof window.App.coupangUrl === "function")
-      ? window.App.coupangUrl(plant)
-      : null;
-    if (typeof url === "string" && url.indexOf("https://") === 0 &&
-        url.indexOf("여기에_") === -1) {
-      return url;
-    }
-    var name = (plant && plant.name) ? plant.name : "식물";
-    return "https://www.coupang.com/np/search?q=" + encodeURIComponent(name);
+  function hasPhoto(plant) {
+    return !!plant && !NO_PHOTO_IDS[plant.id];
   }
 
   function inTags(tags, val) {
@@ -90,9 +90,8 @@
   /* --- featured 카드(오늘의 초록친구) --------------------------------- */
   function featuredCardHTML(plant, eager) {
     var name = esc(plant.name);
-    var id = encodeURIComponent(plant.id);
+    var detail = esc(detailHref(plant));
     var img = esc(plantImg(plant));
-    var coupang = esc(safeCoupang(plant));
     var loading = eager ? "eager" : "lazy";
 
     var aud = audienceTags(plant);
@@ -114,10 +113,8 @@
     html += '<p class="featured-card__merit">' + esc(plant.merit || "") + "</p>";
     html += audHTML;
     html += '<div class="featured-card__actions">';
-    html += '<a class="btn btn--detail" href="/plant.html?id=' + id + '">'
+    html += '<a class="btn btn--detail" href="' + detail + '">'
       + '자세히 보기 <span aria-hidden="true">→</span></a>';
-    html += '<a class="btn btn--shop" href="' + coupang + '" target="_blank" rel="noopener nofollow sponsored">'
-      + '쿠팡에서 보기 <span aria-hidden="true">🛒</span></a>';
     html += "</div>"; // actions
     html += "</div>"; // body
     html += "</article>";
@@ -141,13 +138,12 @@
   /* --- 랭킹 카드(쿠팡 구매 유도) ------------------------------------- */
   function rankCardHTML(plant, rank) {
     var name = esc(plant.name);
-    var id = encodeURIComponent(plant.id);
+    var detail = esc(detailHref(plant));
     var img = esc(plantImg(plant));
-    var coupang = esc(safeCoupang(plant));
 
     var html = "";
     html += '<article class="rank-card">';
-    html += '<a class="rank-card__link" href="/plant.html?id=' + id + '">';
+    html += '<a class="rank-card__link" href="' + detail + '">';
     html += '<span class="rank-card__num" aria-hidden="true">' + rank + "</span>";
     html += '<img class="rank-card__photo" src="' + img + '" alt="' + name + ' 사진"'
       + ' loading="lazy" decoding="async" width="240" height="160" data-fallback="1" />';
@@ -155,9 +151,8 @@
     html += '<span class="rank-card__name">' + name + "</span>";
     html += '<span class="rank-card__merit">' + esc(shortMerit(plant)) + "</span>";
     html += "</a>";
-    html += '<a class="btn btn--shop rank-card__shop" href="' + coupang + '"'
-      + ' target="_blank" rel="noopener nofollow sponsored">'
-      + '쿠팡에서 보기 <span aria-hidden="true">🛒</span></a>';
+    html += '<a class="btn btn--detail rank-card__detail" href="' + detail + '">'
+      + '자세히 보기 <span aria-hidden="true">→</span></a>';
     html += "</article>";
     return html;
   }
@@ -167,13 +162,70 @@
     var html = "";
     html += '<div class="rank-block">';
     html += '<h3 class="rank-block__title">' + esc(title) + "</h3>";
+    // 가로 스크롤 + 좌/우 화살표(시니어가 손쉽게 넘길 수 있도록)
+    html += '<div class="rank-scroller">';
+    html += '<button class="rank-arrow rank-arrow--prev" type="button"'
+      + ' aria-label="이전 식물 보기"><span aria-hidden="true">◀</span></button>';
     html += '<div class="rank-row">';
     for (var i = 0; i < plants.length; i++) {
       html += rankCardHTML(plants[i], i + 1);
     }
     html += "</div>"; // rank-row
+    html += '<button class="rank-arrow rank-arrow--next" type="button"'
+      + ' aria-label="다음 식물 보기"><span aria-hidden="true">▶</span></button>';
+    html += "</div>"; // rank-scroller
     html += "</div>"; // rank-block
     return html;
+  }
+
+  /* --- 랭킹 가로 스크롤 화살표 바인딩 -------------------------------- */
+  function prefersReducedMotion() {
+    return !!(window.matchMedia &&
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+  }
+
+  function bindRankArrows(scope) {
+    var scrollers = scope.querySelectorAll(".rank-scroller");
+    for (var s = 0; s < scrollers.length; s++) {
+      (function (scroller) {
+        var row = scroller.querySelector(".rank-row");
+        var prev = scroller.querySelector(".rank-arrow--prev");
+        var next = scroller.querySelector(".rank-arrow--next");
+        if (!row || !prev || !next) return;
+
+        // 카드 1~2개 폭만큼 이동(카드 폭 + gap을 측정, 폴백 220px)
+        function step() {
+          var card = row.querySelector(".rank-card");
+          var w = card ? card.getBoundingClientRect().width : 200;
+          var gap = 16;
+          var unit = w + gap;
+          // 화면이 좁으면 1개, 넓으면 2개씩
+          var count = row.clientWidth >= unit * 2.5 ? 2 : 1;
+          return unit * count;
+        }
+
+        function scrollByDir(dir) {
+          var opts = { left: dir * step() };
+          opts.behavior = prefersReducedMotion() ? "auto" : "smooth";
+          row.scrollBy(opts);
+        }
+
+        // 끝에 닿으면 화살표 비활성(시각·상호작용 모두)
+        function updateArrows() {
+          var max = row.scrollWidth - row.clientWidth - 1;
+          var atStart = row.scrollLeft <= 0;
+          var atEnd = row.scrollLeft >= max;
+          prev.disabled = atStart;
+          next.disabled = atEnd;
+        }
+
+        prev.addEventListener("click", function () { scrollByDir(-1); });
+        next.addEventListener("click", function () { scrollByDir(1); });
+        row.addEventListener("scroll", updateArrows, { passive: true });
+        window.addEventListener("resize", updateArrows);
+        updateArrows();
+      })(scrollers[s]);
+    }
   }
 
   function renderRankings(container, plants) {
@@ -211,6 +263,7 @@
 
     container.innerHTML = html;
     bindImages(container);
+    bindRankArrows(container);
   }
 
   /* --- 공통 --------------------------------------------------------- */

@@ -173,11 +173,14 @@
       html += '</div>';
     }
 
-    // 쿠팡 구매
-    html += '<p style="margin-top:var(--space-3)">';
+    // 구매 + 공유
+    html += '<p class="detail-actions" style="margin-top:var(--space-3)">';
     html += '<a class="btn-primary" href="' + esc(coupang) + '" data-coupang-name="' + name + '"';
     html += ' rel="nofollow sponsored noopener" target="_blank">';
-    html += '<span aria-hidden="true">🛒</span> 쿠팡에서 보기</a>';
+    html += '<span aria-hidden="true">🛒</span> 구매하러 가기</a>';
+    html += '<button class="btn btn--share" type="button" id="plant-share"'
+      + ' data-share-name="' + name + '" data-share-id="' + esc(plant.id) + '">'
+      + '이 식물 공유하기 <span aria-hidden="true">💬</span></button>';
     html += '</p>';
     html += '<p class="ad-disclosure">이 링크는 쿠팡 파트너스 활동의 일환으로 수수료를 받을 수 있습니다.</p>';
 
@@ -206,6 +209,21 @@
 
     // 쿠팡 placeholder 링크 폴백(공통 헬퍼)
     if (window.App.bindCoupangLinks) window.App.bindCoupangLinks();
+
+    // 이 식물 공유하기 — 해당 상세 URL(절대경로)
+    var shareBtn = document.getElementById("plant-share");
+    if (shareBtn) {
+      shareBtn.addEventListener("click", function () {
+        var base = (window.CONFIG && window.CONFIG.SITE_URL)
+          ? window.CONFIG.SITE_URL.replace(/\/$/, "")
+          : window.location.origin;
+        window.App.share({
+          title: "우리집 초록친구 — " + plant.name,
+          text: plant.name + " 어떠세요? 우리집에 맞는 식물을 찾아봤어요.",
+          url: base + "/plant.html?id=" + encodeURIComponent(plant.id)
+        });
+      });
+    }
   }
 
   function renderNotFound(container) {

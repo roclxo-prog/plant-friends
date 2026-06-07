@@ -174,7 +174,7 @@
     html += '<div class="plant-card__actions">';
     html += '<a class="btn btn--detail" href="/plant.html?id=' + encodeURIComponent(plant.id) + '">🔎 자세히 보기</a>';
     html += '<a class="btn btn--shop" href="' + esc(coupang) + '" target="_blank" rel="noopener nofollow sponsored">'
-      + '쿠팡에서 보기 <span aria-hidden="true">🛒</span></a>';
+      + '구매하러 가기 <span aria-hidden="true">🛒</span></a>';
     html += '<button class="btn btn--share" type="button" data-share-id="' + id + '" data-share-name="' + name + '">'
       + '카톡으로 공유 <span aria-hidden="true">💬</span></button>';
     html += '</div>';   // actions
@@ -221,6 +221,10 @@
     html += '<div class="result-head card">';
     html += '<h1 class="result-head__title">이런 식물이 잘 맞아요 <span aria-hidden="true">🌿</span></h1>';
     html += '<p class="result-head__subtitle">우리집에 잘 맞는 식물 3가지예요.</p>';
+    html += '<div class="result-head__actions">';
+    html += '<button class="btn btn--share" type="button" id="result-share">'
+      + '결과 공유하기 <span aria-hidden="true">💬</span></button>';
+    html += '</div>';
     html += '</div>';
 
     if (relaxed) {
@@ -242,6 +246,22 @@
     // 이미지 폴백 바인딩
     var imgs = container.querySelectorAll("img[data-fallback]");
     for (var j = 0; j < imgs.length; j++) window.App.attachImageFallback(imgs[j]);
+
+    // 결과 전체 공유 — 현재 결과 URL(쿼리 포함)을 공유해 받은 사람도 같은 결과를 봄
+    var resultShare = document.getElementById("result-share");
+    if (resultShare) {
+      resultShare.addEventListener("click", function () {
+        var base = (window.CONFIG && window.CONFIG.SITE_URL)
+          ? window.CONFIG.SITE_URL.replace(/\/$/, "")
+          : window.location.origin;
+        var shareUrl = base + window.location.pathname + window.location.search;
+        window.App.share({
+          title: "우리집 초록친구 — 추천 결과",
+          text: "우리집에 맞는 식물을 찾아봤어요. 같은 결과를 함께 보세요.",
+          url: shareUrl
+        });
+      });
+    }
 
     // 공유 버튼
     var shareBtns = container.querySelectorAll("[data-share-id]");

@@ -590,6 +590,23 @@ li { margin: 0 0 8px; }
   border-color: transparent; cursor: not-allowed;
 }
 
+/* 상세·결과·글 하단 액션 묶음 — 구매/공유 버튼을 보기 좋게 줄바꿈 정렬.
+   .btn(공유)은 display:flex 기본이라 wrap 안에서 적정 폭으로 늘어남. */
+.detail-actions,
+.result-head__actions,
+.article-share {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  align-items: stretch;
+}
+.detail-actions .btn-primary,
+.detail-actions .btn,
+.article-share .btn,
+.result-head__actions .btn {
+  flex: 1 1 220px;   /* 한 줄에 둘, 좁으면 줄바꿈 */
+}
+
 /* ---------------------------------------------------------------------
    5. 하단 고정 네비
    --------------------------------------------------------------------- */
@@ -1179,6 +1196,9 @@ figure > figcaption {
   margin: 0 0 var(--space-2);
 }
 
+/* 스크롤러: 가로 스크롤 행 + 양옆 화살표 버튼(겹침 배치). 시니어가 손쉽게 넘김. */
+.rank-scroller { position: relative; }
+
 /* 가로 스크롤 + 스냅(모바일). 카드는 고정 폭. 320px에서도 본문 무넘침. */
 .rank-row {
   display: flex;
@@ -1260,9 +1280,48 @@ figure > figcaption {
   color: var(--color-text-sub);
   padding: 4px var(--space-2) var(--space-2);
 }
-.rank-card__shop {
+/* 카드 하단 "자세히 보기" 버튼 — 구매는 상세에서 하도록 홈은 자세히 보기 우선 */
+.rank-card__detail {
   margin: auto var(--space-2) var(--space-2);
 }
+
+/* 랭킹 좌/우 화살표 버튼 — 48px+, 카드 위 양옆에 겹쳐 배치 */
+.rank-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-h3);
+  font-weight: 700;
+  color: var(--color-secondary, #1B5E20);
+  background: var(--color-surface, #FFFFFF);
+  border: 2px solid var(--color-secondary, #1B5E20);
+  border-radius: 999px;
+  box-shadow: var(--shadow-card);
+  cursor: pointer;
+}
+.rank-arrow--prev { left: -6px; }
+.rank-arrow--next { right: -6px; }
+.rank-arrow:hover,
+.rank-arrow:focus-visible {
+  outline: var(--focus-width) solid var(--color-primary);
+  outline-offset: 2px;
+}
+.rank-arrow:active { transform: translateY(-50%) scale(0.96); }
+.rank-arrow:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  background: var(--color-disabled-bg, #E0E0E0);
+  color: var(--color-disabled-text, #757575);
+  border-color: transparent;
+}
+/* JS 미동작 시(no-js) 화살표 숨김 — 터치 스와이프는 그대로 사용 가능 */
+.no-js .rank-arrow { display: none; }
 
 /* (C) 제휴 표시 — 작지만 18px+, 흰 카드, 사진 위 글씨 아님 */
 .affiliate-note {

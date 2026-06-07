@@ -130,6 +130,36 @@
     return Promise.resolve();
   };
 
+  // 정적 페이지용: data-share 버튼을 일괄 바인딩(인라인 onclick 대신, CSP 친화)
+  // 속성: data-share-title(선택), data-share-text(선택), data-share-url(선택, 없으면 현재 URL)
+  // data-share-url 이 상대경로면 SITE_URL 기준 절대 URL로 보정.
+  App.bindShareButtons = function () {
+    var btns = document.querySelectorAll("[data-share]");
+    for (var i = 0; i < btns.length; i++) {
+      var b = btns[i];
+      if (b.dataset.shareBound) continue;
+      b.dataset.shareBound = "1";
+      b.addEventListener("click", function (e) {
+        var el = e.currentTarget;
+        var cfg = App.config();
+        var base = (cfg.SITE_URL && !App.isPlaceholder(cfg.SITE_URL))
+          ? cfg.SITE_URL.replace(/\/$/, "")
+          : global.location.origin;
+        var url = el.getAttribute("data-share-url");
+        if (!url) {
+          url = base + global.location.pathname;
+        } else if (url.indexOf("http") !== 0) {
+          url = base + (url.indexOf("/") === 0 ? "" : "/") + url;
+        }
+        App.share({
+          title: el.getAttribute("data-share-title") || undefined,
+          text: el.getAttribute("data-share-text") || undefined,
+          url: url
+        });
+      });
+    }
+  };
+
   App.fallbackCopy = function (text) {
     try {
       var ta = document.createElement("textarea");
@@ -221,6 +251,9 @@
 
     // 쿠팡 버튼 placeholder 링크 → 검색 URL 폴백
     App.bindCoupangLinks();
+
+    // 공유 버튼(data-share) 바인딩 — 정적 상세·글 페이지에서 사용
+    App.bindShareButtons();
 
     // 광고(콘텐츠 하단 .ad-slot 있는 페이지만 실제 로드)
     if (document.querySelector(".ad-slot")) App.loadAds();
