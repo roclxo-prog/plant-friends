@@ -21,6 +21,7 @@
 | 파비콘 16px | `public/favicon-16.png` | 자체 제작 | 브랜드 소유 (독점) | — | 아니오 | 준비중 |
 | Apple touch icon | `public/apple-touch-icon.png` | 자체 제작 | 브랜드 소유 (독점) | — | 아니오 | 준비중 |
 | OG 이미지 | `public/og-image.png` | 자체 제작 | 브랜드 소유 (독점) | — | 아니오 | 준비중 |
+| 마케팅 공유 이미지 (5종) | `public/marketing/*.png` (share-card-main/air/petsafe, kakao-link, youtube-thumb) | 자체 제작 (SVG→sharp) | 브랜드 소유 (독점) · 자유 사용 | — | 아니오 | 완료 |
 | 사진 폴백 플레이스홀더 | `public/plants/placeholder.svg` | 자체 제작 | 브랜드 소유 (독점) | — | 아니오 | 완료 |
 
 ## 식물 사진 (212종 · 수집 완료)
