@@ -39,37 +39,34 @@ test.describe('1. 핵심 흐름', () => {
     await expect(page.locator('#quiz-question')).toBeVisible();
   });
 
-  test('Q1→Q2→Q3→Q4 응답 후 result.html?쿼리 이동', async ({ page }) => {
+  test('Q1~Q7 전부 응답 후 result.html?쿼리(7개) 이동', async ({ page }) => {
     await page.goto(`${BASE}/quiz.html`);
 
-    // Q1 빛 — 첫 번째 선택지 클릭(☀️ 햇빛 잘 들어요 = high)
+    // Q1 빛
     await expect(page.locator('#quiz-question')).toContainText('햇빛');
     await page.click('.choice-card[data-value="high"]');
-
-    // Q2 물 — 자주 줄 수 있어요 = high
+    // Q2 물
     await expect(page.locator('#quiz-question')).toContainText('물');
     await page.click('.choice-card[data-value="high"]');
-
-    // Q3 목적 — 먹을 수 있는 식물 = harvest
+    // Q3 목적
     await expect(page.locator('#quiz-question')).toContainText('어떤 식물');
     await page.click('.choice-card[data-value="harvest"]');
-
-    // Q4 경험(선택) — 처음이에요 = beginner
-    await expect(page.locator('#quiz-question')).toContainText('키워 보신');
-    await page.click('.choice-card[data-value="beginner"]');
+    // Q4 장소
+    await expect(page.locator('#quiz-question')).toContainText('어디에');
+    await page.click('.choice-card[data-value="window"]');
+    // Q5 반려동물
+    await expect(page.locator('#quiz-question')).toContainText('반려동물');
+    await page.click('.choice-card[data-value="no"]');
+    // Q6 크기
+    await expect(page.locator('#quiz-question')).toContainText('크기');
+    await page.click('.choice-card[data-value="small"]');
+    // Q7 보는 재미
+    await expect(page.locator('#quiz-question')).toContainText('보는');
+    await page.click('.choice-card[data-value="fruit"]');
 
     await expect(page).toHaveURL(
-      /\/result\.html\?light=high&water=high&purpose=harvest&level=beginner$/
+      /\/result\.html\?light=high&water=high&purpose=harvest&place=window&pet=no&size=small&interest=fruit$/
     );
-  });
-
-  test('Q4 "건너뛰고 결과 보기" → level 없이 이동', async ({ page }) => {
-    await page.goto(`${BASE}/quiz.html`);
-    await page.click('.choice-card[data-value="mid"]');   // Q1
-    await page.click('.choice-card[data-value="mid"]');   // Q2
-    await page.click('.choice-card[data-value="deco"]');  // Q3
-    await page.click('#quiz-skip');                        // Q4 건너뛰기
-    await expect(page).toHaveURL(/\/result\.html\?light=mid&water=mid&purpose=deco$/);
   });
 });
 
@@ -153,20 +150,22 @@ test.describe('4. 이전 / 다시하기', () => {
 });
 
 /* ---------------------------------------------------------------------
-   시나리오 5: 진행바 ①②③ 갱신
+   시나리오 5: 진행바 "n / 7" + 막대 + 점 7개 갱신
    --------------------------------------------------------------------- */
 test.describe('5. 진행바', () => {
-  test('단계별 is-current / is-done 갱신', async ({ page }) => {
+  test('"n / 7" 텍스트·progressbar·점 7개 갱신', async ({ page }) => {
     await page.goto(`${BASE}/quiz.html`);
-    // Q1: 1번째 단계가 current
-    await expect(page.locator('.progress__step').nth(0)).toHaveClass(/is-current/);
+    // Q1: "1 / 7", progressbar aria-valuenow=1, 점 7개·첫 점 current
+    await expect(page.locator('.progress__count')).toContainText('1 / 7');
+    await expect(page.locator('.progress__bar')).toHaveAttribute('aria-valuenow', '1');
+    await expect(page.locator('.progress__dot')).toHaveCount(7);
+    await expect(page.locator('.progress__dot').nth(0)).toHaveClass(/is-current/);
     await page.click('.choice-card[data-value="high"]');
-    // Q2: 1번째 done, 2번째 current
-    await expect(page.locator('.progress__step').nth(0)).toHaveClass(/is-done/);
-    await expect(page.locator('.progress__step').nth(1)).toHaveClass(/is-current/);
-    await page.click('.choice-card[data-value="high"]');
-    // Q3: 3번째 current
-    await expect(page.locator('.progress__step').nth(2)).toHaveClass(/is-current/);
+    // Q2: "2 / 7", 첫 점 done, 둘째 current
+    await expect(page.locator('.progress__count')).toContainText('2 / 7');
+    await expect(page.locator('.progress__bar')).toHaveAttribute('aria-valuenow', '2');
+    await expect(page.locator('.progress__dot').nth(0)).toHaveClass(/is-done/);
+    await expect(page.locator('.progress__dot').nth(1)).toHaveClass(/is-current/);
   });
 });
 
