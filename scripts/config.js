@@ -9,6 +9,6 @@ window.CONFIG = {
   COUPANG_TRACKING_ID: "여기에_쿠팡_ID",
   ADSENSE_CLIENT_ID: "여기에_애드센스_ID",
   KAKAO_JS_KEY: "여기에_카카오_JS_키",
-  CONTACT_EMAIL: "여기에_이메일@example.com",
+  CONTACT_EMAIL: "roclxo@gmail.com",
   SITE_URL: "https://plant-friends.pages.dev"
 };

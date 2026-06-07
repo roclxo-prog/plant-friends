@@ -256,7 +256,7 @@
     var mails = document.querySelectorAll("[data-contact-email]");
     for (var j = 0; j < mails.length; j++) {
       var email = cfg.CONTACT_EMAIL && !App.isPlaceholder(cfg.CONTACT_EMAIL)
-        ? cfg.CONTACT_EMAIL : "여기에_이메일@example.com";
+        ? cfg.CONTACT_EMAIL : "roclxo@gmail.com";
       mails[j].textContent = email;
       if (mails[j].tagName === "A") mails[j].setAttribute("href", "mailto:" + email);
     }
